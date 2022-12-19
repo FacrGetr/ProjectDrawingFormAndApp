@@ -6,12 +6,23 @@ using System.Threading.Tasks;
 
 namespace DrawingModel
 {
+    interface Command
+    {
+        void Execute();
+        void UnExecute();
+    }
+
+    class DrawTriangleCommand
+    {
+
+    }
+
     class CommandManager
     {
-        Stack<ICommand> _undo = new Stack<ICommand>();
-        Stack<ICommand> _redo = new Stack<ICommand>();
+        Stack<Command> _undo = new Stack<Command>();
+        Stack<Command> _redo = new Stack<Command>();
 
-        public void Execute(ICommand command)
+        public void Execute(Command command)
         {
             command.Execute();
             _undo.Push(command);    // push command 進 undo stack
@@ -24,7 +35,7 @@ namespace DrawingModel
             {
                 throw new Exception("Cannot Undo exception\n");
             }
-            ICommand command = _undo.Pop();
+            Command command = _undo.Pop();
             _redo.Push(command);
             command.UnExecute();
         }
@@ -33,7 +44,7 @@ namespace DrawingModel
         {
             if (_redo.Count <= 0)
                 throw new Exception("Cannot Redo exception\n");
-            ICommand command = _redo.Pop();
+            Command command = _redo.Pop();
             _undo.Push(command);
             command.Execute();
         }
