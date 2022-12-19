@@ -9,12 +9,15 @@ namespace DrawingModel
     class CommandClear : ICommand
     {
         Model _model;
-        ShapeManager _shapes;
+        List<Shape> _shapes = new List<Shape>();
 
         public CommandClear(Model model, ShapeManager shapes)
         {
             _model = model;
-            _shapes = shapes;
+            foreach (Shape shape in shapes)
+            {
+                _shapes.Add(shape);
+            }
         }
 
         public void Execute()

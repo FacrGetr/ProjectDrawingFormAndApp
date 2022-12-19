@@ -31,7 +31,7 @@ namespace DrawingModel
         //滑鼠按下
         public void PressedPointer(double x1, double y1)
         {
-            if (_nowDrawing == DrawingMode.Line)
+            if (_nowDrawing == DrawingMode.Null)
                 return;
             if (x1 > 0 && y1 > 0)
             {
@@ -61,9 +61,15 @@ namespace DrawingModel
                 _isPressed = false;
                 //_shapes.Add(_hint);
                 _commands.Execute(new CommandAddNewShape(this, _hint));
-                _buttons.EnableAll();
-                NotifyButtonsChanged();
+                _nowDrawing = DrawingMode.Null;
+                EnableButtons();
             }
+        }
+
+        void EnableButtons()
+        {
+            _buttons.EnableAll();
+            NotifyButtonsChanged();
         }
 
         public void AddShape(Shape shape)
@@ -84,10 +90,10 @@ namespace DrawingModel
             _isPressed = false;
             //_shapes.Clear();
             //NotifyModelChanged();
-            _commands.Execute(new CommandClear(this));
+            _commands.Execute(new CommandClear(this, _shapes));
             _buttons.EnableAll();
             NotifyButtonsChanged();
-            _nowDrawing = DrawingMode.Line;
+            _nowDrawing = DrawingMode.Null;
         }
 
         public void ClearAllShapes()
