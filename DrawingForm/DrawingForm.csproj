@@ -49,6 +49,9 @@
     <Compile Include="..\DrawingModel\Buttons.cs">
       <Link>Model\Buttons.cs</Link>
     </Compile>
+    <Compile Include="..\DrawingModel\Command.cs">
+      <Link>Model\Command.cs</Link>
+    </Compile>
     <Compile Include="..\DrawingModel\DrawingMode.cs">
       <Link>Model\DrawingMode.cs</Link>
     </Compile>

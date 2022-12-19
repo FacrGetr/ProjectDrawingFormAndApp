@@ -9,6 +9,8 @@ namespace DrawingForm
     {
         Model _model;
         Panel _canvas = new DoubleBufferedPanel();
+        ToolStripButton _undo;
+        ToolStripButton _redo;
         const string ENABLED = "Enabled";
         public DrawingForm(Model model)
         {
@@ -81,15 +83,15 @@ namespace DrawingForm
             //
             //undo
             //
-            ToolStripButton undo = new ToolStripButton("Undo", null, HandleUndoButtonClick);
-            undo.Enabled = false;
-            ts.Items.Add(undo);
+            _undo = new ToolStripButton("Undo", null, HandleUndoButtonClick);
+            _undo.Enabled = false;
+            ts.Items.Add(_undo);
             //
             //redo
             //
-            ToolStripButton redo = new ToolStripButton("Redo", null, HandleRedoButtonClick);
-            redo.Enabled = false;
-            ts.Items.Add(redo);
+            _redo = new ToolStripButton("Redo", null, HandleRedoButtonClick);
+            _redo.Enabled = false;
+            ts.Items.Add(_redo);
         }
 
         //Undo按鈕
@@ -158,6 +160,8 @@ namespace DrawingForm
         void HandleModelChanged()
         {
             Invalidate(true);
+            _undo.Enabled = _model.IsUndoEnabled;
+            _redo.Enabled = _model.IsRedoEnabled;
         }
     }
 }

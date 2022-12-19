@@ -30,6 +30,7 @@ namespace DrawingModel
         MyButton _clear = new MyButton(DrawingMode.Line, true);
         MyButton _rectangle = new MyButton(DrawingMode.Rectangle, true);
         MyButton _triangle = new MyButton(DrawingMode.Triangle, true);
+        MyButton _line = new MyButton(DrawingMode.Line, true);
         List<MyButton> _buttons = new List<MyButton>();
 
         public Buttons()
@@ -37,6 +38,7 @@ namespace DrawingModel
             _buttons.Add(_clear);
             _buttons.Add(_rectangle);
             _buttons.Add(_triangle);
+            _buttons.Add(_line);
         }
 
         public bool IsRectangleEnable
@@ -60,6 +62,14 @@ namespace DrawingModel
             get
             {
                 return _clear.IsEnable;
+            }
+        }
+
+        public bool IsLineEnable
+        {
+            get
+            {
+                return _line.IsEnable;
             }
         }
 

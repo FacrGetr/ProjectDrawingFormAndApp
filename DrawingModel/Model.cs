@@ -14,6 +14,7 @@ namespace DrawingModel
         Buttons _buttons = new Buttons();
         Shape _hint;
         DrawingMode _nowDrawing = DrawingMode.Line;
+        CommandManager _commands = new CommandManager();
         //data binding用
         const string PROPERTY_RECTANGLE_ENABLE = "IsRectangleEnable";
         const string PROPERTY_CLEAR_ENABLE = "IsClearEnable";
@@ -57,6 +58,7 @@ namespace DrawingModel
             {
                 _isPressed = false;
                 //_shapes.Add(_hint);
+                _commands.Execute(new CommandAddNewShape(this, _hint));
                 NotifyModelChanged();
                 _buttons.EnableAll();
                 NotifyButtonsChanged();
@@ -66,6 +68,11 @@ namespace DrawingModel
         public void AddShape(Shape shape)
         {
             _shapes.Add(shape);
+        }
+
+        public void PopShape()
+        {
+            _shapes.PopShape();
         }
 
         //點擊 Clear Button 時，清空畫面上所有圖片，並且將所有按鈕 enable。
@@ -137,16 +144,40 @@ namespace DrawingModel
             }
         }
 
+        public bool IsLineEnable
+        {
+            get
+            {
+                return _buttons.IsLineEnable;
+            }
+        }
+
+        public bool IsRedoEnabled
+        {
+            get
+            {
+                return _commands.IsRedoEnabled;
+            }
+        }
+
+        public bool IsUndoEnabled
+        {
+            get
+            {
+                return _commands.IsUndoEnabled;
+            }
+        }
+
         //後悔
         public void Undo()
         {
-
+            _commands.Undo();
         }
 
         //後悔我的後悔
         public void Redo()
         {
-
+            _commands.Redo();
         }
 
         //Observer / DataBinding 用

@@ -23,13 +23,13 @@ namespace DrawingModel
 
     class Shapes
     {
-        List<Shape> _shapes = new List<Shape>();
+        List<Shape> _shapeList = new List<Shape>();
 
         public bool NotEmpty
         {
             get
             {
-                return _shapes.Count() > 0;
+                return _shapeList.Count() > 0;
             }
         }
 
@@ -49,20 +49,26 @@ namespace DrawingModel
         //新增此形狀
         public void Add(Shape shape)
         {
-            _shapes.Add(shape);
+            _shapeList.Add(shape);
         }
 
         //將形狀清空
         public void Clear()
         {
-            _shapes.Clear();
+            _shapeList.Clear();
         }
 
         //畫圖
         public void Draw(IGraphics graphics)
         {
-            foreach (Shape aShape in _shapes)
+            foreach (Shape aShape in _shapeList)
                 aShape.Draw(graphics);
+        }
+
+        //移除末端形狀
+        public void PopShape()
+        {
+            _shapeList.RemoveAt(_shapeList.Count - 1);
         }
     }
 

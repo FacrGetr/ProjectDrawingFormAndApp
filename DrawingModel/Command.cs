@@ -12,25 +12,25 @@ namespace DrawingModel
         void UnExecute();
     }
 
-    class AddNewShapeCommand
+    class CommandAddNewShape : Command
     {
         Model _model;
         Shape _shape;
 
-        public AddNewShapeCommand(Model model, Shape shape)
+        public CommandAddNewShape(Model model, Shape shape)
         {
             _model = model;
             _shape = shape;
         }
 
-        void Execute()
+        public void Execute()
         {
-
+            _model.AddShape(_shape);
         }
 
-        void UnExecute()
+        public void UnExecute()
         {
-
+            _model.PopShape();
         }
     }
 
