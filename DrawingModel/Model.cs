@@ -10,7 +10,7 @@ namespace DrawingModel
         public delegate void ModelChangedEventHandler();
         MyPoint _firstPoint;
         bool _isPressed = false;
-        Shapes _shapes = new Shapes();
+        ShapeManager _shapes = new ShapeManager();
         Buttons _buttons = new Buttons();
         Shape _hint;
         DrawingMode _nowDrawing = DrawingMode.Line;

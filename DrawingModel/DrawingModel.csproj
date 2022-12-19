@@ -42,18 +42,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Buttons.cs" />
+    <Compile Include="Command\CommandClear.cs" />
+    <Compile Include="Command\CommandAddNewShape.cs" />
+    <Compile Include="Command\CommandManager.cs" />
     <Compile Include="DrawingMode.cs" />
-    <Compile Include="Command.cs" />
+    <Compile Include="Command\ICommand.cs" />
     <Compile Include="IGraphics.cs" />
     <Compile Include="Model.cs" />
     <Compile Include="MyPoint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Shapes.cs" />
+    <Compile Include="Shape\MyTriangle.cs" />
+    <Compile Include="Shape\Line.cs" />
+    <Compile Include="Shape\MyRectangle.cs" />
+    <Compile Include="Shape\ShapeManager.cs" />
+    <Compile Include="Shape\Shape.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
