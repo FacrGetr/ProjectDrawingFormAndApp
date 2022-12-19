@@ -9,7 +9,7 @@ namespace DrawingModel
 {
     class ButtonManager : IEnumerable
     {
-        MyButton _clear = new MyButton(DrawingMode.Line, true);
+        MyButton _clear = new MyButton(DrawingMode.Null, true);
         MyButton _rectangle = new MyButton(DrawingMode.Rectangle, true);
         MyButton _triangle = new MyButton(DrawingMode.Triangle, true);
         MyButton _line = new MyButton(DrawingMode.Line, true);
@@ -55,8 +55,8 @@ namespace DrawingModel
             }
         }
 
-        //點擊畫圖(Rectangle 或 Triangle Button 時)按鈕時須將另一個按鈕設定為
-        //enable，且將本身按 鈕設定為 disable。
+        //點擊畫圖(Rectangle 或 Triangle Button 時)按鈕時須將其他按鈕設定為
+        //enable，且將本身按鈕設定為 disable。
         public void SetMode(DrawingMode mode)
         {
             foreach (MyButton button in _buttonList)

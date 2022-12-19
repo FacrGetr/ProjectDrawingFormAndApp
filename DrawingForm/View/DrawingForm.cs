@@ -105,10 +105,10 @@ namespace DrawingForm
         {
             _model.Redo();
         }
-        //Clear按鈕
+        //Line按鈕
         void HandleLineButtonClick(object sender, System.EventArgs e)
         {
-            _model.ClickClear();
+            _model.SetMode(DrawingMode.Line);
         }
 
         //Clear按鈕
