@@ -108,13 +108,13 @@ namespace DrawingForm
         //Clear按鈕
         void HandleLineButtonClick(object sender, System.EventArgs e)
         {
-            _model.Clear();
+            _model.ClickClear();
         }
 
         //Clear按鈕
         void HandleClearButtonClick(object sender, System.EventArgs e)
         {
-            _model.Clear();
+            _model.ClickClear();
         }
 
         //Rectangle按鈕

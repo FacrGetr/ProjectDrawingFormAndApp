@@ -45,7 +45,7 @@ namespace DrawingApp
         //Clear按鈕
         private void HandleClearButtonClick(object sender, RoutedEventArgs e)
         {
-            _model.Clear();
+            _model.ClickClear();
         }
 
         //Rectangle按鈕

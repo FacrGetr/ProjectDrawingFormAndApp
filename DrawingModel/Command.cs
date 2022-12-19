@@ -34,6 +34,28 @@ namespace DrawingModel
         }
     }
 
+    class CommandClear : Command
+    {
+        Model _model;
+        Shapes _shapes;
+
+        public CommandClear(Model model, Shapes shapes)
+        {
+            _model = model;
+            _shapes = shapes;
+        }
+
+        public void Execute()
+        {
+            _model.ClearAllShapes();
+        }
+
+        public void UnExecute()
+        {
+            _model.PopShape();
+        }
+    }
+
     class CommandManager
     {
         Stack<Command> _undo = new Stack<Command>();

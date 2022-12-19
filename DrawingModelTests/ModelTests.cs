@@ -98,7 +98,7 @@ namespace DrawingModelTests
         [TestMethod()]
         public void ClearTest()
         {
-            _model.Clear();
+            _model.ClickClear();
             _privateModel = new PrivateObject(_model);
             Assert.AreEqual(LINE, _privateModel.Invoke("GetMode"));
             Assert.AreEqual(false, _privateModel.Invoke("IsPressed"));
@@ -129,7 +129,7 @@ namespace DrawingModelTests
             Assert.IsTrue(graphics.DidDrawSomething);
 
             graphics.Reset();
-            _model.Clear();
+            _model.ClickClear();
             _model.Draw(graphics);
             Assert.IsFalse(graphics.DidDrawSomething);
 

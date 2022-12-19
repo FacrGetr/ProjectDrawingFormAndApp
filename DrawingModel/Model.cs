@@ -79,14 +79,21 @@ namespace DrawingModel
         }
 
         //點擊 Clear Button 時，清空畫面上所有圖片，並且將所有按鈕 enable。
-        public void Clear()
+        public void ClickClear()
         {
             _isPressed = false;
-            _shapes.Clear();
-            NotifyModelChanged();
+            //_shapes.Clear();
+            //NotifyModelChanged();
+            _commands.Execute(new CommandClear(this));
             _buttons.EnableAll();
             NotifyButtonsChanged();
             _nowDrawing = DrawingMode.Line;
+        }
+
+        public void ClearAllShapes()
+        {
+            _shapes.Clear();
+            NotifyModelChanged();
         }
 
         //畫圖
