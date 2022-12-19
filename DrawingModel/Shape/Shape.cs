@@ -17,9 +17,14 @@ namespace DrawingModel
             get; set;
         }
 
-        abstract public MyPoint Center
+        public MyPoint Center
         {
-            get;
+            get
+            {
+                double x = (Point1.X + Point2.X) / 2;
+                double y = (Point1.Y + Point2.Y) / 2;
+                return new MyPoint(x, y);
+            }
         }
 
         //畫圖，virtual function

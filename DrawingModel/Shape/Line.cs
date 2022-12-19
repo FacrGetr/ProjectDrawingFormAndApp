@@ -17,16 +17,6 @@ namespace DrawingModel
             _shape2 = shape2;
         }
 
-        public override MyPoint Center
-        {
-            get
-            {
-                double x = (Point1.X + Point2.X) / 2;
-                double y = (Point1.Y + Point2.Y) / 2;
-                return new MyPoint(x, y);
-            }
-        }
-
         public override void Draw(IGraphics graphics)
         {
             MyPoint pointStart = _shape1.Center;
