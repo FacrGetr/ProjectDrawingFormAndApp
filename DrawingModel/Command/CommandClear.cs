@@ -26,7 +26,7 @@ namespace DrawingModel
         {
             foreach (Shape shape in _shapes)
             {
-
+                _model.AddShape(shape);
             }
         }
     }

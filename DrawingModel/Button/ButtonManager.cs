@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,39 +7,20 @@ using System.Threading.Tasks;
 
 namespace DrawingModel
 {
-    class MyButton
-    {
-        public MyButton(DrawingMode mode, bool enable)
-        {
-            Mode = mode;
-            IsEnable = enable;
-        }
-
-        public DrawingMode Mode
-        {
-            get; set;
-        }
-
-        public bool IsEnable
-        {
-            get; set;
-        }
-    }
-
-    class Buttons
+    class ButtonManager : IEnumerable
     {
         MyButton _clear = new MyButton(DrawingMode.Line, true);
         MyButton _rectangle = new MyButton(DrawingMode.Rectangle, true);
         MyButton _triangle = new MyButton(DrawingMode.Triangle, true);
         MyButton _line = new MyButton(DrawingMode.Line, true);
-        List<MyButton> _buttons = new List<MyButton>();
+        List<MyButton> _buttonList = new List<MyButton>();
 
-        public Buttons()
+        public ButtonManager()
         {
-            _buttons.Add(_clear);
-            _buttons.Add(_rectangle);
-            _buttons.Add(_triangle);
-            _buttons.Add(_line);
+            _buttonList.Add(_clear);
+            _buttonList.Add(_rectangle);
+            _buttonList.Add(_triangle);
+            _buttonList.Add(_line);
         }
 
         public bool IsRectangleEnable
@@ -77,7 +59,7 @@ namespace DrawingModel
         //enable，且將本身按 鈕設定為 disable。
         public void SetMode(DrawingMode mode)
         {
-            foreach (MyButton button in _buttons)
+            foreach (MyButton button in _buttonList)
             {
                 if (button.Mode == mode)
                 {
@@ -93,10 +75,15 @@ namespace DrawingModel
         //將所有按鈕打開
         public void EnableAll()
         {
-            foreach (MyButton button in _buttons)
+            foreach (MyButton button in _buttonList)
             {
                 button.IsEnable = true;
             }
+        }
+
+        public IEnumerator GetEnumerator()
+        {
+            return _buttonList.GetEnumerator();
         }
     }
 }

@@ -11,7 +11,7 @@ namespace DrawingModel
         MyPoint _firstPoint;
         bool _isPressed = false;
         ShapeManager _shapes = new ShapeManager();
-        Buttons _buttons = new Buttons();
+        ButtonManager _buttons = new ButtonManager();
         Shape _hint;
         DrawingMode _nowDrawing = DrawingMode.Line;
         CommandManager _commands = new CommandManager();

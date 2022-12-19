@@ -41,7 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Buttons.cs" />
+    <Compile Include="Button\ButtonManager.cs" />
+    <Compile Include="Button\MyButton.cs" />
     <Compile Include="Command\CommandClear.cs" />
     <Compile Include="Command\CommandAddNewShape.cs" />
     <Compile Include="Command\CommandManager.cs" />
