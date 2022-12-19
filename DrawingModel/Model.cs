@@ -31,6 +31,8 @@ namespace DrawingModel
         //滑鼠按下
         public void PressedPointer(double x1, double y1)
         {
+            if (_nowDrawing == DrawingMode.Line)
+                return;
             if (x1 > 0 && y1 > 0)
             {
                 _firstPoint = new MyPoint(x1, y1);
@@ -59,7 +61,6 @@ namespace DrawingModel
                 _isPressed = false;
                 //_shapes.Add(_hint);
                 _commands.Execute(new CommandAddNewShape(this, _hint));
-                NotifyModelChanged();
                 _buttons.EnableAll();
                 NotifyButtonsChanged();
             }
@@ -68,11 +69,13 @@ namespace DrawingModel
         public void AddShape(Shape shape)
         {
             _shapes.Add(shape);
+            NotifyModelChanged();
         }
 
         public void PopShape()
         {
             _shapes.PopShape();
+            NotifyModelChanged();
         }
 
         //點擊 Clear Button 時，清空畫面上所有圖片，並且將所有按鈕 enable。
