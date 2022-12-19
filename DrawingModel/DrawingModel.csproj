@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Buttons.cs" />
+    <Compile Include="CommandManager.cs" />
     <Compile Include="DrawingMode.cs" />
+    <Compile Include="ICommand.cs" />
     <Compile Include="IGraphics.cs" />
     <Compile Include="Model.cs" />
     <Compile Include="MyPoint.cs" />
