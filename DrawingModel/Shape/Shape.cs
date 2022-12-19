@@ -17,6 +17,11 @@ namespace DrawingModel
             get; set;
         }
 
+        abstract public MyPoint Center
+        {
+            get;
+        }
+
         //畫圖，virtual function
         abstract public void Draw(IGraphics graphics);
     }

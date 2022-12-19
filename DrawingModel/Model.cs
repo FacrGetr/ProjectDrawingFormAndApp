@@ -34,15 +34,19 @@ namespace DrawingModel
         //滑鼠按下
         public void PressedPointer(double x1, double y1)
         {
-            if (_nowDrawing == DrawingMode.Null)
-                return;
-            if (x1 > 0 && y1 > 0)
+            switch (_nowDrawing)
             {
-                _firstPoint = new MyPoint(x1, y1);
-                _hint = _shapes.CreateNewShape(_nowDrawing);
-                _hint.Point1 = _firstPoint;
-                _hint.Point2 = _firstPoint;
-                _isPressed = true;
+                case DrawingMode.Null:
+                    return;
+                default:
+                    if (x1 > 0 && y1 > 0)
+                    {
+                        _firstPoint = new MyPoint(x1, y1);
+                        _hint = _shapes.CreateNewShape(_nowDrawing);
+                        _hint.Point1 = _firstPoint;
+                        _hint.Point2 = _firstPoint;
+                        _isPressed = true;
+                    }
             }
         }
 

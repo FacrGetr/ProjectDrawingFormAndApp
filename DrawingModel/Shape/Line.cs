@@ -8,10 +8,31 @@ namespace DrawingModel
 {
     class Line : Shape
     {
-        //純畫一條線
+        Shape _shape1;
+        Shape _shape2;
+
+        public Line(ref Shape shape1, ref Shape shape2)
+        {
+            _shape1 = shape1;
+            _shape2 = shape2;
+        }
+
+        public override MyPoint Center
+        {
+            get
+            {
+                double x = (Point1.X + Point2.X) / 2;
+                double y = (Point1.Y + Point2.Y) / 2;
+                return new MyPoint(x, y);
+            }
+        }
+
         public override void Draw(IGraphics graphics)
         {
-            graphics.DrawLine(Point1.X, Point1.Y, Point2.X, Point2.Y);
+            MyPoint pointStart = _shape1.Center;
+            MyPoint pointEnd = _shape2.Center;
+            MyPoint pointCornor1 = new MyPoint((pointStart.X + pointEnd.X / 2), pointStart.Y);
+            MyPoint pointCornor2 = new MyPoint((pointStart.X + pointEnd.X / 2), pointEnd.Y);
         }
     }
 
