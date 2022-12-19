@@ -88,6 +88,9 @@
     <Compile Include="..\DrawingModel\Shape\Shape.cs">
       <Link>Model\Shape.cs</Link>
     </Compile>
+    <Compile Include="..\DrawingModel\Shape\ShapeFactory.cs">
+      <Link>Model\ShapeFactory.cs</Link>
+    </Compile>
     <Compile Include="..\DrawingModel\Shape\ShapeManager.cs">
       <Link>Model\ShapeManager.cs</Link>
     </Compile>
