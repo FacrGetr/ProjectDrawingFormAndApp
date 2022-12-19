@@ -132,6 +132,18 @@ namespace DrawingModel
             }
         }
 
+        //後悔
+        public void Undo()
+        {
+
+        }
+
+        //後悔我的後悔
+        public void Redo()
+        {
+
+        }
+
         //Observer / DataBinding 用
         void NotifyButtonsChanged()
         {

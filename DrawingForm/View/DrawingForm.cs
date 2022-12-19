@@ -62,46 +62,74 @@ namespace DrawingForm
             triangle.Click += HandleTriangleButtonClick;
             triangle.DataBindings.Add(ENABLED, _model, "IsTriangleEnable");
             Controls.Add(triangle);
+            //
+            //ToolStrip
+            //
+            ToolStrip ts = new ToolStrip();
+            Controls.Add(ts);
+            //
+            //undo
+            //
+            ToolStripButton undo = new ToolStripButton("Undo", null, HandleUndoButtonClick);
+            undo.Enabled = false;
+            ts.Items.Add(undo);
+            //
+            //redo
+            //
+            ToolStripButton redo = new ToolStripButton("Redo", null, HandleRedoButtonClick);
+            redo.Enabled = false;
+            ts.Items.Add(redo);
         }
 
+        //Undo按鈕
+        void HandleUndoButtonClick(object sender, System.EventArgs e)
+        {
+            _model.Undo();
+        }
+
+        //Redo按鈕
+        void HandleRedoButtonClick(object sender, System.EventArgs e)
+        {
+            _model.Redo();
+        }
         //Clear按鈕
-        public void HandleClearButtonClick(object sender, System.EventArgs e)
+        void HandleClearButtonClick(object sender, System.EventArgs e)
         {
             _model.Clear();
         }
 
         //Rectangle按鈕
-        public void HandleRectangleButtonClick(object sender, System.EventArgs e)
+        void HandleRectangleButtonClick(object sender, System.EventArgs e)
         {
             _model.SetMode(DrawingMode.Rectangle);
         }
 
         //Triangle按鈕
-        public void HandleTriangleButtonClick(object sender, System.EventArgs e)
+        void HandleTriangleButtonClick(object sender, System.EventArgs e)
         {
             _model.SetMode(DrawingMode.Triangle);
         }
 
         //左鍵按下去
-        public void HandleCanvasPointerPressed(object sender, MouseEventArgs e)
+        void HandleCanvasPointerPressed(object sender, MouseEventArgs e)
         {
             _model.PressedPointer(e.X, e.Y);
         }
 
         //左鍵放開來
-        public void HandleCanvasPointerReleased(object sender, MouseEventArgs e)
+        void HandleCanvasPointerReleased(object sender, MouseEventArgs e)
         {
             _model.ReleasedPointer(e.X, e.Y);
         }
 
         //滑鼠移動
-        public void HandleCanvasPointerMoved(object sender, MouseEventArgs e)
+        void HandleCanvasPointerMoved(object sender, MouseEventArgs e)
         {
             _model.MovedPointer(e.X, e.Y);
         }
 
         //畫畫
-        public void HandleCanvasPaint(object sender, PaintEventArgs e)
+        void HandleCanvasPaint(object sender, PaintEventArgs e)
         {
             // e.Graphics物件是Paint事件帶進來的，只能在當次Paint使用
             // 而Adaptor又直接使用e.Graphics，因此，Adaptor不能重複使用
@@ -110,7 +138,7 @@ namespace DrawingForm
         }
 
         //Model（也就是圖案們）有變動
-        public void HandleModelChanged()
+        void HandleModelChanged()
         {
             Invalidate(true);
         }

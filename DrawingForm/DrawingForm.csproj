@@ -55,26 +55,11 @@
     <Compile Include="..\DrawingModel\IGraphics.cs">
       <Link>Model\IGraphics.cs</Link>
     </Compile>
-    <Compile Include="..\DrawingModel\Line.cs">
-      <Link>Model\Line.cs</Link>
-    </Compile>
     <Compile Include="..\DrawingModel\Model.cs">
       <Link>Model\Model.cs</Link>
     </Compile>
-    <Compile Include="..\DrawingModel\MyButton.cs">
-      <Link>Model\MyButton.cs</Link>
-    </Compile>
     <Compile Include="..\DrawingModel\MyPoint.cs">
       <Link>Model\MyPoint.cs</Link>
-    </Compile>
-    <Compile Include="..\DrawingModel\MyRectangle.cs">
-      <Link>Model\MyRectangle.cs</Link>
-    </Compile>
-    <Compile Include="..\DrawingModel\MyTriangle.cs">
-      <Link>Model\MyTriangle.cs</Link>
-    </Compile>
-    <Compile Include="..\DrawingModel\Shape.cs">
-      <Link>Model\Shape.cs</Link>
     </Compile>
     <Compile Include="..\DrawingModel\Shapes.cs">
       <Link>Model\Shapes.cs</Link>
