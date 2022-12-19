@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="DrawingApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DrawingApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Canvas x:Name="_canvas" Margin="99,138,99,99" Background="#FFFFFFA0"/>
+        <Button x:Name="_clear" Content="Clear" HorizontalAlignment="Right" Margin="1001,48,99,0" VerticalAlignment="Top"/>
+        <Button x:Name="_rectangle" Content="Rectangle" HorizontalAlignment="Left" Margin="99,48,1001,0" VerticalAlignment="Top"/>
+        <Button x:Name="_triangle" Content="Triangle" HorizontalAlignment="Center" Margin="550,48,550,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>
