@@ -56,11 +56,16 @@ namespace DrawingModel
             if (_isPressed)
             {
                 _isPressed = false;
-                _shapes.Add(_hint);
+                //_shapes.Add(_hint);
                 NotifyModelChanged();
                 _buttons.EnableAll();
                 NotifyButtonsChanged();
             }
+        }
+
+        public void AddShape(Shape shape)
+        {
+            _shapes.Add(shape);
         }
 
         //點擊 Clear Button 時，清空畫面上所有圖片，並且將所有按鈕 enable。

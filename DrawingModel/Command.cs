@@ -12,9 +12,26 @@ namespace DrawingModel
         void UnExecute();
     }
 
-    class DrawTriangleCommand
+    class AddNewShapeCommand
     {
+        Model _model;
+        Shape _shape;
 
+        public AddNewShapeCommand(Model model, Shape shape)
+        {
+            _model = model;
+            _shape = shape;
+        }
+
+        void Execute()
+        {
+
+        }
+
+        void UnExecute()
+        {
+
+        }
     }
 
     class CommandManager

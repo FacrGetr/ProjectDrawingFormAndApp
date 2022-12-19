@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DrawingModel
 {
-    struct MyPoint
+    public struct MyPoint
     {
         public double X
         {
