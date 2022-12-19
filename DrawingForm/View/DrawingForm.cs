@@ -41,7 +41,7 @@ namespace DrawingForm
             clear.DataBindings.Add(ENABLED, _model, "IsClearEnable");
             Controls.Add(clear);
             //
-            // prepare clear button
+            // prepare rectangle button
             //
             Button rectangle = new Button();
             rectangle.Text = "Rectangle";
@@ -52,7 +52,7 @@ namespace DrawingForm
             rectangle.DataBindings.Add(ENABLED, _model, "IsRectangleEnable");
             Controls.Add(rectangle);
             //
-            // prepare clear button
+            // prepare triangle button
             //
             Button triangle = new Button();
             triangle.Text = "Triangle";
@@ -62,6 +62,17 @@ namespace DrawingForm
             triangle.Click += HandleTriangleButtonClick;
             triangle.DataBindings.Add(ENABLED, _model, "IsTriangleEnable");
             Controls.Add(triangle);
+            //
+            // prepare line button
+            //
+            Button line = new Button();
+            line.Text = "line";
+            line.Dock = DockStyle.Top;
+            line.AutoSize = true;
+            line.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            line.Click += HandleLineButtonClick;
+            line.DataBindings.Add(ENABLED, _model, "IsTriangleEnable");
+            Controls.Add(line);
             //
             //ToolStrip
             //
@@ -92,6 +103,12 @@ namespace DrawingForm
         {
             _model.Redo();
         }
+        //Clear按鈕
+        void HandleLineButtonClick(object sender, System.EventArgs e)
+        {
+            _model.Clear();
+        }
+
         //Clear按鈕
         void HandleClearButtonClick(object sender, System.EventArgs e)
         {
