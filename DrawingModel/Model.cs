@@ -15,13 +15,13 @@ namespace DrawingModel
         Shape _hint;
         DrawingMode _nowDrawing = DrawingMode.Line;
         CommandManager _commands = new CommandManager();
-        //
+        #region
         //data binding用
-        //
         const string PROPERTY_RECTANGLE_ENABLE = "IsRectangleEnable";
         const string PROPERTY_CLEAR_ENABLE = "IsClearEnable";
         const string PROPERTY_TRIANGLE_ENABLE = "IsTriangleEnable";
         const string PROPERTY_LINE_ENABLE = "IsLineEnable";
+        #endregion
 
         //更改繪圖模式（設定現在要畫什麼）
         public void SetMode(DrawingMode mode)
@@ -94,8 +94,7 @@ namespace DrawingModel
             //_shapes.Clear();
             //NotifyModelChanged();
             _commands.Execute(new CommandClear(this, _shapes));
-            _buttons.EnableAll();
-            NotifyButtonsChanged();
+            EnableButtons();
             _nowDrawing = DrawingMode.Null;
         }
 
