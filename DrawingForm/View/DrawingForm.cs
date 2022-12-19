@@ -66,12 +66,12 @@ namespace DrawingForm
             // prepare line button
             //
             Button line = new Button();
-            line.Text = "line";
+            line.Text = "Line";
             line.Dock = DockStyle.Top;
             line.AutoSize = true;
             line.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             line.Click += HandleLineButtonClick;
-            line.DataBindings.Add(ENABLED, _model, "IsTriangleEnable");
+            line.DataBindings.Add(ENABLED, _model, "IsLineEnable");
             Controls.Add(line);
             //
             //ToolStrip
