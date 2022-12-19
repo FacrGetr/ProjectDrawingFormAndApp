@@ -15,6 +15,7 @@ namespace DrawingModel
         Shape _hint;
         DrawingMode _nowDrawing = DrawingMode.Line;
         CommandManager _commands = new CommandManager();
+        ShapeFactory shapeFactory = new ShapeFactory();
         #region
         //data binding用
         const string PROPERTY_RECTANGLE_ENABLE = "IsRectangleEnable";
@@ -37,16 +38,19 @@ namespace DrawingModel
             switch (_nowDrawing)
             {
                 case DrawingMode.Null:
-                    return;
+                    break;
+                case DrawingMode.Line:
+                    break;
                 default:
                     if (x1 > 0 && y1 > 0)
                     {
                         _firstPoint = new MyPoint(x1, y1);
-                        _hint = _shapes.CreateNewShape(_nowDrawing);
+                        _hint = shapeFactory.CreateNewShape(_nowDrawing);
                         _hint.Point1 = _firstPoint;
                         _hint.Point2 = _firstPoint;
                         _isPressed = true;
                     }
+                    break;
             }
         }
 

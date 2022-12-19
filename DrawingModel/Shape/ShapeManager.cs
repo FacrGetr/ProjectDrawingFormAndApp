@@ -19,19 +19,6 @@ namespace DrawingModel
             }
         }
 
-        //根據要求 new 一個形狀回去
-        public Shape CreateNewShape(DrawingMode mode)
-        {
-            switch (mode)
-            {
-                case DrawingMode.Rectangle:
-                    return new MyRectangle();
-                case DrawingMode.Triangle:
-                    return new MyTriangle();
-            }
-            return new Line();
-        }
-
         //新增此形狀
         public void Add(Shape shape)
         {
