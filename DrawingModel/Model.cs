@@ -13,7 +13,7 @@ namespace DrawingModel
         ShapeManager _shapes = new ShapeManager();
         ButtonManager _buttons = new ButtonManager();
         Shape _hint;
-        DrawingMode _nowDrawing = DrawingMode.Line;
+        DrawingMode _nowDrawing = DrawingMode.Null;
         CommandManager _commands = new CommandManager();
         ShapeFactory shapeFactory = new ShapeFactory();
         #region
@@ -35,6 +35,9 @@ namespace DrawingModel
         //滑鼠按下
         public void PressedPointer(double x1, double y1)
         {
+            _firstPoint = new MyPoint(x1, y1);
+            _isPressed = true;
+
             switch (_nowDrawing)
             {
                 case DrawingMode.Null:
@@ -44,11 +47,9 @@ namespace DrawingModel
                 default:
                     if (x1 > 0 && y1 > 0)
                     {
-                        _firstPoint = new MyPoint(x1, y1);
                         _hint = shapeFactory.CreateNewShape(_nowDrawing);
                         _hint.Point1 = _firstPoint;
                         _hint.Point2 = _firstPoint;
-                        _isPressed = true;
                     }
                     break;
             }
