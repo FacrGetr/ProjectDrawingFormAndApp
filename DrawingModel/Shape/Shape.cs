@@ -27,6 +27,12 @@ namespace DrawingModel
             }
         }
 
+        public bool CatchedBy(MyPoint point)
+        {
+            return (Point1.X < point.X && point.X < Point2.X &&
+                    Point1.Y < point.Y && point.Y < Point2.Y);
+        }
+
         //畫圖，virtual function
         abstract public void Draw(IGraphics graphics);
     }

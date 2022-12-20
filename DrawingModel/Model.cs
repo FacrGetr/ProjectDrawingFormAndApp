@@ -13,9 +13,9 @@ namespace DrawingModel
         ShapeManager _shapes = new ShapeManager();
         ButtonManager _buttons = new ButtonManager();
         Shape _hint;
-        DrawingMode _nowDrawing = DrawingMode.Null;
+        DrawingMode _nowDrawing = DrawingMode.Select;
         CommandManager _commands = new CommandManager();
-        ShapeFactory shapeFactory = new ShapeFactory();
+        ShapeFactory _shapeFactory = new ShapeFactory();
         #region
         //data binding用
         const string PROPERTY_RECTANGLE_ENABLE = "IsRectangleEnable";
@@ -37,21 +37,21 @@ namespace DrawingModel
         {
             _firstPoint = new MyPoint(x1, y1);
             _isPressed = true;
-
-            switch (_nowDrawing)
+            if (x1 > 0 && y1 > 0)
             {
-                case DrawingMode.Null:
-                    break;
-                case DrawingMode.Line:
-                    break;
-                default:
-                    if (x1 > 0 && y1 > 0)
-                    {
-                        _hint = shapeFactory.CreateNewShape(_nowDrawing);
+                switch (_nowDrawing)
+                {
+                    case DrawingMode.Select:
+                        _shapes.SelectShape(_firstPoint);
+                        break;
+                    case DrawingMode.Line:
+                        break;
+                    default:
+                        _hint = _shapeFactory.CreateNewShape(_nowDrawing);
                         _hint.Point1 = _firstPoint;
                         _hint.Point2 = _firstPoint;
-                    }
-                    break;
+                        break;
+                }
             }
         }
 
@@ -73,7 +73,7 @@ namespace DrawingModel
                 _isPressed = false;
                 //_shapes.Add(_hint);
                 _commands.Execute(new CommandAddNewShape(this, _hint));
-                _nowDrawing = DrawingMode.Null;
+                _nowDrawing = DrawingMode.Select;
                 EnableButtons();
             }
         }
@@ -104,7 +104,7 @@ namespace DrawingModel
             //NotifyModelChanged();
             _commands.Execute(new CommandClear(this, _shapes));
             EnableButtons();
-            _nowDrawing = DrawingMode.Null;
+            _nowDrawing = DrawingMode.Select;
         }
 
         public void ClearAllShapes()

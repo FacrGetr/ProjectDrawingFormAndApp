@@ -20,5 +20,18 @@ namespace DrawingModel
             }
             throw new Exception("無效 DrawingMode");
         }
+
+        public Shape CreateNewSelectedShape(Shape shape)
+        {
+            if (shape is MyRectangle)
+            {
+                return new SelectedRectangle((MyRectangle)shape);
+            } 
+            else if (shape is MyTriangle)
+            {
+
+            }
+            throw new Exception("無效 Shape");
+        }
     }
 }

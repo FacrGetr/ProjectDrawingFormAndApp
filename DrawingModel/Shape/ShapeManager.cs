@@ -10,6 +10,8 @@ namespace DrawingModel
     class ShapeManager : IEnumerable
     {
         List<Shape> _shapeList = new List<Shape>();
+        Shape _nowSelectShape = null;
+        ShapeFactory _shapeFactory = new ShapeFactory();
 
         public bool NotEmpty
         {
@@ -36,6 +38,8 @@ namespace DrawingModel
         {
             foreach (Shape aShape in _shapeList)
                 aShape.Draw(graphics);
+            if(_nowSelectShape != null)
+                _nowSelectShape.Draw(graphics);
         }
 
         //移除末端形狀
@@ -47,6 +51,19 @@ namespace DrawingModel
         public IEnumerator GetEnumerator()
         {
             return _shapeList.GetEnumerator();
+        }
+
+        public void SelectShape(MyPoint pointer)
+        {
+            foreach (Shape aShape in _shapeList)
+            {
+                if (aShape.CatchedBy(pointer))
+                {
+                    _nowSelectShape = _shapeFactory.CreateNewSelectedShape(aShape);
+                    return;
+                }
+            }
+            _nowSelectShape = null;
         }
     }
 }
