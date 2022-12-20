@@ -13,6 +13,14 @@ namespace DrawingModel
         Shape _nowSelectShape = null;
         ShapeFactory _shapeFactory = new ShapeFactory();
 
+        public Shape NowSelectedShape
+        {
+            get
+            {
+                return _nowSelectShape;
+            }
+        }
+
         public bool NotEmpty
         {
             get
@@ -38,8 +46,8 @@ namespace DrawingModel
         {
             foreach (Shape aShape in _shapeList)
                 aShape.Draw(graphics);
-            if(_nowSelectShape != null)
-                _nowSelectShape.Draw(graphics);
+            //if(_nowSelectShape != null)
+            //    _nowSelectShape.Draw(graphics);
         }
 
         //移除末端形狀
@@ -53,17 +61,17 @@ namespace DrawingModel
             return _shapeList.GetEnumerator();
         }
 
-        public void SelectShape(MyPoint pointer)
+        public Shape SelectShape(MyPoint pointer)
         {
             foreach (Shape aShape in _shapeList)
             {
                 if (aShape.CatchedBy(pointer))
                 {
-                    _nowSelectShape = _shapeFactory.CreateNewSelectedShape(aShape);
-                    return;
+                    _nowSelectShape = aShape;
+                    return aShape;
                 }
             }
-            _nowSelectShape = null;
+            return null;
         }
     }
 }

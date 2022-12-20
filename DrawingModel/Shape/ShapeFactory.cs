@@ -21,17 +21,9 @@ namespace DrawingModel
             throw new Exception("無效 DrawingMode");
         }
 
-        public Shape CreateNewSelectedShape(Shape shape)
+        public Line CreateNewLine(ref Shape shape1, ref Shape shape2)
         {
-            if (shape is MyRectangle)
-            {
-                return new SelectedRectangle((MyRectangle)shape);
-            } 
-            else if (shape is MyTriangle)
-            {
-
-            }
-            throw new Exception("無效 Shape");
+            return new Line(ref shape1, ref shape2);
         }
     }
 }

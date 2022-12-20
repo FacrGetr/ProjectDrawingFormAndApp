@@ -35,16 +35,22 @@ namespace DrawingModel
         //滑鼠按下
         public void PressedPointer(double x1, double y1)
         {
-            _firstPoint = new MyPoint(x1, y1);
-            _isPressed = true;
             if (x1 > 0 && y1 > 0)
             {
+                _firstPoint = new MyPoint(x1, y1);
+                _isPressed = true;
                 switch (_nowDrawing)
                 {
                     case DrawingMode.Select:
-                        _shapes.SelectShape(_firstPoint);
                         break;
                     case DrawingMode.Line:
+                        Shape selected = _shapes.SelectShape(_firstPoint);
+                        if (selected == null)
+                        {
+                            _isPressed = false;
+                            return;
+                        }
+                        _hint = _shapeFactory.CreateNewLine(ref selected, ref selected);
                         break;
                     default:
                         _hint = _shapeFactory.CreateNewShape(_nowDrawing);
@@ -70,11 +76,21 @@ namespace DrawingModel
         {
             if (_isPressed)
             {
-                _isPressed = false;
-                //_shapes.Add(_hint);
-                _commands.Execute(new CommandAddNewShape(this, _hint));
-                _nowDrawing = DrawingMode.Select;
+                switch (_nowDrawing)
+                {
+                    case DrawingMode.Line:
+                        Shape shape1 = _shapes.NowSelectedShape;
+                        Shape shape2 = _shapes.SelectShape(new MyPoint(x1, y1));
+                        Line newLine = _shapeFactory.CreateNewLine(ref shape1, ref shape2);
+                        _commands.Execute(new CommandAddNewShape(this, newLine));
+                        break;
+                    default:
+                        _commands.Execute(new CommandAddNewShape(this, _hint));
+                        break;
+                }
                 EnableButtons();
+                _isPressed = false;
+                _nowDrawing = DrawingMode.Select;
             }
         }
 
