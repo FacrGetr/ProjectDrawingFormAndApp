@@ -12,7 +12,18 @@ namespace DrawingModelTests
         {
             get; set;
         }
+
         public bool DidDrawSomething
+        {
+            get; set;
+        }
+
+        public bool DidDrawMarker
+        {
+            get; set;
+        }
+
+        public bool DidDrawLine
         {
             get; set;
         }
@@ -24,13 +35,15 @@ namespace DrawingModelTests
 
         public void DrawLine(double x1, double y1, double x2, double y2)
         {
-            DidDrawSomething = true;
+            DidDrawLine = true;
         }
 
         public void Reset()
         {
             DidClearAll = false;
             DidDrawSomething = false;
+            DidDrawLine = false;
+            DidDrawMarker = false;
         }
 
         public void DrawRectangle(double x1, double y1, double x2, double y2)
@@ -40,6 +53,16 @@ namespace DrawingModelTests
         public void DrawTriangle(double x1, double y1, double x2, double y2)
         {
             DidDrawSomething = true;
+        }
+
+        public void DrawRectangleMarker(double x1, double y1, double x2, double y2)
+        {
+            DidDrawMarker = true;
+        }
+
+        public void DrawTriangleMarker(double x1, double y1, double x2, double y2)
+        {
+            DidDrawMarker = true;
         }
     }
 }

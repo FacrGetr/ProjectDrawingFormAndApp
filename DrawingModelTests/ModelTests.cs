@@ -13,17 +13,18 @@ namespace DrawingModelTests
     {
         Model _model;
         const DrawingMode LINE = DrawingMode.Line;
+        const DrawingMode SELECT = DrawingMode.Select;
         const DrawingMode RECTANGLE = DrawingMode.Rectangle;
         const DrawingMode TRIANGLE = DrawingMode.Triangle;
         bool _modelChanged;
         PrivateObject _privateModel;
-        MockGraphics graphics = new MockGraphics();
+        MockGraphics _graphics = new MockGraphics();
 
         [TestInitialize()]
         public void TestInitialize()
         {
             _model = new Model();
-            graphics.Reset();
+            _graphics.Reset();
             _modelChanged = false;
             _model._modelChanged += modelDidChanged;
         }
@@ -40,12 +41,21 @@ namespace DrawingModelTests
             Assert.AreEqual(false, _model.IsRectangleEnable);
             Assert.AreEqual(true, _model.IsTriangleEnable);
             Assert.AreEqual(true, _model.IsClearEnable);
+            Assert.AreEqual(true, _model.IsLineEnable);
             _model.SetMode(TRIANGLE);
             _privateModel = new PrivateObject(_model);
             Assert.AreEqual(TRIANGLE, _privateModel.Invoke("GetMode"));
             Assert.AreEqual(true, _model.IsRectangleEnable);
             Assert.AreEqual(false, _model.IsTriangleEnable);
             Assert.AreEqual(true, _model.IsClearEnable);
+            Assert.AreEqual(true, _model.IsLineEnable);
+            _model.SetMode(LINE);
+            _privateModel = new PrivateObject(_model);
+            Assert.AreEqual(LINE, _privateModel.Invoke("GetMode"));
+            Assert.AreEqual(true, _model.IsRectangleEnable);
+            Assert.AreEqual(true, _model.IsTriangleEnable);
+            Assert.AreEqual(true, _model.IsClearEnable);
+            Assert.AreEqual(false, _model.IsLineEnable);
         }
 
         [TestMethod()]
@@ -58,24 +68,36 @@ namespace DrawingModelTests
             TestInitialize();
             _model.PressedPointer(1, 1);
             _privateModel = new PrivateObject(_model);
-            Assert.AreEqual(true, _privateModel.Invoke("IsPressed"));
+            Assert.AreEqual(false, _privateModel.Invoke("IsPressed"));
 
             TestInitialize();
             _model.PressedPointer(-1, -1);
             _privateModel = new PrivateObject(_model);
             Assert.AreEqual(false, _privateModel.Invoke("IsPressed"));
+
+
+            TestInitialize();
+            _model.SetMode(RECTANGLE);
+            _model.PressedPointer(1, 1);
+            _privateModel = new PrivateObject(_model);
+            Assert.AreEqual(true, _privateModel.Invoke("IsPressed"));
         }
 
         [TestMethod()]
         public void PointerMovedTest()
         {
+            _model.PressedPointer(1, 1);
             _model.MovedPointer(10, 10);
-            Assert.IsFalse(_modelChanged);
+            _model.Draw(_graphics);
+            Assert.IsFalse(_graphics.DidDrawSomething);
 
             TestInitialize();
+            _model.SetMode(RECTANGLE);
             _model.PressedPointer(1, 1);
             _model.MovedPointer(10, 10);
             Assert.IsTrue(_modelChanged);
+            _model.Draw(_graphics);
+            Assert.IsTrue(_graphics.DidDrawSomething);
         }
 
         [TestMethod()]
@@ -100,7 +122,7 @@ namespace DrawingModelTests
         {
             _model.ClickClear();
             _privateModel = new PrivateObject(_model);
-            Assert.AreEqual(LINE, _privateModel.Invoke("GetMode"));
+            Assert.AreEqual(SELECT, _privateModel.Invoke("GetMode"));
             Assert.AreEqual(false, _privateModel.Invoke("IsPressed"));
             Assert.IsTrue(_modelChanged);
         }
@@ -108,53 +130,138 @@ namespace DrawingModelTests
         [TestMethod()]
         public void DrawTest()
         {
-            _model.Draw(graphics);
-            Assert.IsTrue(graphics.DidClearAll);
-            Assert.IsFalse(graphics.DidDrawSomething);
+            _model.Draw(_graphics);
+            Assert.IsTrue(_graphics.DidClearAll);
+            Assert.IsFalse(_graphics.DidDrawSomething);
 
-            graphics.Reset();
+            _graphics.Reset();
             TestInitialize();
-            _model.PressedPointer(1, 1);
-            _model.Draw(graphics);
-            Assert.IsTrue(graphics.DidDrawSomething);
-
-            graphics.Reset();
-            _model.MovedPointer(5, 5);
-            _model.Draw(graphics);
-            Assert.IsTrue(graphics.DidDrawSomething);
-
-            graphics.Reset();
-            _model.ReleasedPointer(10, 10);
-            _model.Draw(graphics);
-            Assert.IsTrue(graphics.DidDrawSomething);
-
-            graphics.Reset();
             _model.ClickClear();
-            _model.Draw(graphics);
-            Assert.IsFalse(graphics.DidDrawSomething);
+            _model.Draw(_graphics);
+            Assert.IsFalse(_graphics.DidDrawSomething);
 
-            graphics.Reset();
+            _graphics.Reset();
             _model.SetMode(RECTANGLE);
             _model.PressedPointer(1, 1);
             _model.MovedPointer(5, 5);
             _model.ReleasedPointer(10, 10);
-            _model.Draw(graphics);
-            Assert.IsTrue(graphics.DidDrawSomething);
+            _model.Draw(_graphics);
+            Assert.IsTrue(_graphics.DidDrawSomething);
 
-            graphics.Reset();
+            _graphics.Reset();
             _model.SetMode(TRIANGLE);
             _model.PressedPointer(1, 1);
             _model.MovedPointer(5, 5);
             _model.ReleasedPointer(10, 10);
-            _model.Draw(graphics);
-            Assert.IsTrue(graphics.DidDrawSomething);
+            _model.Draw(_graphics);
+            Assert.IsTrue(_graphics.DidDrawSomething);
         }
 
         [TestMethod()]
-        public void NotifyTest()
+        public void TestDrawLine()
         {
-            //呃......我不知道 PropertyChanged 要怎麼單元測試......
-            Assert.Fail();
+            _model.SetMode(RECTANGLE);
+            _model.PressedPointer(1, 1);
+            _model.MovedPointer(10, 10);
+            _model.ReleasedPointer(10, 10);
+
+            _model.SetMode(TRIANGLE);
+            _model.PressedPointer(15, 15);
+            _model.MovedPointer(30, 30);
+            _model.ReleasedPointer(30, 30);
+
+            _model.SetMode(LINE);
+            _model.PressedPointer(50, 50);
+            _model.MovedPointer(10, 10);
+            _model.Draw(_graphics);
+            Assert.IsFalse(_graphics.DidDrawLine);
+
+            _model.PressedPointer(5, 5);
+            _model.MovedPointer(50, 50);
+            _model.Draw(_graphics);
+            Assert.IsTrue(_graphics.DidDrawLine);
+            _graphics.Reset();
+
+            _model.ReleasedPointer(50, 50);
+            _model.Draw(_graphics);
+            Assert.IsFalse(_graphics.DidDrawLine);
+
+            _model.SetMode(LINE);
+            _model.PressedPointer(5, 5);
+            _model.MovedPointer(20, 20);
+            _model.ReleasedPointer(20, 20);
+
+            _model.Draw(_graphics);
+            Assert.IsTrue(_graphics.DidDrawLine);
+        }
+
+        [TestMethod()]
+        public void TestUndoRedo()
+        {
+            Assert.IsFalse(_model.IsUndoEnabled);
+            Assert.IsFalse(_model.IsRedoEnabled);
+
+            _model.SetMode(RECTANGLE);
+            _model.PressedPointer(1, 1);
+            _model.MovedPointer(10, 10);
+            _model.ReleasedPointer(10, 10);
+
+            Assert.IsTrue(_model.IsUndoEnabled);
+            Assert.IsFalse(_model.IsRedoEnabled);
+
+            _model.Draw(_graphics);
+            Assert.IsTrue(_graphics.DidDrawSomething);
+            _graphics.Reset();
+
+            _model.Undo();
+            Assert.IsFalse(_model.IsUndoEnabled);
+            Assert.IsTrue(_model.IsRedoEnabled);
+
+            _model.Draw(_graphics);
+            Assert.IsFalse(_graphics.DidDrawSomething);
+
+            _model.Redo();
+            Assert.IsTrue(_model.IsUndoEnabled);
+            Assert.IsFalse(_model.IsRedoEnabled);
+
+            _model.Draw(_graphics);
+            Assert.IsTrue(_graphics.DidDrawSomething);
+        }
+
+        [TestMethod()]
+        public void TestDrawMarker()
+        {
+            _model.SetMode(RECTANGLE);
+            _model.PressedPointer(1, 1);
+            _model.MovedPointer(10, 10);
+            _model.ReleasedPointer(10, 10);
+
+            _model.SetMode(SELECT);
+            _model.PressedPointer(5, 5);
+            _model.Draw(_graphics);
+            Assert.IsTrue(_graphics.DidDrawMarker);
+            _graphics.Reset();
+
+            _model.PressedPointer(50, 50);
+
+            _model.Draw(_graphics);
+            Assert.IsFalse(_graphics.DidDrawMarker);
+        }
+
+        [TestMethod()]
+        public void TestSelectedShapeInfo()
+        {
+            Assert.AreEqual("Select：", _model.SelectedShapeInfo);
+
+            _model.SetMode(RECTANGLE);
+            _model.PressedPointer(1, 1);
+            _model.MovedPointer(10, 10);
+            _model.ReleasedPointer(10, 10);
+
+            _model.PressedPointer(5, 5);
+
+            Assert.AreEqual("Select：Rectangle(1, 1, 10, 10)", _model.SelectedShapeInfo);
+
         }
 
         void modelDidChanged()

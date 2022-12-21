@@ -95,8 +95,8 @@ namespace DrawingModel
             MyPoint bottonRight = new MyPoint(GetMax(Point1.X, Point2.X),
                                             GetMax(Point1.Y, Point2.Y));
 
-            return (topLeft.X < point.X && point.X < bottonRight.X &&
-                    topLeft.Y < point.Y && point.Y < bottonRight.Y);
+            return topLeft.X < point.X && point.X < bottonRight.X &&
+                    topLeft.Y < point.Y && point.Y < bottonRight.Y;
         }
 
         double GetMax(double num1, double num2)
