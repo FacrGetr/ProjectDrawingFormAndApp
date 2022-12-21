@@ -22,9 +22,7 @@ namespace DrawingModel
         //新增此形狀
         public void Add(Shape shape)
         {
-            _shapeList.Reverse();
             _shapeList.Add(shape);
-            _shapeList.Reverse();
         }
 
         //將形狀清空
@@ -63,10 +61,12 @@ namespace DrawingModel
 
         public Shape SelectShape(MyPoint pointer)
         {
+            _shapeList.Reverse();
             foreach (Shape aShape in _shapeList)
             {
                 if (aShape.CatchedBy(pointer))
                 {
+                    _shapeList.Reverse();
                     return aShape;
                 }
             }
