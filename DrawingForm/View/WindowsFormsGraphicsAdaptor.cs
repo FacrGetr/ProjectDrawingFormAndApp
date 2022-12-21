@@ -23,7 +23,7 @@ namespace DrawingForm.PresentationModel
         //畫線
         public void DrawLine(double x1, double y1, double x2, double y2)
         {
-            _graphics.DrawLine(Pens.Black, (float)x1, (float)y1, (float)x2, (float)y2);
+            _graphics.DrawLine(new Pen(Color.Black, PEN_WIDTH), (float)x1, (float)y1, (float)x2, (float)y2);
         }
 
         //畫方
