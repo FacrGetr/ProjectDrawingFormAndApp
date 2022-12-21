@@ -311,32 +311,32 @@
               <AnalysisFile>
                 <RelativePath>Button\ButtonManager.cs</RelativePath>
                 <ProjectName>DrawingModel</ProjectName>
-                <AnalysisFileType>Unknown</AnalysisFileType>
+                <AnalysisFileType>Model</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
                 <RelativePath>Button\MyButton.cs</RelativePath>
                 <ProjectName>DrawingModel</ProjectName>
-                <AnalysisFileType>Unknown</AnalysisFileType>
+                <AnalysisFileType>Model</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
                 <RelativePath>Command\CommandAddNewShape.cs</RelativePath>
                 <ProjectName>DrawingModel</ProjectName>
-                <AnalysisFileType>Unknown</AnalysisFileType>
+                <AnalysisFileType>Model</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
                 <RelativePath>Command\CommandClear.cs</RelativePath>
                 <ProjectName>DrawingModel</ProjectName>
-                <AnalysisFileType>Unknown</AnalysisFileType>
+                <AnalysisFileType>Model</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
                 <RelativePath>Command\CommandManager.cs</RelativePath>
                 <ProjectName>DrawingModel</ProjectName>
-                <AnalysisFileType>Unknown</AnalysisFileType>
+                <AnalysisFileType>Model</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
                 <RelativePath>Command\ICommand.cs</RelativePath>
                 <ProjectName>DrawingModel</ProjectName>
-                <AnalysisFileType>Unknown</AnalysisFileType>
+                <AnalysisFileType>Model</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
                 <RelativePath>DrawingMode.cs</RelativePath>
@@ -366,37 +366,37 @@
               <AnalysisFile>
                 <RelativePath>Shape\MyLine.cs</RelativePath>
                 <ProjectName>DrawingModel</ProjectName>
-                <AnalysisFileType>Unknown</AnalysisFileType>
+                <AnalysisFileType>Model</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
                 <RelativePath>Shape\MyRectangle.cs</RelativePath>
                 <ProjectName>DrawingModel</ProjectName>
-                <AnalysisFileType>Unknown</AnalysisFileType>
+                <AnalysisFileType>Model</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
                 <RelativePath>Shape\MyTriangle.cs</RelativePath>
                 <ProjectName>DrawingModel</ProjectName>
-                <AnalysisFileType>Unknown</AnalysisFileType>
+                <AnalysisFileType>Model</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
                 <RelativePath>Shape\Shape.cs</RelativePath>
                 <ProjectName>DrawingModel</ProjectName>
-                <AnalysisFileType>Unknown</AnalysisFileType>
+                <AnalysisFileType>Model</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
                 <RelativePath>Shape\ShapeFactory.cs</RelativePath>
                 <ProjectName>DrawingModel</ProjectName>
-                <AnalysisFileType>Unknown</AnalysisFileType>
+                <AnalysisFileType>Model</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
                 <RelativePath>Shape\ShapeManager.cs</RelativePath>
                 <ProjectName>DrawingModel</ProjectName>
-                <AnalysisFileType>Unknown</AnalysisFileType>
+                <AnalysisFileType>Model</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
                 <RelativePath>ShapeInfo.cs</RelativePath>
                 <ProjectName>DrawingModel</ProjectName>
-                <AnalysisFileType>Unknown</AnalysisFileType>
+                <AnalysisFileType>Model</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
                 <RelativePath>Program.cs</RelativePath>
@@ -436,7 +436,7 @@
               <AnalysisFile>
                 <RelativePath>View\WindowsFormsGraphicsAdaptor.cs</RelativePath>
                 <ProjectName>DrawingForm</ProjectName>
-                <AnalysisFileType>Model</AnalysisFileType>
+                <AnalysisFileType>ViewOrController</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
                 <RelativePath>App.xaml.cs</RelativePath>
@@ -456,12 +456,12 @@
               <AnalysisFile>
                 <RelativePath>View\WindowsStoreGraphicsAdaptor.cs</RelativePath>
                 <ProjectName>DrawingApp</ProjectName>
-                <AnalysisFileType>Model</AnalysisFileType>
+                <AnalysisFileType>ViewOrController</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
                 <RelativePath>MainFormUITest.cs</RelativePath>
                 <ProjectName>DrawingModelTests</ProjectName>
-                <AnalysisFileType>Unknown</AnalysisFileType>
+                <AnalysisFileType>Test</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
                 <RelativePath>MockGraphics.cs</RelativePath>
@@ -481,7 +481,7 @@
               <AnalysisFile>
                 <RelativePath>Robot.cs</RelativePath>
                 <ProjectName>DrawingModelTests</ProjectName>
-                <AnalysisFileType>Unknown</AnalysisFileType>
+                <AnalysisFileType>Test</AnalysisFileType>
               </AnalysisFile>
             </AnalysisFiles>
           </AnalysisFileManager>
