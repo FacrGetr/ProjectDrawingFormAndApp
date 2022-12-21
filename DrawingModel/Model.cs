@@ -11,9 +11,11 @@ namespace DrawingModel
         MyPoint _firstPoint;
         bool _isPressed = false;
         ShapeManager _shapes = new ShapeManager();
+        ShapeManager _lines = new ShapeManager();
         ButtonManager _buttons = new ButtonManager();
         Shape _hint;
-        DrawingMode _nowDrawing = DrawingMode.Select;
+        Line _hintLine;
+        DrawingMode _drawingModeNow = DrawingMode.Select;
         CommandManager _commands = new CommandManager();
         ShapeFactory _shapeFactory = new ShapeFactory();
         #region
@@ -27,7 +29,7 @@ namespace DrawingModel
         //更改繪圖模式（設定現在要畫什麼）
         public void SetMode(DrawingMode mode)
         {
-            _nowDrawing = mode;
+            _drawingModeNow = mode;
             _buttons.SetMode(mode);
             NotifyButtonsChanged();
         }
@@ -35,63 +37,62 @@ namespace DrawingModel
         //滑鼠按下
         public void PressedPointer(double x1, double y1)
         {
-            if (x1 > 0 && y1 > 0)
+            if (x1 <= 0 || y1 <= 0) return;
+            
+            _firstPoint = new MyPoint(x1, y1);
+            _isPressed = true;
+            _hint = _shapeFactory.CreateNewShape(_drawingModeNow);
+            _hint.Point1 = _firstPoint;
+            _hint.Point2 = _firstPoint;
+
+            if(_drawingModeNow == DrawingMode.Line)
             {
-                _firstPoint = new MyPoint(x1, y1);
-                _isPressed = true;
-                switch (_nowDrawing)
-                {
-                    case DrawingMode.Select:
-                        break;
-                    case DrawingMode.Line:
-                        Shape selected = _shapes.SelectShape(_firstPoint);
-                        if (selected == null)
-                        {
-                            _isPressed = false;
-                            return;
-                        }
-                        _hint = _shapeFactory.CreateNewLine(ref selected, ref selected);
-                        break;
-                    default:
-                        _hint = _shapeFactory.CreateNewShape(_nowDrawing);
-                        _hint.Point1 = _firstPoint;
-                        _hint.Point2 = _firstPoint;
-                        break;
-                }
+                Shape selected = _shapes.SelectShape(_firstPoint);
+                if (selected == null)
+                    _isPressed = false;
+                _hint.SetShape1(selected);
             }
         }
 
         //滑鼠移動
         public void MovedPointer(double x1, double y1)
         {
-            if (_isPressed)
+            if (!_isPressed) return;
+
+            switch (_drawingModeNow)
             {
-                _hint.Point2 = new MyPoint(x1, y1);
-                NotifyModelChanged();
+                case DrawingMode.Line:
+                    _hintLine.Point2 = new MyPoint(x1, y1);
+                    break;
+                default:
+                    break;
             }
+            _hint.Point2 = new MyPoint(x1, y1);
+            NotifyModelChanged();
+            
         }
 
         //滑鼠放開
         public void ReleasedPointer(double x1, double y1)
         {
-            if (_isPressed)
+            if (!_isPressed) return;
+            
+            if(_drawingModeNow == DrawingMode.Line)
             {
-                switch (_nowDrawing)
+                Shape selected = _shapes.SelectShape(new MyPoint(x1, y1));
+                if (selected == null)
                 {
-                    case DrawingMode.Line:
-                        Shape shape1 = _shapes.NowSelectedShape;
-                        Shape shape2 = _shapes.SelectShape(new MyPoint(x1, y1));
-                        Line newLine = _shapeFactory.CreateNewLine(ref shape1, ref shape2);
-                        _commands.Execute(new CommandAddNewShape(this, newLine));
-                        break;
-                    default:
-                        _commands.Execute(new CommandAddNewShape(this, _hint));
-                        break;
+                    _isPressed = false;
+                    return;
                 }
-                EnableButtons();
-                _isPressed = false;
-                _nowDrawing = DrawingMode.Select;
+                _hint.SetShape2(selected);
             }
+
+            _commands.Execute(new CommandAddNewShape(this, _hint));
+            EnableButtons();
+            _isPressed = false;
+            _drawingModeNow = DrawingMode.Select;
+            
         }
 
         void EnableButtons()
@@ -120,7 +121,7 @@ namespace DrawingModel
             //NotifyModelChanged();
             _commands.Execute(new CommandClear(this, _shapes));
             EnableButtons();
-            _nowDrawing = DrawingMode.Select;
+            _drawingModeNow = DrawingMode.Select;
         }
 
         public void ClearAllShapes()
@@ -138,7 +139,9 @@ namespace DrawingModel
                 _shapes.Draw(graphics);
             }
             if (_isPressed)
+            {
                 _hint.Draw(graphics);
+            }
         }
 
         //Observer Pattern，通知訂閱者老子變了
@@ -150,7 +153,7 @@ namespace DrawingModel
         //單元測試用
         private DrawingMode GetMode()
         {
-            return _nowDrawing;
+            return _drawingModeNow;
         }
 
         //單元測試用

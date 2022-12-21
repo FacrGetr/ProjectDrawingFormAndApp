@@ -17,13 +17,15 @@ namespace DrawingModel
                     return new MyRectangle();
                 case DrawingMode.Triangle:
                     return new MyTriangle();
+                case DrawingMode.Line:
+                    return new Line();
             }
             throw new Exception("無效 DrawingMode");
         }
 
-        public Line CreateNewLine(ref Shape shape1, ref Shape shape2)
+        public Line CreateNewLine()
         {
-            return new Line(ref shape1, ref shape2);
+            return new Line();
         }
     }
 }

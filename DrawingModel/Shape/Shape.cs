@@ -12,6 +12,29 @@ namespace DrawingModel
         public event ModelChangedEventHandler _shapeChanged;
         public delegate void ModelChangedEventHandler();
 
+        Shape _shape1;
+        Shape _shape2;
+
+        public void SetShape1(Shape shape)
+        {
+            _shape1 = shape;
+            Point1 = shape.Center;
+            _shape1._shapeChanged += HandleShapeChanged;
+        }
+
+        public void SetShape2(Shape shape)
+        {
+            _shape2 = shape;
+            Point2 = shape.Center;
+            _shape2._shapeChanged += HandleShapeChanged;
+        }
+
+        void HandleShapeChanged()
+        {
+            Point1 = _shape1.Center;
+            Point2 = _shape2.Center;
+        }
+
         MyPoint _point1;
 
         public MyPoint Point1
