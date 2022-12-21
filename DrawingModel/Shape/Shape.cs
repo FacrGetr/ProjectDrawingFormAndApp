@@ -77,8 +77,10 @@ namespace DrawingModel
 
         public bool CatchedBy(MyPoint point)
         {
-            return (Point1.X < point.X && point.X < Point2.X &&
-                    Point1.Y < point.Y && point.Y < Point2.Y);
+            return ((Point1.X < point.X && point.X < Point2.X &&
+                    Point1.Y < point.Y && point.Y < Point2.Y) ||
+                    (Point2.X < point.X && point.X < Point1.X &&
+                    Point2.Y < point.Y && point.Y < Point1.Y));
         }
 
         //畫圖，virtual function
