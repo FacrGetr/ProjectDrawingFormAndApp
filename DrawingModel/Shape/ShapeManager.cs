@@ -30,6 +30,7 @@ namespace DrawingModel
         public void Clear()
         {
             _shapeList.Clear();
+            _nowSelectShape = null;
         }
 
         //畫圖
