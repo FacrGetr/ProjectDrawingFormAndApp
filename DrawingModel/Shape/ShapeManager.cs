@@ -68,12 +68,12 @@ namespace DrawingModel
                 if (aShape.CatchedBy(pointer))
                 {
                     _shapeList.Reverse();
-                    _nowSelecting = aShape;
-                    break;
+                    _nowSelectShape = aShape;
+                    return aShape;
                 }
             }
-            _nowSelecting = null;
-            return _nowSelecting;
+            _nowSelectShape = null;
+            return null;
         }
     }
 }
