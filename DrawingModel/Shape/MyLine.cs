@@ -20,6 +20,11 @@ namespace DrawingModel
             graphics.DrawLine(pointCornor2.X, pointCornor2.Y,
                                 Point2.X, Point2.Y);
         }
+
+        public override void DrawMarker(IGraphics graphics)
+        {
+            Draw(graphics);
+        }
     }
 
 }

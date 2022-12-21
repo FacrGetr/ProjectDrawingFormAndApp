@@ -84,6 +84,8 @@ namespace DrawingModel
         //畫圖，virtual function
         abstract public void Draw(IGraphics graphics);
 
+        abstract public void DrawMarker(IGraphics graphics);
+
         void NotifyShapeChanged()
         {
             _shapeChanged?.Invoke();

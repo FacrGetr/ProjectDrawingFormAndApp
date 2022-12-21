@@ -10,6 +10,7 @@ namespace DrawingModel
     class ShapeManager : IEnumerable
     {
         List<Shape> _shapeList = new List<Shape>();
+        Shape _nowSelecting;
 
         public bool NotEmpty
         {
@@ -44,6 +45,7 @@ namespace DrawingModel
                 if (!(aShape is MyLine))
                     aShape.Draw(graphics);
             }
+            _nowSelecting.DrawMarker(graphics);
             //if(_nowSelectShape != null)
             //    _nowSelectShape.Draw(graphics);
         }
@@ -67,6 +69,7 @@ namespace DrawingModel
                 if (aShape.CatchedBy(pointer))
                 {
                     _shapeList.Reverse();
+                    _nowSelecting = aShape;
                     return aShape;
                 }
             }

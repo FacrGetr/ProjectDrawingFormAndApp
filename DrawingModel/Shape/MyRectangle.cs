@@ -13,6 +13,11 @@ namespace DrawingModel
         {
             graphics.DrawRectangle(Point1.X, Point1.Y, Point2.X, Point2.Y);
         }
+
+        public override void DrawMarker(IGraphics graphics)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }
