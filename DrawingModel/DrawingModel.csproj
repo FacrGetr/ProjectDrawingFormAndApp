@@ -55,8 +55,6 @@
     <Compile Include="Shape\MyTriangle.cs" />
     <Compile Include="Shape\MyLine.cs" />
     <Compile Include="Shape\MyRectangle.cs" />
-    <Compile Include="Shape\SelectedRectangle.cs" />
-    <Compile Include="Shape\SelectedTriangle.cs" />
     <Compile Include="Shape\ShapeFactory.cs" />
     <Compile Include="Shape\ShapeManager.cs" />
     <Compile Include="Shape\Shape.cs" />
