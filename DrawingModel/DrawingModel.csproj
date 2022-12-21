@@ -52,6 +52,7 @@
     <Compile Include="Model.cs" />
     <Compile Include="MyPoint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShapeInfo.cs" />
     <Compile Include="Shape\MyTriangle.cs" />
     <Compile Include="Shape\MyLine.cs" />
     <Compile Include="Shape\MyRectangle.cs" />

@@ -25,6 +25,11 @@ namespace DrawingModel
         {
             Draw(graphics);
         }
+
+        public override string GetTypeName()
+        {
+            return "Line";
+        }
     }
 
 }

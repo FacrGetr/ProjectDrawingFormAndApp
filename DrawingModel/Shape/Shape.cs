@@ -12,6 +12,19 @@ namespace DrawingModel
         public event ModelChangedEventHandler _shapeChanged;
         public delegate void ModelChangedEventHandler();
 
+        abstract public string GetTypeName();
+
+        public string Info
+        {
+            get
+            {
+                return GetTypeName() + '(' + Point1.X + ", " +
+                                            Point1.Y + ", " +
+                                            Point2.X + ", " +
+                                            Point2.Y + ')';
+            }
+        }
+
         Shape _shape1;
         Shape _shape2;
 

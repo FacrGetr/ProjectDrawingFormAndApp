@@ -18,5 +18,10 @@ namespace DrawingModel
         {
             graphics.DrawTriangleMarker(Point1.X, Point1.Y, Point2.X, Point2.Y);
         }
+
+        public override string GetTypeName()
+        {
+            return "Triangle";
+        }
     }
 }

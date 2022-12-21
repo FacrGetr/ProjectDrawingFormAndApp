@@ -11,7 +11,7 @@ namespace DrawingForm
         Panel _canvas = new DoubleBufferedPanel();
         ToolStripButton _undo;
         ToolStripButton _redo;
-        const string ENABLED = "Enabled";
+
         public DrawingForm(Model model)
         {
             InitializeComponent();
@@ -40,7 +40,7 @@ namespace DrawingForm
             clear.AutoSize = true;
             clear.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             clear.Click += HandleClearButtonClick;
-            clear.DataBindings.Add(ENABLED, _model, "IsClearEnable");
+            clear.DataBindings.Add(nameof(Enabled), _model, "IsClearEnable");
             Controls.Add(clear);
             //
             // prepare rectangle button
@@ -51,7 +51,7 @@ namespace DrawingForm
             rectangle.AutoSize = true;
             rectangle.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             rectangle.Click += HandleRectangleButtonClick;
-            rectangle.DataBindings.Add(ENABLED, _model, "IsRectangleEnable");
+            rectangle.DataBindings.Add(nameof(Enabled), _model, "IsRectangleEnable");
             Controls.Add(rectangle);
             //
             // prepare triangle button
@@ -62,7 +62,7 @@ namespace DrawingForm
             triangle.AutoSize = true;
             triangle.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             triangle.Click += HandleTriangleButtonClick;
-            triangle.DataBindings.Add(ENABLED, _model, "IsTriangleEnable");
+            triangle.DataBindings.Add(nameof(Enabled), _model, "IsTriangleEnable");
             Controls.Add(triangle);
             //
             // prepare line button
@@ -73,7 +73,7 @@ namespace DrawingForm
             line.AutoSize = true;
             line.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             line.Click += HandleLineButtonClick;
-            line.DataBindings.Add(ENABLED, _model, "IsLineEnable");
+            line.DataBindings.Add(nameof(Enabled), _model, "IsLineEnable");
             Controls.Add(line);
             //
             //ToolStrip
@@ -92,6 +92,10 @@ namespace DrawingForm
             _redo = new ToolStripButton("Redo", null, HandleRedoButtonClick);
             _redo.Enabled = false;
             ts.Items.Add(_redo);
+            //
+            //selectString
+            //
+            _selectShapeString.DataBindings.Add(nameof(Text), _model, "SelectedShapeInfo");
         }
 
         //Undo按鈕

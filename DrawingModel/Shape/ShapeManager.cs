@@ -10,7 +10,31 @@ namespace DrawingModel
     class ShapeManager : IEnumerable
     {
         List<Shape> _shapeList = new List<Shape>();
+
         Shape _nowSelectShape;
+
+        Shape NowSelectShape
+        {
+            get
+            {
+                return _nowSelectShape;
+            }
+            set
+            {
+                _nowSelectShape = value;
+                _shapeInfo.SetShape(_nowSelectShape);
+            }
+        }
+
+        ShapeInfo _shapeInfo = new ShapeInfo();
+
+        public string SelectShapeInfo
+        {
+            get
+            {
+                return _shapeInfo.Info;
+            }
+        }
 
         public bool NotEmpty
         {
@@ -30,7 +54,7 @@ namespace DrawingModel
         public void Clear()
         {
             _shapeList.Clear();
-            _nowSelectShape = null;
+            NowSelectShape = null;
         }
 
         //畫圖
@@ -46,8 +70,8 @@ namespace DrawingModel
                 if (!(aShape is MyLine))
                     aShape.Draw(graphics);
             }
-            if(_nowSelectShape != null)
-                _nowSelectShape.DrawMarker(graphics);
+            if(NowSelectShape != null)
+                NowSelectShape.DrawMarker(graphics);
         }
 
         //移除末端形狀
@@ -68,10 +92,10 @@ namespace DrawingModel
             {
                 if (aShape.CatchedBy(pointer))
                 {
-                    _nowSelectShape = aShape;
+                    NowSelectShape = aShape;
                     break;
                 }
-                _nowSelectShape = null;
+                NowSelectShape = null;
             }
             _shapeList.Reverse();
         }

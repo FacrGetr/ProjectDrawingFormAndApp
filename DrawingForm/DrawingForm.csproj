@@ -76,6 +76,9 @@
     <Compile Include="..\DrawingModel\MyPoint.cs">
       <Link>Model\MyPoint.cs</Link>
     </Compile>
+    <Compile Include="..\DrawingModel\ShapeInfo.cs">
+      <Link>Model\ShapeInfo.cs</Link>
+    </Compile>
     <Compile Include="..\DrawingModel\Shape\MyLine.cs">
       <Link>Model\MyLine.cs</Link>
     </Compile>
