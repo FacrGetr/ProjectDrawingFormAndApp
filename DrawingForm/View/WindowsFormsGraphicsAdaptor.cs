@@ -8,6 +8,8 @@ namespace DrawingForm.PresentationModel
         Graphics _graphics;
         const int PEN_WIDTH = 3;
         const float DASH_SIZE = 3.0f;
+        const float DOT_SIZE = 10.0f;
+        const float PREFIX = 5.0f;
 
         public WindowsFormsGraphicsAdaptor(Graphics graphics)
         {
@@ -66,6 +68,15 @@ namespace DrawingForm.PresentationModel
             Rectangle rectangle = new Rectangle((int)x1, (int)y1, (int)width, (int)height);
 
             _graphics.DrawRectangle(pen, rectangle);
+            Pen blackPen = new Pen(Color.Black, PEN_WIDTH);
+            _graphics.FillEllipse(Brushes.White, (float)x1 - PREFIX, (float)y1 - PREFIX, DOT_SIZE, DOT_SIZE); 
+            _graphics.FillEllipse(Brushes.White, (float)x2 - PREFIX, (float)y1 - PREFIX, DOT_SIZE, DOT_SIZE); 
+            _graphics.FillEllipse(Brushes.White, (float)x1 - PREFIX, (float)y2 - PREFIX, DOT_SIZE, DOT_SIZE); 
+            _graphics.FillEllipse(Brushes.White, (float)x2 - PREFIX, (float)y2 - PREFIX, DOT_SIZE, DOT_SIZE); 
+            _graphics.DrawEllipse(blackPen, (float)x1 - PREFIX, (float)y1 - PREFIX, DOT_SIZE, DOT_SIZE);
+            _graphics.DrawEllipse(blackPen, (float)x2 - PREFIX, (float)y1 - PREFIX, DOT_SIZE, DOT_SIZE);
+            _graphics.DrawEllipse(blackPen, (float)x1 - PREFIX, (float)y2 - PREFIX, DOT_SIZE, DOT_SIZE);
+            _graphics.DrawEllipse(blackPen, (float)x2 - PREFIX, (float)y2 - PREFIX, DOT_SIZE, DOT_SIZE);
         }
 
         //畫三角
@@ -84,14 +95,22 @@ namespace DrawingForm.PresentationModel
         {
             Pen pen = new Pen(Color.Orange, PEN_WIDTH);
             pen.DashPattern = new float[] { DASH_SIZE, DASH_SIZE };
+            double midX = (x1 + x2) / 2;
 
             Point[] triangle = {
                     new Point((int)x1, (int)y2),
-                    new Point((int)((x1 + x2) / 2), (int)y1),
+                    new Point((int)midX, (int)y1),
                     new Point((int)x2, (int)y2)
             };
 
             _graphics.DrawPolygon(pen, triangle);
+            Pen blackPen = new Pen(Color.Black, PEN_WIDTH);
+            _graphics.FillEllipse(Brushes.White, (float)x1 - PREFIX, (float)y2 - PREFIX, DOT_SIZE, DOT_SIZE);
+            _graphics.FillEllipse(Brushes.White, (float)midX - PREFIX, (float)y1 - PREFIX, DOT_SIZE, DOT_SIZE);
+            _graphics.FillEllipse(Brushes.White, (float)x2 - PREFIX, (float)y2 - PREFIX, DOT_SIZE, DOT_SIZE);
+            _graphics.DrawEllipse(blackPen, (float)x1 - PREFIX, (float)y2 - PREFIX, DOT_SIZE, DOT_SIZE);
+            _graphics.DrawEllipse(blackPen, (float)midX - PREFIX, (float)y1 - PREFIX, DOT_SIZE, DOT_SIZE);
+            _graphics.DrawEllipse(blackPen, (float)x2 - PREFIX, (float)y2 - PREFIX, DOT_SIZE, DOT_SIZE);
         }
     }
 }
