@@ -46,7 +46,7 @@ namespace DrawingModel
                     aShape.Draw(graphics);
             }
             if(_nowSelectShape != null)
-                _nowSelectShape.Draw(graphics);
+                _nowSelectShape.DrawMarker(graphics);
         }
 
         //移除末端形狀
@@ -60,7 +60,7 @@ namespace DrawingModel
             return _shapeList.GetEnumerator();
         }
 
-        public Shape SelectShape(MyPoint pointer)
+        public void SelectTargetShape(MyPoint pointer)
         {
             _shapeList.Reverse();
             foreach (Shape aShape in _shapeList)
@@ -73,7 +73,23 @@ namespace DrawingModel
                 _nowSelectShape = null;
             }
             _shapeList.Reverse();
-            return _nowSelectShape;
+        }
+
+        public Shape LineCatchShape(MyPoint pointer)
+        {
+            //為麼這不能用@@
+            //return _nowSelectShape;
+            _shapeList.Reverse();
+            foreach (Shape aShape in _shapeList)
+            {
+                if (aShape.CatchedBy(pointer))
+                {
+                    _shapeList.Reverse();
+                    return aShape;
+                }
+            }
+            _shapeList.Reverse();
+            return null;
         }
     }
 }

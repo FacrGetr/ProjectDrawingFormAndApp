@@ -48,6 +48,16 @@ namespace DrawingForm.PresentationModel
 
         public void DrawRectangleMarker(double x1, double y1, double x2, double y2)
         {
+            if (x1 > x2)
+            {
+                (x1, x2) = (x2, x1);
+            }
+
+            if (y1 > y2)
+            {
+                (y1, y2) = (y2, y1);
+            }
+
             Pen pen = new Pen(Color.Orange, PEN_WIDTH);
             pen.DashPattern = new float[] { DASH_SIZE, DASH_SIZE };
 

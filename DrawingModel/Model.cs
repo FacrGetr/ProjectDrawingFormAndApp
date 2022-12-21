@@ -36,10 +36,14 @@ namespace DrawingModel
         public void PressedPointer(double x1, double y1)
         {
             if (x1 <= 0 || y1 <= 0) return;
-
-            if (_drawingModeNow == DrawingMode.Select) return; //還沒實作
-            
             _firstPoint = new MyPoint(x1, y1);
+            if (_drawingModeNow == DrawingMode.Select)
+            {
+                _shapes.SelectTargetShape(_firstPoint);
+                NotifyModelChanged();
+                return;
+            }
+ 
             _isPressed = true;
             _hint = _shapeFactory.CreateNewShape(_drawingModeNow);
             _hint.Point1 = _firstPoint;
@@ -47,7 +51,7 @@ namespace DrawingModel
 
             if(_drawingModeNow == DrawingMode.Line)
             {
-                Shape selected = _shapes.SelectShape(_firstPoint);
+                Shape selected = _shapes.LineCatchShape(_firstPoint);
                 if (selected == null)
                 {
                     _isPressed = false;
@@ -71,10 +75,10 @@ namespace DrawingModel
         public void ReleasedPointer(double x1, double y1)
         {
             if (!_isPressed) return;
-            
-            if(_drawingModeNow == DrawingMode.Line)
+
+            if (_drawingModeNow == DrawingMode.Line)
             {
-                Shape selected = _shapes.SelectShape(new MyPoint(x1, y1));
+                Shape selected = _shapes.LineCatchShape(new MyPoint(x1, y1));
                 if (selected == null)
                 {
                     _isPressed = false;

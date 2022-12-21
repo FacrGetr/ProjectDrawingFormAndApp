@@ -77,10 +77,25 @@ namespace DrawingModel
 
         public bool CatchedBy(MyPoint point)
         {
-            return ((Point1.X < point.X && point.X < Point2.X &&
-                    Point1.Y < point.Y && point.Y < Point2.Y) ||
-                    (Point2.X < point.X && point.X < Point1.X &&
-                    Point2.Y < point.Y && point.Y < Point1.Y));
+            MyPoint topLeft = new MyPoint(GetMin(Point1.X, Point2.X),
+                                        GetMin(Point1.Y, Point2.Y));
+            MyPoint bottonRight = new MyPoint(GetMax(Point1.X, Point2.X),
+                                            GetMax(Point1.Y, Point2.Y));
+
+            return (topLeft.X < point.X && point.X < bottonRight.X &&
+                    topLeft.Y < point.Y && point.Y < bottonRight.Y);
+        }
+
+        double GetMax(double num1, double num2)
+        {
+            if (num1 > num2) return num1;
+            return num2;
+        }
+
+        double GetMin(double num1, double num2)
+        {
+            if (num1 < num2) return num1;
+            return num2;
         }
 
         //畫圖，virtual function
