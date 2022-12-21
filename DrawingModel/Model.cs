@@ -78,6 +78,7 @@ namespace DrawingModel
                 if (selected == null)
                 {
                     _isPressed = false;
+                    NotifyModelChanged();
                     return;
                 }
                 _hint.ConnectPoint2ToShape(selected);
