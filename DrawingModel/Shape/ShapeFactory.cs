@@ -18,14 +18,14 @@ namespace DrawingModel
                 case DrawingMode.Triangle:
                     return new MyTriangle();
                 case DrawingMode.Line:
-                    return new Line();
+                    return new MyLine();
             }
             throw new Exception("無效 DrawingMode");
         }
 
-        public Line CreateNewLine()
+        public MyLine CreateNewLine()
         {
-            return new Line();
+            return new MyLine();
         }
     }
 }

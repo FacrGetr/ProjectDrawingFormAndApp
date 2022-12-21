@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DrawingModel
 {
-    class Line : Shape
+    class MyLine : Shape
     {
         public override void Draw(IGraphics graphics)
         {

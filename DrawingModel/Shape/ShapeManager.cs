@@ -36,12 +36,12 @@ namespace DrawingModel
         {
             foreach (Shape aShape in _shapeList)
             {
-                if (aShape is Line)
+                if (aShape is MyLine)
                     aShape.Draw(graphics);
             }
             foreach (Shape aShape in _shapeList)
             {
-                if (!(aShape is Line))
+                if (!(aShape is MyLine))
                     aShape.Draw(graphics);
             }
             //if(_nowSelectShape != null)

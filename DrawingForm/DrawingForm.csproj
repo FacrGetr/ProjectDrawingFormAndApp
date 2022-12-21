@@ -76,8 +76,8 @@
     <Compile Include="..\DrawingModel\MyPoint.cs">
       <Link>Model\MyPoint.cs</Link>
     </Compile>
-    <Compile Include="..\DrawingModel\Shape\Line.cs">
-      <Link>Model\Line.cs</Link>
+    <Compile Include="..\DrawingModel\Shape\MyLine.cs">
+      <Link>Model\MyLine.cs</Link>
     </Compile>
     <Compile Include="..\DrawingModel\Shape\MyRectangle.cs">
       <Link>Model\MyRectangle.cs</Link>
