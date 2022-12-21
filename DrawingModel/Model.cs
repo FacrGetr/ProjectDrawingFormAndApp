@@ -11,10 +11,8 @@ namespace DrawingModel
         MyPoint _firstPoint;
         bool _isPressed = false;
         ShapeManager _shapes = new ShapeManager();
-        ShapeManager _lines = new ShapeManager();
         ButtonManager _buttons = new ButtonManager();
         Shape _hint;
-        Line _hintLine;
         DrawingMode _drawingModeNow = DrawingMode.Select;
         CommandManager _commands = new CommandManager();
         ShapeFactory _shapeFactory = new ShapeFactory();
@@ -38,6 +36,8 @@ namespace DrawingModel
         public void PressedPointer(double x1, double y1)
         {
             if (x1 <= 0 || y1 <= 0) return;
+
+            if (_drawingModeNow == DrawingMode.Select) return; //還沒實作
             
             _firstPoint = new MyPoint(x1, y1);
             _isPressed = true;
@@ -49,8 +49,11 @@ namespace DrawingModel
             {
                 Shape selected = _shapes.SelectShape(_firstPoint);
                 if (selected == null)
+                {
                     _isPressed = false;
-                _hint.SetShape1(selected);
+                    return;
+                }
+                _hint.ConnectPoint1ToShape(selected);
             }
         }
 
@@ -59,14 +62,6 @@ namespace DrawingModel
         {
             if (!_isPressed) return;
 
-            switch (_drawingModeNow)
-            {
-                case DrawingMode.Line:
-                    _hintLine.Point2 = new MyPoint(x1, y1);
-                    break;
-                default:
-                    break;
-            }
             _hint.Point2 = new MyPoint(x1, y1);
             NotifyModelChanged();
             
@@ -85,7 +80,7 @@ namespace DrawingModel
                     _isPressed = false;
                     return;
                 }
-                _hint.SetShape2(selected);
+                _hint.ConnectPoint2ToShape(selected);
             }
 
             _commands.Execute(new CommandAddNewShape(this, _hint));
@@ -134,13 +129,13 @@ namespace DrawingModel
         public void Draw(IGraphics graphics)
         {
             graphics.ClearAll();
-            if (_shapes.NotEmpty)
-            {
-                _shapes.Draw(graphics);
-            }
             if (_isPressed)
             {
                 _hint.Draw(graphics);
+            }
+            if (_shapes.NotEmpty)
+            {
+                _shapes.Draw(graphics);
             }
         }
 

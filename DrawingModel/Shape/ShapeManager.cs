@@ -10,16 +10,6 @@ namespace DrawingModel
     class ShapeManager : IEnumerable
     {
         List<Shape> _shapeList = new List<Shape>();
-        Shape _nowSelectShape = null;
-        ShapeFactory _shapeFactory = new ShapeFactory();
-
-        public Shape NowSelectedShape
-        {
-            get
-            {
-                return _nowSelectShape;
-            }
-        }
 
         public bool NotEmpty
         {
@@ -45,7 +35,15 @@ namespace DrawingModel
         public void Draw(IGraphics graphics)
         {
             foreach (Shape aShape in _shapeList)
-                aShape.Draw(graphics);
+            {
+                if (aShape is Line)
+                    aShape.Draw(graphics);
+            }
+            foreach (Shape aShape in _shapeList)
+            {
+                if (!(aShape is Line))
+                    aShape.Draw(graphics);
+            }
             //if(_nowSelectShape != null)
             //    _nowSelectShape.Draw(graphics);
         }
@@ -63,11 +61,12 @@ namespace DrawingModel
 
         public Shape SelectShape(MyPoint pointer)
         {
+            _shapeList.Reverse();
             foreach (Shape aShape in _shapeList)
             {
                 if (aShape.CatchedBy(pointer))
                 {
-                    _nowSelectShape = aShape;
+                    _shapeList.Reverse();
                     return aShape;
                 }
             }

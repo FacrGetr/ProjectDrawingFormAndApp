@@ -15,14 +15,14 @@ namespace DrawingModel
         Shape _shape1;
         Shape _shape2;
 
-        public void SetShape1(Shape shape)
+        public void ConnectPoint1ToShape(Shape shape)
         {
             _shape1 = shape;
             Point1 = shape.Center;
             _shape1._shapeChanged += HandleShapeChanged;
         }
 
-        public void SetShape2(Shape shape)
+        public void ConnectPoint2ToShape(Shape shape)
         {
             _shape2 = shape;
             Point2 = shape.Center;
