@@ -130,13 +130,13 @@ namespace DrawingModel
         public void Draw(IGraphics graphics)
         {
             graphics.ClearAll();
-            if (_isPressed)
-            {
-                _hint.Draw(graphics);
-            }
             if (_shapes.NotEmpty)
             {
                 _shapes.Draw(graphics);
+            }
+            if (_isPressed)
+            {
+                _hint.Draw(graphics);
             }
         }
 
