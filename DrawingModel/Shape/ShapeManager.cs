@@ -45,7 +45,8 @@ namespace DrawingModel
                 if (!(aShape is MyLine))
                     aShape.Draw(graphics);
             }
-            _nowSelecting.DrawMarker(graphics);
+            if (_nowSelecting != null)
+                _nowSelecting.DrawMarker(graphics);
             //if(_nowSelectShape != null)
             //    _nowSelectShape.Draw(graphics);
         }
@@ -70,10 +71,11 @@ namespace DrawingModel
                 {
                     _shapeList.Reverse();
                     _nowSelecting = aShape;
-                    return aShape;
+                    break;
                 }
             }
-            return null;
+            _nowSelecting = null;
+            return _nowSelecting;
         }
     }
 }
