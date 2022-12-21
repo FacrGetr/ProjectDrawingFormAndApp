@@ -144,8 +144,7 @@ namespace DrawingModel
         //Observer Pattern，通知訂閱者老子變了
         void NotifyModelChanged()
         {
-            if (_modelChanged != null)
-                _modelChanged();
+            _modelChanged?.Invoke();
         }
 
         //單元測試用
@@ -235,8 +234,7 @@ namespace DrawingModel
         //Observer / DataBinding 用
         void Notify(string propertyName)
         {
-            if (PropertyChanged != null)
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }
