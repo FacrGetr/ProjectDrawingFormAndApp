@@ -16,7 +16,7 @@ namespace DrawingModel
 
         public override void DrawMarker(IGraphics graphics)
         {
-            throw new NotImplementedException();
+            graphics.DrawRectangleMarker(Point1.X, Point1.Y, Point2.X, Point2.Y);
         }
     }
 

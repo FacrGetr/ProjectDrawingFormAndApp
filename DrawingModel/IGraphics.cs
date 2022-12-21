@@ -19,5 +19,12 @@ namespace DrawingModel
 
         //畫三角
         void DrawTriangle(double x1, double y1, double x2, double y2);
+
+
+        //畫方框
+        void DrawRectangleMarker(double x1, double y1, double x2, double y2);
+
+        //畫三角框
+        void DrawTriangleMarker(double x1, double y1, double x2, double y2);
     }
 }
