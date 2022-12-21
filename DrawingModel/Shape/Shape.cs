@@ -18,10 +18,10 @@ namespace DrawingModel
         {
             get
             {
-                return GetTypeName() + '(' + Point1.X + ", " +
-                                            Point1.Y + ", " +
-                                            Point2.X + ", " +
-                                            Point2.Y + ')';
+                return GetTypeName() + '(' + Math.Round(Point1.X) + ", " +
+                                            Math.Round(Point1.Y) + ", " +
+                                            Math.Round(Point2.X) + ", " +
+                                            Math.Round(Point2.Y) + ')';
             }
         }
 

@@ -9,10 +9,15 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Canvas x:Name="_canvas" Margin="99,138,99,99" Background="#FFFFFFA0"/>
-        <Button x:Name="_clear" Content="Clear" HorizontalAlignment="Right" Margin="1001,48,99,0" VerticalAlignment="Top"/>
-        <Button x:Name="_rectangle" Content="Rectangle" HorizontalAlignment="Left" Margin="99,48,1001,0" VerticalAlignment="Top"/>
-        <Button x:Name="_triangle" Content="Triangle" HorizontalAlignment="Center" Margin="550,48,550,0" VerticalAlignment="Top"/>
+        <Canvas x:Name="_canvas" Margin="99,138,99,99" Background="#FFFFFFA0">
+        </Canvas>
+        <TextBlock x:Name="_selectedShapeInfo" Canvas.Left="-48" Canvas.Top="783" Text="Select：" TextWrapping="Wrap" FontFamily="Microsoft YaHei" FontSize="48" FontWeight="Bold" SelectionHighlightColor="White" Foreground="White" IsTextScaleFactorEnabled="False" IsTapEnabled="False" IsRightTapEnabled="False" IsHoldingEnabled="False" IsDoubleTapEnabled="False" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,0,19"/>
+        <Button x:Name="_clear" Content="Clear" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="18" Margin="0,50,100,0"/>
+        <Button x:Name="_rectangle" Content="Rectangle" VerticalAlignment="Top" FontSize="18" Margin="0,50,400,0" HorizontalAlignment="Right"/>
+        <Button x:Name="_triangle" Content="Triangle" Margin="0,50,200,0" VerticalAlignment="Top" FontSize="18" HorizontalAlignment="Right"/>
+        <Button x:Name="_line" Content="Line" VerticalAlignment="Top" FontSize="18" HorizontalAlignment="Right" Margin="0,50,300,0"/>
+        <Button x:Name="_undo" Content="Undo" VerticalAlignment="Top" FontSize="18" Margin="100,50,0,0" HorizontalAlignment="Left" IsEnabled="False"/>
+        <Button x:Name="_redo" Content="Redo" VerticalAlignment="Top" FontSize="18" Margin="200,50,0,0" HorizontalAlignment="Left" IsEnabled="False"/>
 
     </Grid>
 </Page>

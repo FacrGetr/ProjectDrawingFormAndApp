@@ -14,6 +14,11 @@ namespace DrawingApp.View
     class WindowsStoreGraphicsAdaptor : IGraphics
     {
         Canvas _canvas;
+        const int LINE_WIDTH = 5;
+        const int DASH_SIZE = 3;
+        const int DOT_SIZE = 20;
+        const int PREFIX = 10;
+
 
         public WindowsStoreGraphicsAdaptor(Canvas canvas)
         {
@@ -37,6 +42,7 @@ namespace DrawingApp.View
             line.X2 = x2;
             line.Y2 = y2;
             line.Stroke = new SolidColorBrush(Colors.Black);
+            line.StrokeThickness = LINE_WIDTH;
             // 將圖形物件加入Children
             _canvas.Children.Add(line);
         }
@@ -54,26 +60,105 @@ namespace DrawingApp.View
                 (y1, y2) = (y2, y1);
             }
 
-            Windows.UI.Xaml.Shapes.Rectangle rectangle = new Windows.UI.Xaml.Shapes.Rectangle();
-            rectangle.Width = x2 - x1;
-            rectangle.Height = y2 - y1;
-            rectangle.Fill = new SolidColorBrush(Colors.Blue);
+            Windows.UI.Xaml.Shapes.Rectangle rectangle = new Windows.UI.Xaml.Shapes.Rectangle
+            {
+                Width = x2 - x1,
+                Height = y2 - y1,
+                Fill = new SolidColorBrush(Colors.Blue),
+                Stroke = new SolidColorBrush(Colors.Black),
+                StrokeThickness = LINE_WIDTH
+            };
             Canvas.SetLeft(rectangle, x1);
             Canvas.SetTop(rectangle, y1);
             _canvas.Children.Add(rectangle);
         }
 
+        public void DrawRectangleMarker(double x1, double y1, double x2, double y2)
+        {
+            PointCollection points = new PointCollection
+            {
+                new Point(x1, y1),
+                new Point(x2, y1),
+                new Point(x2, y2),
+                new Point(x1, y2)
+            };
+            DoubleCollection dashPattern = new DoubleCollection
+            {
+                DASH_SIZE,
+                DASH_SIZE
+            };
+            Windows.UI.Xaml.Shapes.Polygon polygon = new Windows.UI.Xaml.Shapes.Polygon
+            {
+                Stroke = new SolidColorBrush(Colors.Orange),
+                StrokeDashArray = dashPattern,
+                StrokeThickness = LINE_WIDTH,
+                Points = points
+            };
+            _canvas.Children.Add(polygon);
+            DrawDot(x1, y1);
+            DrawDot(x1, y2);
+            DrawDot(x2, y1);
+            DrawDot(x2, y2);
+        }
+
         //畫三角
         public void DrawTriangle(double x1, double y1, double x2, double y2)
         {
-            Windows.UI.Xaml.Shapes.Polygon polygon = new Windows.UI.Xaml.Shapes.Polygon();
-            PointCollection points = new PointCollection();
-            points.Add(new Point(x1, y2));
-            points.Add(new Point((x1 + x2) / 2, y1));
-            points.Add(new Point(x2, y2));
-            polygon.Points = points;
-            polygon.Fill = new SolidColorBrush(Colors.Red);
+            PointCollection points = new PointCollection
+            {
+                new Point(x1, y2),
+                new Point((x1 + x2) / 2, y1),
+                new Point(x2, y2)
+            };
+            Windows.UI.Xaml.Shapes.Polygon polygon = new Windows.UI.Xaml.Shapes.Polygon()
+            {
+                Stroke = new SolidColorBrush(Colors.Black),
+                StrokeThickness = LINE_WIDTH,
+                Points = points,
+                Fill = new SolidColorBrush(Colors.Red)
+            };
             _canvas.Children.Add(polygon);
+        }
+
+        public void DrawTriangleMarker(double x1, double y1, double x2, double y2)
+        {
+            DoubleCollection dashPattern = new DoubleCollection
+            {
+                DASH_SIZE,
+                DASH_SIZE
+            };
+            PointCollection points = new PointCollection
+            {
+                new Point(x1, y2),
+                new Point((x1 + x2) / 2, y1),
+                new Point(x2, y2)
+            };
+            Windows.UI.Xaml.Shapes.Polygon polygon = new Windows.UI.Xaml.Shapes.Polygon
+            {
+                Stroke = new SolidColorBrush(Colors.Orange),
+                StrokeDashArray = dashPattern,
+                StrokeThickness = LINE_WIDTH,
+                Points = points
+            };
+            _canvas.Children.Add(polygon);
+            DrawDot(x1, y2);
+            DrawDot((x1 + x2) / 2, y1);
+            DrawDot(x2, y2);
+        }
+
+        void DrawDot(double x1, double y1)
+        {
+            Windows.UI.Xaml.Shapes.Ellipse ellipse = new Windows.UI.Xaml.Shapes.Ellipse
+            {
+                Width = DOT_SIZE,
+                Height = DOT_SIZE,
+                Fill = new SolidColorBrush(Colors.White),
+                Stroke = new SolidColorBrush(Colors.Black),
+                StrokeThickness = LINE_WIDTH
+            };
+            Canvas.SetLeft(ellipse, x1 - PREFIX);
+            Canvas.SetTop(ellipse, y1 - PREFIX);
+            _canvas.Children.Add(ellipse);
         }
     }
 }

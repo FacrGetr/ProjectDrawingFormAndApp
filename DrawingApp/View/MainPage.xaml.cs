@@ -30,8 +30,26 @@ namespace DrawingApp
             _clear.Click += HandleClearButtonClick;
             _rectangle.Click += HandleRectangleButtonClick;
             _triangle.Click += HandleTriangleButtonClick;
+            _line.Click += HandleLineButtonClick;
+            _undo.Click += HandleUndoButtonClick;
+            _redo.Click += HandleRedoButtonClick;
             _model._modelChanged += HandleModelChanged;
             _model.PropertyChanged += HandlePropertyChanged;
+        }
+
+        private void HandleRedoButtonClick(object sender, RoutedEventArgs e)
+        {
+            _model.Redo();
+        }
+
+        private void HandleUndoButtonClick(object sender, RoutedEventArgs e)
+        {
+            _model.Undo();
+        }
+
+        private void HandleLineButtonClick(object sender, RoutedEventArgs e)
+        {
+            _model.SetMode(DrawingMode.Line);
         }
 
         //Observer，設定按鈕開關
@@ -40,6 +58,10 @@ namespace DrawingApp
             _clear.IsEnabled = _model.IsClearEnable;
             _rectangle.IsEnabled = _model.IsRectangleEnable;
             _triangle.IsEnabled = _model.IsTriangleEnable;
+            _line.IsEnabled = _model.IsLineEnable;
+            _undo.IsEnabled = _model.IsUndoEnabled;
+            _redo.IsEnabled = _model.IsRedoEnabled;
+            _selectedShapeInfo.Text = _model.SelectedShapeInfo;
         }
 
         //Clear按鈕

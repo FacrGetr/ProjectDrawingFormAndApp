@@ -219,12 +219,14 @@ namespace DrawingModel
         public void Undo()
         {
             _commands.Undo();
+            NotifyButtonsChanged();
         }
 
         //後悔我的後悔
         public void Redo()
         {
             _commands.Redo();
+            NotifyButtonsChanged();
         }
 
         //Observer / DataBinding 用
@@ -234,6 +236,8 @@ namespace DrawingModel
             Notify(nameof(IsClearEnable));
             Notify(nameof(IsTriangleEnable));
             Notify(nameof(IsLineEnable));
+            Notify(nameof(IsUndoEnabled));
+            Notify(nameof(IsRedoEnabled));
         }
 
         //Observer / DataBinding 用
