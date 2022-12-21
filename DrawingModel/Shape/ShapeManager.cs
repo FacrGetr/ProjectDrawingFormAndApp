@@ -10,7 +10,7 @@ namespace DrawingModel
     class ShapeManager : IEnumerable
     {
         List<Shape> _shapeList = new List<Shape>();
-        Shape _nowSelecting;
+        Shape _nowSelectShape;
 
         public bool NotEmpty
         {
@@ -45,10 +45,8 @@ namespace DrawingModel
                 if (!(aShape is MyLine))
                     aShape.Draw(graphics);
             }
-            if (_nowSelecting != null)
-                _nowSelecting.DrawMarker(graphics);
-            //if(_nowSelectShape != null)
-            //    _nowSelectShape.Draw(graphics);
+            if(_nowSelectShape != null)
+                _nowSelectShape.Draw(graphics);
         }
 
         //移除末端形狀
