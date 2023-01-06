@@ -380,12 +380,12 @@
             </Smell>
             <Smell>
               <Id>13</Id>
-              <SmellType>A syntax error has been discovered in file D:\111-1_classes\Windows\PJ2\107A50039\DrawingModel\Model.cs on line 144.</SmellType>
+              <SmellType>A syntax error has been discovered in file D:\111-1_classes\Windows\PJ2\107A50039\DrawingModel\Model.cs on line 196.</SmellType>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingModel</Project>
               <File>Model.cs</File>
-              <Line>144</Line>
+              <Line>196</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -570,24 +570,104 @@
             </Smell>
             <Smell>
               <Id>25</Id>
-              <SmellType>ICS(空白與空行-16)</SmellType>
-              <HashCode>SpacingAndNewLine16.DrawingForm.HandleLineButtonClick.0</HashCode>
+              <SmellType>ICS(空白與空行-9)</SmellType>
+              <HashCode>SpacingAndNewLine9</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingForm</Project>
               <File>DrawingForm.cs</File>
-              <Line>113</Line>
+              <Line>42</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
               <EndCol>0</EndCol>
-              <Comment>ICS(空白與空行-16) 每個函式之間加一個空行</Comment>
+              <Comment>ICS(空白與空行-9) 陣列初始化的左大括號後面，右大括號前面</Comment>
               <Auto>false</Auto>
             </Smell>
             <Smell>
               <Id>26</Id>
-              <SmellType>Unsuitable naming(名不符實)-ts(ts)</SmellType>
-              <HashCode>UnsuitableNaming.DrawingForm.DrawingForm.ts</HashCode>
+              <SmellType>ICS(空白與空行-9)</SmellType>
+              <HashCode>SpacingAndNewLine9</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>DrawingForm.cs</File>
+              <Line>46</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(空白與空行-9) 陣列初始化的左大括號後面，右大括號前面</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>27</Id>
+              <SmellType>ICS(空白與空行-9)</SmellType>
+              <HashCode>SpacingAndNewLine9</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>DrawingForm.cs</File>
+              <Line>55</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(空白與空行-9) 陣列初始化的左大括號後面，右大括號前面</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>28</Id>
+              <SmellType>ICS(空白與空行-9)</SmellType>
+              <HashCode>SpacingAndNewLine9</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>DrawingForm.cs</File>
+              <Line>59</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(空白與空行-9) 陣列初始化的左大括號後面，右大括號前面</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>29</Id>
+              <SmellType>ICS(空白與空行-9)</SmellType>
+              <HashCode>SpacingAndNewLine9</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>DrawingForm.cs</File>
+              <Line>68</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(空白與空行-9) 陣列初始化的左大括號後面，右大括號前面</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>30</Id>
+              <SmellType>ICS(空白與空行-9)</SmellType>
+              <HashCode>SpacingAndNewLine9</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>DrawingForm.cs</File>
+              <Line>72</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(空白與空行-9) 陣列初始化的左大括號後面，右大括號前面</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>31</Id>
+              <SmellType>ICS(空白與空行-9)</SmellType>
+              <HashCode>SpacingAndNewLine9</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingForm</Project>
@@ -597,11 +677,59 @@
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
               <EndCol>0</EndCol>
+              <Comment>ICS(空白與空行-9) 陣列初始化的左大括號後面，右大括號前面</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>32</Id>
+              <SmellType>ICS(空白與空行-9)</SmellType>
+              <HashCode>SpacingAndNewLine9</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>DrawingForm.cs</File>
+              <Line>85</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(空白與空行-9) 陣列初始化的左大括號後面，右大括號前面</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>33</Id>
+              <SmellType>ICS(空白與空行-16)</SmellType>
+              <HashCode>SpacingAndNewLine16.DrawingForm.HandleLineButtonClick.0</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>DrawingForm.cs</File>
+              <Line>142</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>ICS(空白與空行-16) 每個函式之間加一個空行</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>34</Id>
+              <SmellType>Unsuitable naming(名不符實)-ts(ts)</SmellType>
+              <HashCode>UnsuitableNaming.DrawingForm.DrawingForm.ts</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>DrawingForm.cs</File>
+              <Line>92</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
               <Comment />
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>27</Id>
+              <Id>35</Id>
               <SmellType>A syntax error has been discovered in file D:\111-1_classes\Windows\PJ2\107A50039\DrawingForm\View\WindowsFormsGraphicsAdaptor.cs on line 36.</SmellType>
               <Severity>Red</Severity>
               <Weight>1</Weight>
@@ -616,7 +744,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>28</Id>
+              <Id>36</Id>
               <SmellType>A syntax error has been discovered in file D:\111-1_classes\Windows\PJ2\107A50039\DrawingApp\View\WindowsStoreGraphicsAdaptor.cs on line 55.</SmellType>
               <Severity>Red</Severity>
               <Weight>1</Weight>
@@ -631,7 +759,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>29</Id>
+              <Id>37</Id>
               <SmellType>A syntax error has been discovered in file D:\111-1_classes\Windows\PJ2\107A50039\DrawingModelTests\Robot.cs on line 147.</SmellType>
               <Severity>Red</Severity>
               <Weight>1</Weight>
@@ -646,7 +774,279 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>30</Id>
+              <Id>38</Id>
+              <SmellType>Unresolved warnings(忽視警告)-'DrawingMode' 未包含 'Select' 的定義</SmellType>
+              <HashCode>DrawingModelTests\DrawingModelTests.ModelTests.cs.Unresolved warnings(忽視警告)-'DrawingMode' 未包含 'Select' 的定義.16</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModelTests\DrawingModelTests</Project>
+              <File>ModelTests.cs</File>
+              <Line>16</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>39</Id>
+              <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?)</SmellType>
+              <HashCode>DrawingModelTests\DrawingModelTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?).35</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModelTests\DrawingModelTests</Project>
+              <File>ModelTests.cs</File>
+              <Line>35</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>40</Id>
+              <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?)</SmellType>
+              <HashCode>DrawingModelTests\DrawingModelTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?).38</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModelTests\DrawingModelTests</Project>
+              <File>ModelTests.cs</File>
+              <Line>38</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>41</Id>
+              <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?)</SmellType>
+              <HashCode>DrawingModelTests\DrawingModelTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?).45</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModelTests\DrawingModelTests</Project>
+              <File>ModelTests.cs</File>
+              <Line>45</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>42</Id>
+              <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?)</SmellType>
+              <HashCode>DrawingModelTests\DrawingModelTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?).52</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModelTests\DrawingModelTests</Project>
+              <File>ModelTests.cs</File>
+              <Line>52</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>43</Id>
+              <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?)</SmellType>
+              <HashCode>DrawingModelTests\DrawingModelTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?).80</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModelTests\DrawingModelTests</Project>
+              <File>ModelTests.cs</File>
+              <Line>80</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>44</Id>
+              <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?)</SmellType>
+              <HashCode>DrawingModelTests\DrawingModelTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?).95</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModelTests\DrawingModelTests</Project>
+              <File>ModelTests.cs</File>
+              <Line>95</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>45</Id>
+              <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?)</SmellType>
+              <HashCode>DrawingModelTests\DrawingModelTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?).144</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModelTests\DrawingModelTests</Project>
+              <File>ModelTests.cs</File>
+              <Line>144</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>46</Id>
+              <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?)</SmellType>
+              <HashCode>DrawingModelTests\DrawingModelTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?).152</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModelTests\DrawingModelTests</Project>
+              <File>ModelTests.cs</File>
+              <Line>152</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>47</Id>
+              <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?)</SmellType>
+              <HashCode>DrawingModelTests\DrawingModelTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?).163</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModelTests\DrawingModelTests</Project>
+              <File>ModelTests.cs</File>
+              <Line>163</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>48</Id>
+              <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?)</SmellType>
+              <HashCode>DrawingModelTests\DrawingModelTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?).168</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModelTests\DrawingModelTests</Project>
+              <File>ModelTests.cs</File>
+              <Line>168</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>49</Id>
+              <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?)</SmellType>
+              <HashCode>DrawingModelTests\DrawingModelTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?).173</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModelTests\DrawingModelTests</Project>
+              <File>ModelTests.cs</File>
+              <Line>173</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>50</Id>
+              <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?)</SmellType>
+              <HashCode>DrawingModelTests\DrawingModelTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?).189</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModelTests\DrawingModelTests</Project>
+              <File>ModelTests.cs</File>
+              <Line>189</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>51</Id>
+              <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?)</SmellType>
+              <HashCode>DrawingModelTests\DrawingModelTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?).204</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModelTests\DrawingModelTests</Project>
+              <File>ModelTests.cs</File>
+              <Line>204</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>52</Id>
+              <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?)</SmellType>
+              <HashCode>DrawingModelTests\DrawingModelTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?).234</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModelTests\DrawingModelTests</Project>
+              <File>ModelTests.cs</File>
+              <Line>234</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>53</Id>
+              <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?)</SmellType>
+              <HashCode>DrawingModelTests\DrawingModelTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?).239</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModelTests\DrawingModelTests</Project>
+              <File>ModelTests.cs</File>
+              <Line>239</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>54</Id>
+              <SmellType>Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?)</SmellType>
+              <HashCode>DrawingModelTests\DrawingModelTests.ModelTests.cs.Unresolved warnings(忽視警告)-'Model' 未包含 'SetMode' 的定義，也找不到可接受類型 'Model' 第一個引數的可存取擴充方法 'SetMode' (是否遺漏 using 指示詞或組件參考?).256</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModelTests\DrawingModelTests</Project>
+              <File>ModelTests.cs</File>
+              <Line>256</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>55</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>26 DrawingModel.ShapeFactory.CreateNewLine()</HashCode>
               <Severity>Red</Severity>
@@ -662,7 +1062,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>31</Id>
+              <Id>56</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>11 DrawingModel.MyLine.Draw(DrawingModel.IGraphics)</HashCode>
               <Severity>Red</Severity>
@@ -678,7 +1078,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>32</Id>
+              <Id>57</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>24 DrawingModel.MyLine.DrawMarker(DrawingModel.IGraphics)</HashCode>
               <Severity>Red</Severity>
@@ -694,7 +1094,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>33</Id>
+              <Id>58</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>29 DrawingModel.MyLine.GetTypeName()</HashCode>
               <Severity>Red</Severity>
@@ -710,7 +1110,23 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>34</Id>
+              <Id>59</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>11 DrawingModel.DrawRectangleState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>DrawRectangleState.cs</File>
+              <Line>11</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.DrawRectangleState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>60</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>23 DrawingModel.CommandClear.Execute()</HashCode>
               <Severity>Red</Severity>
@@ -726,7 +1142,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>35</Id>
+              <Id>61</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>28 DrawingModel.CommandClear.UnExecute()</HashCode>
               <Severity>Red</Severity>
@@ -742,7 +1158,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>36</Id>
+              <Id>62</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>83 DrawingModel.ShapeManager.GetEnumerator()</HashCode>
               <Severity>Red</Severity>
@@ -758,7 +1174,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>37</Id>
+              <Id>63</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>88 DrawingModel.ShapeManager.SelectTargetShape(DrawingModel.MyPoint)</HashCode>
               <Severity>Red</Severity>
@@ -774,9 +1190,9 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>38</Id>
+              <Id>64</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>103 DrawingModel.ShapeManager.LineCatchShape(DrawingModel.MyPoint)</HashCode>
+              <HashCode>103 DrawingModel.ShapeManager.CatchShape(DrawingModel.MyPoint)</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingModel</Project>
@@ -786,11 +1202,27 @@
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
               <EndCol>0</EndCol>
-              <Comment>DrawingModel.ShapeManager.LineCatchShape(DrawingModel.MyPoint)</Comment>
+              <Comment>DrawingModel.ShapeManager.CatchShape(DrawingModel.MyPoint)</Comment>
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>39</Id>
+              <Id>65</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>120 DrawingModel.ShapeManager.ClearSelection()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>ShapeManager.cs</File>
+              <Line>120</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.ShapeManager.ClearSelection()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>66</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>11 DrawingModel.ICommand.Execute()</HashCode>
               <Severity>Red</Severity>
@@ -806,7 +1238,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>40</Id>
+              <Id>67</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>12 DrawingModel.ICommand.UnExecute()</HashCode>
               <Severity>Red</Severity>
@@ -822,7 +1254,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>41</Id>
+              <Id>68</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>84 DrawingModel.ButtonManager.GetEnumerator()</HashCode>
               <Severity>Red</Severity>
@@ -838,7 +1270,55 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>42</Id>
+              <Id>69</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>11 DrawingModel.IState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>IState.cs</File>
+              <Line>11</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.IState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>70</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>13 DrawingModel.IState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>IState.cs</File>
+              <Line>13</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.IState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>71</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>15 DrawingModel.IState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>IState.cs</File>
+              <Line>15</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.IState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>72</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>20 DrawingModel.CommandAddNewShape.Execute()</HashCode>
               <Severity>Red</Severity>
@@ -854,7 +1334,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>43</Id>
+              <Id>73</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>25 DrawingModel.CommandAddNewShape.UnExecute()</HashCode>
               <Severity>Red</Severity>
@@ -870,7 +1350,103 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>44</Id>
+              <Id>74</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>11 DrawingModel.LineState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>LineState.cs</File>
+              <Line>11</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.LineState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>75</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>16 DrawingModel.LineState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>LineState.cs</File>
+              <Line>16</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.LineState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>76</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>27 DrawingModel.LineState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>LineState.cs</File>
+              <Line>27</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.LineState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>77</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>11 DrawingModel.PointState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>PointState.cs</File>
+              <Line>11</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.PointState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>78</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>16 DrawingModel.PointState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>PointState.cs</File>
+              <Line>16</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.PointState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>79</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>22 DrawingModel.PointState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>PointState.cs</File>
+              <Line>22</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.PointState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>80</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>23 DrawingModel.ShapeInfo.SetShape(DrawingModel.Shape)</HashCode>
               <Severity>Red</Severity>
@@ -886,14 +1462,206 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>45</Id>
+              <Id>81</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>92 DrawingModel.Model.EnableButtons()</HashCode>
+              <HashCode>20 DrawingModel.Model.Save()</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingModel</Project>
               <File>Model.cs</File>
-              <Line>92</Line>
+              <Line>20</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.Save()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>82</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>25 DrawingModel.Model.Load()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>Model.cs</File>
+              <Line>25</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.Load()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>83</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>30 DrawingModel.Model.SetButtonsMode(DrawingModel.DrawingMode)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>Model.cs</File>
+              <Line>30</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.SetButtonsMode(DrawingModel.DrawingMode)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>84</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>77 DrawingModel.Model.CatchShape(DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>Model.cs</File>
+              <Line>77</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.CatchShape(DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>85</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>82 DrawingModel.Model.CreateNewHint(DrawingModel.DrawingMode, DrawingModel.Shape)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>Model.cs</File>
+              <Line>82</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.CreateNewHint(DrawingModel.DrawingMode, DrawingModel.Shape)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>86</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>88 DrawingModel.Model.CreateNewHint(DrawingModel.DrawingMode, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>Model.cs</File>
+              <Line>88</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.CreateNewHint(DrawingModel.DrawingMode, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>87</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>95 DrawingModel.Model.ChangeHintPoint2(DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>Model.cs</File>
+              <Line>95</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.ChangeHintPoint2(DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>88</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>100 DrawingModel.Model.SetToPointState()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>Model.cs</File>
+              <Line>100</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.SetToPointState()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>89</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>106 DrawingModel.Model.SetToRectangleState()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>Model.cs</File>
+              <Line>106</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.SetToRectangleState()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>90</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>112 DrawingModel.Model.SetToTriangleState()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>Model.cs</File>
+              <Line>112</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.SetToTriangleState()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>91</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>118 DrawingModel.Model.SetToLineState()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>Model.cs</File>
+              <Line>118</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.SetToLineState()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>92</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>124 DrawingModel.Model.SelectTargetShape(DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>Model.cs</File>
+              <Line>124</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.SelectTargetShape(DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>93</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>132 DrawingModel.Model.EnableButtons()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>Model.cs</File>
+              <Line>132</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -902,14 +1670,46 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>46</Id>
+              <Id>94</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>98 DrawingModel.Model.AddShape(DrawingModel.Shape)</HashCode>
+              <HashCode>138 DrawingModel.Model.AddHintToShapes(DrawingModel.MyPoint)</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingModel</Project>
               <File>Model.cs</File>
-              <Line>98</Line>
+              <Line>138</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.AddHintToShapes(DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>95</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>144 DrawingModel.Model.AddHintToShapes(DrawingModel.Shape)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>Model.cs</File>
+              <Line>144</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.AddHintToShapes(DrawingModel.Shape)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>96</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>150 DrawingModel.Model.AddShape(DrawingModel.Shape)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>Model.cs</File>
+              <Line>150</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -918,14 +1718,14 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>47</Id>
+              <Id>97</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>104 DrawingModel.Model.PopShape()</HashCode>
+              <HashCode>156 DrawingModel.Model.PopShape()</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingModel</Project>
               <File>Model.cs</File>
-              <Line>104</Line>
+              <Line>156</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -934,14 +1734,14 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>48</Id>
+              <Id>98</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>121 DrawingModel.Model.ClearAllShapes()</HashCode>
+              <HashCode>173 DrawingModel.Model.ClearAllShapes()</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingModel</Project>
               <File>Model.cs</File>
-              <Line>121</Line>
+              <Line>173</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -950,7 +1750,23 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>49</Id>
+              <Id>99</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>11 DrawingModel.DrawTriangleState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>DrawTriangleState.cs</File>
+              <Line>11</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.DrawTriangleState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>100</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>15 DrawingModel.Shape.GetTypeName()</HashCode>
               <Severity>Red</Severity>
@@ -966,7 +1782,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>50</Id>
+              <Id>101</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>31 DrawingModel.Shape.ConnectPoint1ToShape(DrawingModel.Shape)</HashCode>
               <Severity>Red</Severity>
@@ -982,7 +1798,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>51</Id>
+              <Id>102</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>38 DrawingModel.Shape.ConnectPoint2ToShape(DrawingModel.Shape)</HashCode>
               <Severity>Red</Severity>
@@ -998,7 +1814,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>52</Id>
+              <Id>103</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>45 DrawingModel.Shape.HandleShapeChanged()</HashCode>
               <Severity>Red</Severity>
@@ -1014,7 +1830,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>53</Id>
+              <Id>104</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>91 DrawingModel.Shape.CatchedBy(DrawingModel.MyPoint)</HashCode>
               <Severity>Red</Severity>
@@ -1030,7 +1846,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>54</Id>
+              <Id>105</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>102 DrawingModel.Shape.GetMax(double, double)</HashCode>
               <Severity>Red</Severity>
@@ -1046,7 +1862,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>55</Id>
+              <Id>106</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>108 DrawingModel.Shape.GetMin(double, double)</HashCode>
               <Severity>Red</Severity>
@@ -1062,7 +1878,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>56</Id>
+              <Id>107</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>117 DrawingModel.Shape.DrawMarker(DrawingModel.IGraphics)</HashCode>
               <Severity>Red</Severity>
@@ -1078,7 +1894,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>57</Id>
+              <Id>108</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>119 DrawingModel.Shape.NotifyShapeChanged()</HashCode>
               <Severity>Red</Severity>
@@ -1094,7 +1910,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>58</Id>
+              <Id>109</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>17 DrawingModel.MyTriangle.DrawMarker(DrawingModel.IGraphics)</HashCode>
               <Severity>Red</Severity>
@@ -1110,7 +1926,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>59</Id>
+              <Id>110</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>22 DrawingModel.MyTriangle.GetTypeName()</HashCode>
               <Severity>Red</Severity>
@@ -1126,7 +1942,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>60</Id>
+              <Id>111</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>17 DrawingModel.MyRectangle.DrawMarker(DrawingModel.IGraphics)</HashCode>
               <Severity>Red</Severity>
@@ -1142,7 +1958,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>61</Id>
+              <Id>112</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>22 DrawingModel.MyRectangle.GetTypeName()</HashCode>
               <Severity>Red</Severity>
@@ -1158,7 +1974,55 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>62</Id>
+              <Id>113</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>11 DrawingModel.DrawState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>DrawState.cs</File>
+              <Line>11</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.DrawState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>114</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>16 DrawingModel.DrawState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>DrawState.cs</File>
+              <Line>16</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.DrawState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>115</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>18 DrawingModel.DrawState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>DrawState.cs</File>
+              <Line>18</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.DrawState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>116</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>14 DrawingModel.CommandManager.Execute(DrawingModel.ICommand)</HashCode>
               <Severity>Red</Severity>
@@ -1174,7 +2038,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>63</Id>
+              <Id>117</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>21 DrawingModel.CommandManager.Undo()</HashCode>
               <Severity>Red</Severity>
@@ -1190,7 +2054,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>64</Id>
+              <Id>118</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>32 DrawingModel.CommandManager.Redo()</HashCode>
               <Severity>Red</Severity>
@@ -1206,7 +2070,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>65</Id>
+              <Id>119</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>26 DrawingModel.ShapeFactory.CreateNewLine()</HashCode>
               <Severity>Red</Severity>
@@ -1222,7 +2086,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>66</Id>
+              <Id>120</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>11 DrawingModel.MyLine.Draw(DrawingModel.IGraphics)</HashCode>
               <Severity>Red</Severity>
@@ -1238,7 +2102,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>67</Id>
+              <Id>121</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>24 DrawingModel.MyLine.DrawMarker(DrawingModel.IGraphics)</HashCode>
               <Severity>Red</Severity>
@@ -1254,7 +2118,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>68</Id>
+              <Id>122</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>29 DrawingModel.MyLine.GetTypeName()</HashCode>
               <Severity>Red</Severity>
@@ -1270,7 +2134,23 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>69</Id>
+              <Id>123</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>11 DrawingModel.DrawRectangleState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>DrawRectangleState.cs</File>
+              <Line>11</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.DrawRectangleState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>124</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>23 DrawingModel.CommandClear.Execute()</HashCode>
               <Severity>Red</Severity>
@@ -1286,7 +2166,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>70</Id>
+              <Id>125</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>28 DrawingModel.CommandClear.UnExecute()</HashCode>
               <Severity>Red</Severity>
@@ -1302,7 +2182,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>71</Id>
+              <Id>126</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>83 DrawingModel.ShapeManager.GetEnumerator()</HashCode>
               <Severity>Red</Severity>
@@ -1318,7 +2198,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>72</Id>
+              <Id>127</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>88 DrawingModel.ShapeManager.SelectTargetShape(DrawingModel.MyPoint)</HashCode>
               <Severity>Red</Severity>
@@ -1334,9 +2214,9 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>73</Id>
+              <Id>128</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>103 DrawingModel.ShapeManager.LineCatchShape(DrawingModel.MyPoint)</HashCode>
+              <HashCode>103 DrawingModel.ShapeManager.CatchShape(DrawingModel.MyPoint)</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingForm</Project>
@@ -1346,11 +2226,27 @@
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
               <EndCol>0</EndCol>
-              <Comment>DrawingModel.ShapeManager.LineCatchShape(DrawingModel.MyPoint)</Comment>
+              <Comment>DrawingModel.ShapeManager.CatchShape(DrawingModel.MyPoint)</Comment>
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>74</Id>
+              <Id>129</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>120 DrawingModel.ShapeManager.ClearSelection()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>ShapeManager.cs</File>
+              <Line>120</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.ShapeManager.ClearSelection()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>130</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>11 DrawingModel.ICommand.Execute()</HashCode>
               <Severity>Red</Severity>
@@ -1366,7 +2262,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>75</Id>
+              <Id>131</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>12 DrawingModel.ICommand.UnExecute()</HashCode>
               <Severity>Red</Severity>
@@ -1382,7 +2278,39 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>76</Id>
+              <Id>132</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>120 DrawingForm.DrawingForm.HandleSaveButtonClick(object, System.EventArgs)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>DrawingForm.cs</File>
+              <Line>120</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingForm.DrawingForm.HandleSaveButtonClick(object, System.EventArgs)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>133</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>125 DrawingForm.DrawingForm.HandleLoadButtonClick(object, System.EventArgs)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>DrawingForm.cs</File>
+              <Line>125</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingForm.DrawingForm.HandleLoadButtonClick(object, System.EventArgs)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>134</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>84 DrawingModel.ButtonManager.GetEnumerator()</HashCode>
               <Severity>Red</Severity>
@@ -1398,7 +2326,55 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>77</Id>
+              <Id>135</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>11 DrawingModel.IState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>IState.cs</File>
+              <Line>11</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.IState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>136</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>13 DrawingModel.IState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>IState.cs</File>
+              <Line>13</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.IState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>137</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>15 DrawingModel.IState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>IState.cs</File>
+              <Line>15</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.IState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>138</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>20 DrawingModel.CommandAddNewShape.Execute()</HashCode>
               <Severity>Red</Severity>
@@ -1414,7 +2390,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>78</Id>
+              <Id>139</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>25 DrawingModel.CommandAddNewShape.UnExecute()</HashCode>
               <Severity>Red</Severity>
@@ -1430,7 +2406,119 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>79</Id>
+              <Id>140</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>11 DrawingModel.LineState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>LineState.cs</File>
+              <Line>11</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.LineState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>141</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>16 DrawingModel.LineState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>LineState.cs</File>
+              <Line>16</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.LineState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>142</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>27 DrawingModel.LineState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>LineState.cs</File>
+              <Line>27</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.LineState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>143</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>11 DrawingModel.PointState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>PointState.cs</File>
+              <Line>11</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.PointState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>144</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>16 DrawingModel.PointState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>PointState.cs</File>
+              <Line>16</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.PointState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>145</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>22 DrawingModel.PointState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>PointState.cs</File>
+              <Line>22</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.PointState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>146</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>11 DrawingModel.DrawTriangleState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>DrawTriangleState.cs</File>
+              <Line>11</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.DrawTriangleState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>147</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>23 DrawingModel.ShapeInfo.SetShape(DrawingModel.Shape)</HashCode>
               <Severity>Red</Severity>
@@ -1446,14 +2534,206 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>80</Id>
+              <Id>148</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>92 DrawingModel.Model.EnableButtons()</HashCode>
+              <HashCode>20 DrawingModel.Model.Save()</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingForm</Project>
               <File>Model.cs</File>
-              <Line>92</Line>
+              <Line>20</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.Save()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>149</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>25 DrawingModel.Model.Load()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>Model.cs</File>
+              <Line>25</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.Load()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>150</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>30 DrawingModel.Model.SetButtonsMode(DrawingModel.DrawingMode)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>Model.cs</File>
+              <Line>30</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.SetButtonsMode(DrawingModel.DrawingMode)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>151</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>77 DrawingModel.Model.CatchShape(DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>Model.cs</File>
+              <Line>77</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.CatchShape(DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>152</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>82 DrawingModel.Model.CreateNewHint(DrawingModel.DrawingMode, DrawingModel.Shape)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>Model.cs</File>
+              <Line>82</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.CreateNewHint(DrawingModel.DrawingMode, DrawingModel.Shape)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>153</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>88 DrawingModel.Model.CreateNewHint(DrawingModel.DrawingMode, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>Model.cs</File>
+              <Line>88</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.CreateNewHint(DrawingModel.DrawingMode, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>154</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>95 DrawingModel.Model.ChangeHintPoint2(DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>Model.cs</File>
+              <Line>95</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.ChangeHintPoint2(DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>155</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>100 DrawingModel.Model.SetToPointState()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>Model.cs</File>
+              <Line>100</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.SetToPointState()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>156</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>106 DrawingModel.Model.SetToRectangleState()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>Model.cs</File>
+              <Line>106</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.SetToRectangleState()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>157</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>112 DrawingModel.Model.SetToTriangleState()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>Model.cs</File>
+              <Line>112</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.SetToTriangleState()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>158</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>118 DrawingModel.Model.SetToLineState()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>Model.cs</File>
+              <Line>118</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.SetToLineState()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>159</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>124 DrawingModel.Model.SelectTargetShape(DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>Model.cs</File>
+              <Line>124</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.SelectTargetShape(DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>160</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>132 DrawingModel.Model.EnableButtons()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>Model.cs</File>
+              <Line>132</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -1462,14 +2742,46 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>81</Id>
+              <Id>161</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>98 DrawingModel.Model.AddShape(DrawingModel.Shape)</HashCode>
+              <HashCode>138 DrawingModel.Model.AddHintToShapes(DrawingModel.MyPoint)</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingForm</Project>
               <File>Model.cs</File>
-              <Line>98</Line>
+              <Line>138</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.AddHintToShapes(DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>162</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>144 DrawingModel.Model.AddHintToShapes(DrawingModel.Shape)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>Model.cs</File>
+              <Line>144</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.AddHintToShapes(DrawingModel.Shape)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>163</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>150 DrawingModel.Model.AddShape(DrawingModel.Shape)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>Model.cs</File>
+              <Line>150</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -1478,14 +2790,14 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>82</Id>
+              <Id>164</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>104 DrawingModel.Model.PopShape()</HashCode>
+              <HashCode>156 DrawingModel.Model.PopShape()</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingForm</Project>
               <File>Model.cs</File>
-              <Line>104</Line>
+              <Line>156</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -1494,14 +2806,14 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>83</Id>
+              <Id>165</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>121 DrawingModel.Model.ClearAllShapes()</HashCode>
+              <HashCode>173 DrawingModel.Model.ClearAllShapes()</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingForm</Project>
               <File>Model.cs</File>
-              <Line>121</Line>
+              <Line>173</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -1510,7 +2822,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>84</Id>
+              <Id>166</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>51 DrawingForm.PresentationModel.WindowsFormsGraphicsAdaptor.DrawRectangleMarker(double, double, double, double)</HashCode>
               <Severity>Red</Severity>
@@ -1526,7 +2838,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>85</Id>
+              <Id>167</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>94 DrawingForm.PresentationModel.WindowsFormsGraphicsAdaptor.DrawTriangleMarker(double, double, double, double)</HashCode>
               <Severity>Red</Severity>
@@ -1542,7 +2854,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>86</Id>
+              <Id>168</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>15 DrawingModel.Shape.GetTypeName()</HashCode>
               <Severity>Red</Severity>
@@ -1558,7 +2870,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>87</Id>
+              <Id>169</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>31 DrawingModel.Shape.ConnectPoint1ToShape(DrawingModel.Shape)</HashCode>
               <Severity>Red</Severity>
@@ -1574,7 +2886,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>88</Id>
+              <Id>170</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>38 DrawingModel.Shape.ConnectPoint2ToShape(DrawingModel.Shape)</HashCode>
               <Severity>Red</Severity>
@@ -1590,7 +2902,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>89</Id>
+              <Id>171</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>45 DrawingModel.Shape.HandleShapeChanged()</HashCode>
               <Severity>Red</Severity>
@@ -1606,7 +2918,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>90</Id>
+              <Id>172</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>91 DrawingModel.Shape.CatchedBy(DrawingModel.MyPoint)</HashCode>
               <Severity>Red</Severity>
@@ -1622,7 +2934,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>91</Id>
+              <Id>173</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>102 DrawingModel.Shape.GetMax(double, double)</HashCode>
               <Severity>Red</Severity>
@@ -1638,7 +2950,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>92</Id>
+              <Id>174</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>108 DrawingModel.Shape.GetMin(double, double)</HashCode>
               <Severity>Red</Severity>
@@ -1654,7 +2966,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>93</Id>
+              <Id>175</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>117 DrawingModel.Shape.DrawMarker(DrawingModel.IGraphics)</HashCode>
               <Severity>Red</Severity>
@@ -1670,7 +2982,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>94</Id>
+              <Id>176</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>119 DrawingModel.Shape.NotifyShapeChanged()</HashCode>
               <Severity>Red</Severity>
@@ -1686,7 +2998,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>95</Id>
+              <Id>177</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>17 DrawingModel.MyTriangle.DrawMarker(DrawingModel.IGraphics)</HashCode>
               <Severity>Red</Severity>
@@ -1702,7 +3014,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>96</Id>
+              <Id>178</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>22 DrawingModel.MyTriangle.GetTypeName()</HashCode>
               <Severity>Red</Severity>
@@ -1718,7 +3030,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>97</Id>
+              <Id>179</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>17 DrawingModel.MyRectangle.DrawMarker(DrawingModel.IGraphics)</HashCode>
               <Severity>Red</Severity>
@@ -1734,7 +3046,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>98</Id>
+              <Id>180</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>22 DrawingModel.MyRectangle.GetTypeName()</HashCode>
               <Severity>Red</Severity>
@@ -1750,7 +3062,55 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>99</Id>
+              <Id>181</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>11 DrawingModel.DrawState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>DrawState.cs</File>
+              <Line>11</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.DrawState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>182</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>16 DrawingModel.DrawState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>DrawState.cs</File>
+              <Line>16</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.DrawState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>183</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>18 DrawingModel.DrawState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm</Project>
+              <File>DrawState.cs</File>
+              <Line>18</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.DrawState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>184</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>14 DrawingModel.CommandManager.Execute(DrawingModel.ICommand)</HashCode>
               <Severity>Red</Severity>
@@ -1766,7 +3126,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>100</Id>
+              <Id>185</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>21 DrawingModel.CommandManager.Undo()</HashCode>
               <Severity>Red</Severity>
@@ -1782,7 +3142,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>101</Id>
+              <Id>186</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>32 DrawingModel.CommandManager.Redo()</HashCode>
               <Severity>Red</Severity>
@@ -1798,23 +3158,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>102</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>20 DrawingApp.Program.Main(string[])</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>App.g.i.cs</File>
-              <Line>20</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingApp.Program.Main(string[])</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>103</Id>
+              <Id>187</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>76 DrawingApp.View.WindowsStoreGraphicsAdaptor.DrawRectangleMarker(double, double, double, double)</HashCode>
               <Severity>Red</Severity>
@@ -1830,7 +3174,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>104</Id>
+              <Id>188</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>123 DrawingApp.View.WindowsStoreGraphicsAdaptor.DrawTriangleMarker(double, double, double, double)</HashCode>
               <Severity>Red</Severity>
@@ -1846,7 +3190,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>105</Id>
+              <Id>189</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>149 DrawingApp.View.WindowsStoreGraphicsAdaptor.DrawDot(double, double)</HashCode>
               <Severity>Red</Severity>
@@ -1862,103 +3206,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>106</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>26 DrawingModel.ShapeFactory.CreateNewLine()</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>ShapeFactory.cs</File>
-              <Line>26</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.ShapeFactory.CreateNewLine()</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>107</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>11 DrawingModel.MyLine.Draw(DrawingModel.IGraphics)</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>MyLine.cs</File>
-              <Line>11</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.MyLine.Draw(DrawingModel.IGraphics)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>108</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>24 DrawingModel.MyLine.DrawMarker(DrawingModel.IGraphics)</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>MyLine.cs</File>
-              <Line>24</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.MyLine.DrawMarker(DrawingModel.IGraphics)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>109</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>29 DrawingModel.MyLine.GetTypeName()</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>MyLine.cs</File>
-              <Line>29</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.MyLine.GetTypeName()</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>110</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>23 DrawingModel.CommandClear.Execute()</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>CommandClear.cs</File>
-              <Line>23</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.CommandClear.Execute()</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>111</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>28 DrawingModel.CommandClear.UnExecute()</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>CommandClear.cs</File>
-              <Line>28</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.CommandClear.UnExecute()</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>112</Id>
+              <Id>190</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>40 DrawingApp.MainPage.HandleRedoButtonClick(object, Windows.UI.Xaml.RoutedEventArgs)</HashCode>
               <Severity>Red</Severity>
@@ -1974,7 +3222,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>113</Id>
+              <Id>191</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>45 DrawingApp.MainPage.HandleUndoButtonClick(object, Windows.UI.Xaml.RoutedEventArgs)</HashCode>
               <Severity>Red</Severity>
@@ -1990,7 +3238,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>114</Id>
+              <Id>192</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>50 DrawingApp.MainPage.HandleLineButtonClick(object, Windows.UI.Xaml.RoutedEventArgs)</HashCode>
               <Severity>Red</Severity>
@@ -2006,423 +3254,55 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>115</Id>
+              <Id>193</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>83 DrawingModel.ShapeManager.GetEnumerator()</HashCode>
+              <HashCode>20 DrawingApp.Program.Main(string[])</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingApp</Project>
-              <File>ShapeManager.cs</File>
-              <Line>83</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.ShapeManager.GetEnumerator()</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>116</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>88 DrawingModel.ShapeManager.SelectTargetShape(DrawingModel.MyPoint)</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>ShapeManager.cs</File>
-              <Line>88</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.ShapeManager.SelectTargetShape(DrawingModel.MyPoint)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>117</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>103 DrawingModel.ShapeManager.LineCatchShape(DrawingModel.MyPoint)</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>ShapeManager.cs</File>
-              <Line>103</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.ShapeManager.LineCatchShape(DrawingModel.MyPoint)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>118</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>11 DrawingModel.ICommand.Execute()</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>ICommand.cs</File>
-              <Line>11</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.ICommand.Execute()</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>119</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>12 DrawingModel.ICommand.UnExecute()</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>ICommand.cs</File>
-              <Line>12</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.ICommand.UnExecute()</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>120</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>84 DrawingModel.ButtonManager.GetEnumerator()</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>ButtonManager.cs</File>
-              <Line>84</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.ButtonManager.GetEnumerator()</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>121</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>20 DrawingModel.CommandAddNewShape.Execute()</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>CommandAddNewShape.cs</File>
+              <File>App.g.i.cs</File>
               <Line>20</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
               <EndCol>0</EndCol>
-              <Comment>DrawingModel.CommandAddNewShape.Execute()</Comment>
+              <Comment>DrawingApp.Program.Main(string[])</Comment>
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>122</Id>
+              <Id>194</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>25 DrawingModel.CommandAddNewShape.UnExecute()</HashCode>
+              <HashCode>129 DrawingApp.DrawingApp_XamlTypeInfo.XamlTypeInfoProvider.GetXamlTypeByType(System.Type)</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingApp</Project>
-              <File>CommandAddNewShape.cs</File>
-              <Line>25</Line>
+              <File>XamlTypeInfo.g.cs</File>
+              <Line>129</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
               <EndCol>0</EndCol>
-              <Comment>DrawingModel.CommandAddNewShape.UnExecute()</Comment>
+              <Comment>DrawingApp.DrawingApp_XamlTypeInfo.XamlTypeInfoProvider.GetXamlTypeByType(System.Type)</Comment>
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>123</Id>
+              <Id>195</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>23 DrawingModel.ShapeInfo.SetShape(DrawingModel.Shape)</HashCode>
+              <HashCode>134 DrawingApp.DrawingApp_XamlTypeInfo.XamlTypeInfoProvider.GetXamlTypeByName(string)</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingApp</Project>
-              <File>ShapeInfo.cs</File>
-              <Line>23</Line>
+              <File>XamlTypeInfo.g.cs</File>
+              <Line>134</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
               <EndCol>0</EndCol>
-              <Comment>DrawingModel.ShapeInfo.SetShape(DrawingModel.Shape)</Comment>
+              <Comment>DrawingApp.DrawingApp_XamlTypeInfo.XamlTypeInfoProvider.GetXamlTypeByName(string)</Comment>
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>124</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>92 DrawingModel.Model.EnableButtons()</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>Model.cs</File>
-              <Line>92</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.Model.EnableButtons()</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>125</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>98 DrawingModel.Model.AddShape(DrawingModel.Shape)</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>Model.cs</File>
-              <Line>98</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.Model.AddShape(DrawingModel.Shape)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>126</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>104 DrawingModel.Model.PopShape()</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>Model.cs</File>
-              <Line>104</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.Model.PopShape()</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>127</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>121 DrawingModel.Model.ClearAllShapes()</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>Model.cs</File>
-              <Line>121</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.Model.ClearAllShapes()</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>128</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>15 DrawingModel.Shape.GetTypeName()</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>Shape.cs</File>
-              <Line>15</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.Shape.GetTypeName()</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>129</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>31 DrawingModel.Shape.ConnectPoint1ToShape(DrawingModel.Shape)</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>Shape.cs</File>
-              <Line>31</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.Shape.ConnectPoint1ToShape(DrawingModel.Shape)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>130</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>38 DrawingModel.Shape.ConnectPoint2ToShape(DrawingModel.Shape)</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>Shape.cs</File>
-              <Line>38</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.Shape.ConnectPoint2ToShape(DrawingModel.Shape)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>131</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>45 DrawingModel.Shape.HandleShapeChanged()</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>Shape.cs</File>
-              <Line>45</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.Shape.HandleShapeChanged()</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>132</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>91 DrawingModel.Shape.CatchedBy(DrawingModel.MyPoint)</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>Shape.cs</File>
-              <Line>91</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.Shape.CatchedBy(DrawingModel.MyPoint)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>133</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>102 DrawingModel.Shape.GetMax(double, double)</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>Shape.cs</File>
-              <Line>102</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.Shape.GetMax(double, double)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>134</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>108 DrawingModel.Shape.GetMin(double, double)</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>Shape.cs</File>
-              <Line>108</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.Shape.GetMin(double, double)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>135</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>117 DrawingModel.Shape.DrawMarker(DrawingModel.IGraphics)</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>Shape.cs</File>
-              <Line>117</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.Shape.DrawMarker(DrawingModel.IGraphics)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>136</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>119 DrawingModel.Shape.NotifyShapeChanged()</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>Shape.cs</File>
-              <Line>119</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.Shape.NotifyShapeChanged()</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>137</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>17 DrawingModel.MyTriangle.DrawMarker(DrawingModel.IGraphics)</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>MyTriangle.cs</File>
-              <Line>17</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.MyTriangle.DrawMarker(DrawingModel.IGraphics)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>138</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>22 DrawingModel.MyTriangle.GetTypeName()</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>MyTriangle.cs</File>
-              <Line>22</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.MyTriangle.GetTypeName()</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>139</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>17 DrawingModel.MyRectangle.DrawMarker(DrawingModel.IGraphics)</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>MyRectangle.cs</File>
-              <Line>17</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.MyRectangle.DrawMarker(DrawingModel.IGraphics)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>140</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>22 DrawingModel.MyRectangle.GetTypeName()</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>MyRectangle.cs</File>
-              <Line>22</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingModel.MyRectangle.GetTypeName()</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>141</Id>
+              <Id>196</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>52 DrawingApp.MainPage.UnloadObject(Windows.UI.Xaml.DependencyObject)</HashCode>
               <Severity>Red</Severity>
@@ -2438,7 +3318,967 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>142</Id>
+              <Id>197</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>23 DrawingModel.ShapeInfo.SetShape(DrawingModel.Shape)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>ShapeInfo.cs</File>
+              <Line>23</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.ShapeInfo.SetShape(DrawingModel.Shape)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>198</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>20 DrawingModel.Model.Save()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Model.cs</File>
+              <Line>20</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.Save()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>199</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>25 DrawingModel.Model.Load()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Model.cs</File>
+              <Line>25</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.Load()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>200</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>30 DrawingModel.Model.SetButtonsMode(DrawingModel.DrawingMode)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Model.cs</File>
+              <Line>30</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.SetButtonsMode(DrawingModel.DrawingMode)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>201</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>77 DrawingModel.Model.CatchShape(DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Model.cs</File>
+              <Line>77</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.CatchShape(DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>202</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>82 DrawingModel.Model.CreateNewHint(DrawingModel.DrawingMode, DrawingModel.Shape)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Model.cs</File>
+              <Line>82</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.CreateNewHint(DrawingModel.DrawingMode, DrawingModel.Shape)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>203</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>88 DrawingModel.Model.CreateNewHint(DrawingModel.DrawingMode, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Model.cs</File>
+              <Line>88</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.CreateNewHint(DrawingModel.DrawingMode, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>204</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>95 DrawingModel.Model.ChangeHintPoint2(DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Model.cs</File>
+              <Line>95</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.ChangeHintPoint2(DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>205</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>100 DrawingModel.Model.SetToPointState()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Model.cs</File>
+              <Line>100</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.SetToPointState()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>206</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>106 DrawingModel.Model.SetToRectangleState()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Model.cs</File>
+              <Line>106</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.SetToRectangleState()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>207</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>112 DrawingModel.Model.SetToTriangleState()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Model.cs</File>
+              <Line>112</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.SetToTriangleState()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>208</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>118 DrawingModel.Model.SetToLineState()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Model.cs</File>
+              <Line>118</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.SetToLineState()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>209</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>124 DrawingModel.Model.SelectTargetShape(DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Model.cs</File>
+              <Line>124</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.SelectTargetShape(DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>210</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>132 DrawingModel.Model.EnableButtons()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Model.cs</File>
+              <Line>132</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.EnableButtons()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>211</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>138 DrawingModel.Model.AddHintToShapes(DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Model.cs</File>
+              <Line>138</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.AddHintToShapes(DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>212</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>144 DrawingModel.Model.AddHintToShapes(DrawingModel.Shape)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Model.cs</File>
+              <Line>144</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.AddHintToShapes(DrawingModel.Shape)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>213</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>150 DrawingModel.Model.AddShape(DrawingModel.Shape)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Model.cs</File>
+              <Line>150</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.AddShape(DrawingModel.Shape)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>214</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>156 DrawingModel.Model.PopShape()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Model.cs</File>
+              <Line>156</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.PopShape()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>215</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>173 DrawingModel.Model.ClearAllShapes()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Model.cs</File>
+              <Line>173</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Model.ClearAllShapes()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>216</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>11 DrawingModel.DrawRectangleState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>DrawRectangleState.cs</File>
+              <Line>11</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.DrawRectangleState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>217</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>11 DrawingModel.IState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>IState.cs</File>
+              <Line>11</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.IState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>218</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>13 DrawingModel.IState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>IState.cs</File>
+              <Line>13</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.IState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>219</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>15 DrawingModel.IState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>IState.cs</File>
+              <Line>15</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.IState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>220</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>11 DrawingModel.LineState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>LineState.cs</File>
+              <Line>11</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.LineState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>221</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>16 DrawingModel.LineState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>LineState.cs</File>
+              <Line>16</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.LineState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>222</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>27 DrawingModel.LineState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>LineState.cs</File>
+              <Line>27</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.LineState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>223</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>11 DrawingModel.PointState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>PointState.cs</File>
+              <Line>11</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.PointState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>224</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>16 DrawingModel.PointState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>PointState.cs</File>
+              <Line>16</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.PointState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>225</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>22 DrawingModel.PointState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>PointState.cs</File>
+              <Line>22</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.PointState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>226</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>11 DrawingModel.DrawTriangleState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>DrawTriangleState.cs</File>
+              <Line>11</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.DrawTriangleState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>227</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>11 DrawingModel.DrawState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>DrawState.cs</File>
+              <Line>11</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.DrawState.MovedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>228</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>16 DrawingModel.DrawState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>DrawState.cs</File>
+              <Line>16</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.DrawState.PressedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>229</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>18 DrawingModel.DrawState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>DrawState.cs</File>
+              <Line>18</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.DrawState.ReleasedPointer(DrawingModel.Model, DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>230</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>26 DrawingModel.ShapeFactory.CreateNewLine()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>ShapeFactory.cs</File>
+              <Line>26</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.ShapeFactory.CreateNewLine()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>231</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>11 DrawingModel.MyLine.Draw(DrawingModel.IGraphics)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>MyLine.cs</File>
+              <Line>11</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.MyLine.Draw(DrawingModel.IGraphics)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>232</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>24 DrawingModel.MyLine.DrawMarker(DrawingModel.IGraphics)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>MyLine.cs</File>
+              <Line>24</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.MyLine.DrawMarker(DrawingModel.IGraphics)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>233</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>29 DrawingModel.MyLine.GetTypeName()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>MyLine.cs</File>
+              <Line>29</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.MyLine.GetTypeName()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>234</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>83 DrawingModel.ShapeManager.GetEnumerator()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>ShapeManager.cs</File>
+              <Line>83</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.ShapeManager.GetEnumerator()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>235</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>88 DrawingModel.ShapeManager.SelectTargetShape(DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>ShapeManager.cs</File>
+              <Line>88</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.ShapeManager.SelectTargetShape(DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>236</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>103 DrawingModel.ShapeManager.CatchShape(DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>ShapeManager.cs</File>
+              <Line>103</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.ShapeManager.CatchShape(DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>237</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>120 DrawingModel.ShapeManager.ClearSelection()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>ShapeManager.cs</File>
+              <Line>120</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.ShapeManager.ClearSelection()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>238</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>15 DrawingModel.Shape.GetTypeName()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Shape.cs</File>
+              <Line>15</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Shape.GetTypeName()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>239</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>31 DrawingModel.Shape.ConnectPoint1ToShape(DrawingModel.Shape)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Shape.cs</File>
+              <Line>31</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Shape.ConnectPoint1ToShape(DrawingModel.Shape)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>240</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>38 DrawingModel.Shape.ConnectPoint2ToShape(DrawingModel.Shape)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Shape.cs</File>
+              <Line>38</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Shape.ConnectPoint2ToShape(DrawingModel.Shape)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>241</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>45 DrawingModel.Shape.HandleShapeChanged()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Shape.cs</File>
+              <Line>45</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Shape.HandleShapeChanged()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>242</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>91 DrawingModel.Shape.CatchedBy(DrawingModel.MyPoint)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Shape.cs</File>
+              <Line>91</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Shape.CatchedBy(DrawingModel.MyPoint)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>243</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>102 DrawingModel.Shape.GetMax(double, double)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Shape.cs</File>
+              <Line>102</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Shape.GetMax(double, double)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>244</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>108 DrawingModel.Shape.GetMin(double, double)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Shape.cs</File>
+              <Line>108</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Shape.GetMin(double, double)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>245</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>117 DrawingModel.Shape.DrawMarker(DrawingModel.IGraphics)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Shape.cs</File>
+              <Line>117</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Shape.DrawMarker(DrawingModel.IGraphics)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>246</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>119 DrawingModel.Shape.NotifyShapeChanged()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>Shape.cs</File>
+              <Line>119</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.Shape.NotifyShapeChanged()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>247</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>17 DrawingModel.MyTriangle.DrawMarker(DrawingModel.IGraphics)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>MyTriangle.cs</File>
+              <Line>17</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.MyTriangle.DrawMarker(DrawingModel.IGraphics)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>248</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>22 DrawingModel.MyTriangle.GetTypeName()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>MyTriangle.cs</File>
+              <Line>22</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.MyTriangle.GetTypeName()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>249</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>17 DrawingModel.MyRectangle.DrawMarker(DrawingModel.IGraphics)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>MyRectangle.cs</File>
+              <Line>17</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.MyRectangle.DrawMarker(DrawingModel.IGraphics)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>250</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>22 DrawingModel.MyRectangle.GetTypeName()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>MyRectangle.cs</File>
+              <Line>22</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.MyRectangle.GetTypeName()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>251</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>23 DrawingModel.CommandClear.Execute()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>CommandClear.cs</File>
+              <Line>23</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.CommandClear.Execute()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>252</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>28 DrawingModel.CommandClear.UnExecute()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>CommandClear.cs</File>
+              <Line>28</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.CommandClear.UnExecute()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>253</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>11 DrawingModel.ICommand.Execute()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>ICommand.cs</File>
+              <Line>11</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.ICommand.Execute()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>254</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>12 DrawingModel.ICommand.UnExecute()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>ICommand.cs</File>
+              <Line>12</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.ICommand.UnExecute()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>255</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>20 DrawingModel.CommandAddNewShape.Execute()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>CommandAddNewShape.cs</File>
+              <Line>20</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.CommandAddNewShape.Execute()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>256</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>25 DrawingModel.CommandAddNewShape.UnExecute()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>CommandAddNewShape.cs</File>
+              <Line>25</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.CommandAddNewShape.UnExecute()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>257</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>14 DrawingModel.CommandManager.Execute(DrawingModel.ICommand)</HashCode>
               <Severity>Red</Severity>
@@ -2454,7 +4294,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>143</Id>
+              <Id>258</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>21 DrawingModel.CommandManager.Undo()</HashCode>
               <Severity>Red</Severity>
@@ -2470,7 +4310,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>144</Id>
+              <Id>259</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>32 DrawingModel.CommandManager.Redo()</HashCode>
               <Severity>Red</Severity>
@@ -2486,7 +4326,23 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>145</Id>
+              <Id>260</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>84 DrawingModel.ButtonManager.GetEnumerator()</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>ButtonManager.cs</File>
+              <Line>84</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingModel.ButtonManager.GetEnumerator()</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>261</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>12 目前物件 DrawingModel.MyLine，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.MyPoint，使用物件方法或屬性次數：3次，使用到的方法或屬性為以下：DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X</HashCode>
               <Severity>Red</Severity>
@@ -2502,7 +4358,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>146</Id>
+              <Id>262</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>13 目前物件 DrawingModel.MyLine，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.MyPoint，使用物件方法或屬性次數：3次，使用到的方法或屬性為以下：DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X</HashCode>
               <Severity>Red</Severity>
@@ -2518,23 +4374,55 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>147</Id>
+              <Id>263</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
-              <HashCode>133 目前物件 DrawingModel.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.ShapeManager，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：DrawingModel.ShapeManager.Draw(DrawingModel.IGraphics) 以及 DrawingModel.ShapeManager.NotEmpty</HashCode>
+              <HashCode>24 目前物件 DrawingModel.LineState，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.Model，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：DrawingModel.Model.CatchShape(DrawingModel.MyPoint) 以及 DrawingModel.Model.CreateNewHint(DrawingModel.DrawingMode, DrawingModel.Shape)</HashCode>
+              <Severity>Warning</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>D:\111-1_classes\Windows\PJ2\107A50039\DrawingModel\State\LineState.cs</File>
+              <Line>24</Line>
+              <StartLine>23</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>24</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>目前物件 DrawingModel.LineState，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.Model，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：DrawingModel.Model.CatchShape(DrawingModel.MyPoint) 以及 DrawingModel.Model.CreateNewHint(DrawingModel.DrawingMode, DrawingModel.Shape)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>264</Id>
+              <SmellType>Feature Envy(依戀情節)</SmellType>
+              <HashCode>35 目前物件 DrawingModel.LineState，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.Model，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：DrawingModel.Model.CatchShape(DrawingModel.MyPoint) 以及 DrawingModel.Model.AddHintToShapes(DrawingModel.Shape)</HashCode>
+              <Severity>Warning</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>D:\111-1_classes\Windows\PJ2\107A50039\DrawingModel\State\LineState.cs</File>
+              <Line>35</Line>
+              <StartLine>34</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>35</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>目前物件 DrawingModel.LineState，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.Model，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：DrawingModel.Model.CatchShape(DrawingModel.MyPoint) 以及 DrawingModel.Model.AddHintToShapes(DrawingModel.Shape)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>265</Id>
+              <SmellType>Feature Envy(依戀情節)</SmellType>
+              <HashCode>185 目前物件 DrawingModel.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.ShapeManager，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：DrawingModel.ShapeManager.Draw(DrawingModel.IGraphics) 以及 DrawingModel.ShapeManager.NotEmpty</HashCode>
               <Severity>Warning</Severity>
               <Weight>1</Weight>
               <Project>DrawingModel</Project>
               <File>D:\111-1_classes\Windows\PJ2\107A50039\DrawingModel\Model.cs</File>
-              <Line>133</Line>
-              <StartLine>132</StartLine>
+              <Line>185</Line>
+              <StartLine>184</StartLine>
               <StartCol>0</StartCol>
-              <EndLine>133</EndLine>
+              <EndLine>185</EndLine>
               <EndCol>0</EndCol>
               <Comment>目前物件 DrawingModel.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.ShapeManager，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：DrawingModel.ShapeManager.Draw(DrawingModel.IGraphics) 以及 DrawingModel.ShapeManager.NotEmpty</Comment>
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>148</Id>
+              <Id>266</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
               <HashCode>99 目前物件 DrawingModel.Shape，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.MyPoint，使用物件方法或屬性次數：8次，使用到的方法或屬性為以下：DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y</HashCode>
               <Severity>Red</Severity>
@@ -2648,6 +4536,36 @@
                 <AnalysisFileType>Model</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
+                <RelativePath>State\DrawRectangleState.cs</RelativePath>
+                <ProjectName>DrawingModel</ProjectName>
+                <AnalysisFileType>Model</AnalysisFileType>
+              </AnalysisFile>
+              <AnalysisFile>
+                <RelativePath>State\DrawState.cs</RelativePath>
+                <ProjectName>DrawingModel</ProjectName>
+                <AnalysisFileType>Model</AnalysisFileType>
+              </AnalysisFile>
+              <AnalysisFile>
+                <RelativePath>State\DrawTriangleState.cs</RelativePath>
+                <ProjectName>DrawingModel</ProjectName>
+                <AnalysisFileType>Model</AnalysisFileType>
+              </AnalysisFile>
+              <AnalysisFile>
+                <RelativePath>State\IState.cs</RelativePath>
+                <ProjectName>DrawingModel</ProjectName>
+                <AnalysisFileType>Model</AnalysisFileType>
+              </AnalysisFile>
+              <AnalysisFile>
+                <RelativePath>State\LineState.cs</RelativePath>
+                <ProjectName>DrawingModel</ProjectName>
+                <AnalysisFileType>Model</AnalysisFileType>
+              </AnalysisFile>
+              <AnalysisFile>
+                <RelativePath>State\PointState.cs</RelativePath>
+                <ProjectName>DrawingModel</ProjectName>
+                <AnalysisFileType>Model</AnalysisFileType>
+              </AnalysisFile>
+              <AnalysisFile>
                 <RelativePath>Program.cs</RelativePath>
                 <ProjectName>DrawingForm</ProjectName>
                 <AnalysisFileType>ViewOrController</AnalysisFileType>
@@ -2705,7 +4623,7 @@
               <AnalysisFile>
                 <RelativePath>View\WindowsStoreGraphicsAdaptor.cs</RelativePath>
                 <ProjectName>DrawingApp</ProjectName>
-                <AnalysisFileType>ViewOrController</AnalysisFileType>
+                <AnalysisFileType>Model</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
                 <RelativePath>MainFormUITest.cs</RelativePath>
@@ -2734,7 +4652,7 @@
               </AnalysisFile>
             </AnalysisFiles>
           </AnalysisFileManager>
-          <ProductionLoc>1203</ProductionLoc>
+          <ProductionLoc>1376</ProductionLoc>
           <TestLoc>411</TestLoc>
         </CodeReview>
       </Data>

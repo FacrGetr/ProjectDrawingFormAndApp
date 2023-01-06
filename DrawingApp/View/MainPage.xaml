@@ -18,6 +18,6 @@
         <Button x:Name="_line" Content="Line" VerticalAlignment="Top" FontSize="18" HorizontalAlignment="Right" Margin="0,50,300,0"/>
         <Button x:Name="_undo" Content="Undo" VerticalAlignment="Top" FontSize="18" Margin="100,50,0,0" HorizontalAlignment="Left" IsEnabled="False"/>
         <Button x:Name="_redo" Content="Redo" VerticalAlignment="Top" FontSize="18" Margin="200,50,0,0" HorizontalAlignment="Left" IsEnabled="False"/>
-
+        
     </Grid>
 </Page>
