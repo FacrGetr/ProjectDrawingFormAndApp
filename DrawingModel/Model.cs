@@ -34,7 +34,7 @@ namespace DrawingModel
             {
                 _shapes.SelectTargetShape(_firstPoint);
                 NotifyModelChanged();
-                Notify(nameof(SelectedShapeInfo));
+                Notify("SelectedShapeInfo");
                 return;
             }
  
