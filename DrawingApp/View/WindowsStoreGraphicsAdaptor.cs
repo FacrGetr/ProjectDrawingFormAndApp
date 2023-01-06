@@ -73,6 +73,7 @@ namespace DrawingApp.View
             _canvas.Children.Add(rectangle);
         }
 
+        //畫框框，方形的那種
         public void DrawRectangleMarker(double x1, double y1, double x2, double y2)
         {
             PointCollection points = new PointCollection
@@ -120,6 +121,7 @@ namespace DrawingApp.View
             _canvas.Children.Add(polygon);
         }
 
+        //畫框框，三角形的那種
         public void DrawTriangleMarker(double x1, double y1, double x2, double y2)
         {
             DoubleCollection dashPattern = new DoubleCollection
@@ -146,6 +148,7 @@ namespace DrawingApp.View
             DrawDot(x2, y2);
         }
 
+        //畫那些白點
         void DrawDot(double x1, double y1)
         {
             Windows.UI.Xaml.Shapes.Ellipse ellipse = new Windows.UI.Xaml.Shapes.Ellipse

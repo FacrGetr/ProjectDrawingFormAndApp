@@ -48,6 +48,7 @@ namespace DrawingForm.PresentationModel
             _graphics.DrawRectangle(new Pen(Color.Black, PEN_WIDTH), rectangle);
         }
 
+        //畫框框，方形的那種
         public void DrawRectangleMarker(double x1, double y1, double x2, double y2)
         {
             if (x1 > x2)
@@ -91,6 +92,7 @@ namespace DrawingForm.PresentationModel
             _graphics.DrawPolygon(new Pen(Color.Black, PEN_WIDTH), triangle);
         }
 
+        //畫框框，三角形的那種
         public void DrawTriangleMarker(double x1, double y1, double x2, double y2)
         {
             Pen pen = new Pen(Color.Orange, PEN_WIDTH);

@@ -17,11 +17,13 @@ namespace DrawingModel
             _shape = shape;
         }
 
+        //執行：新增圖形
         public void Execute()
         {
             _model.AddShape(_shape);
         }
 
+        //反執行：吐出一個圖形
         public void UndoExecute()
         {
             _model.PopShape();

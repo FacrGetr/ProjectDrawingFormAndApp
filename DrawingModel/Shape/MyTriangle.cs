@@ -14,11 +14,13 @@ namespace DrawingModel
             graphics.DrawTriangle(Point1.X, Point1.Y, Point2.X, Point2.Y);
         }
 
+        //被選到時怎麼畫
         public override void DrawMarker(IGraphics graphics)
         {
             graphics.DrawTriangleMarker(Point1.X, Point1.Y, Point2.X, Point2.Y);
         }
 
+        //哩叫蝦米名(你叫甚麼名)
         public override string GetTypeName()
         {
             return nameof(MyTriangle);

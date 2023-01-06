@@ -9,8 +9,8 @@ namespace DrawingModel
     class ShapeInfo
     {
         Shape _shape;
-        const string INFO_PREFIX = "Select：";
-        string _info = INFO_PREFIX;
+        const string INFO_HEADER = "Select：";
+        string _info = INFO_HEADER;
 
         public string Info
         {
@@ -20,15 +20,16 @@ namespace DrawingModel
             }
         }
 
-        public void SetShape(Shape shape)
+        //設定現在被選的是哪個圖形
+        public void SetSelectedShape(Shape shape)
         {
             if (shape == null)
             {
-                _info = INFO_PREFIX;
+                _info = INFO_HEADER;
                 return;
             }
             _shape = shape;
-            _info = INFO_PREFIX + shape.Info;
+            _info = INFO_HEADER + shape.Info;
         }
     }
 }

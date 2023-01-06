@@ -11,6 +11,7 @@ namespace DrawingModel
         //根據要求 new 一個形狀回去
         public Shape CreateNewShape(DrawingMode mode)
         {
+            const string EXCEPTION_MESSAGE = "無效 DrawingMode";
             switch (mode)
             {
                 case DrawingMode.Rectangle:
@@ -20,12 +21,7 @@ namespace DrawingModel
                 case DrawingMode.Line:
                     return new MyLine();
             }
-            throw new Exception("無效 DrawingMode");
-        }
-
-        public MyLine CreateNewLine()
-        {
-            return new MyLine();
+            throw new Exception(EXCEPTION_MESSAGE);
         }
     }
 }

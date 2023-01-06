@@ -12,8 +12,10 @@ namespace DrawingModel
         public event ModelChangedEventHandler _shapeChanged;
         public delegate void ModelChangedEventHandler();
 
+        //哩叫蝦米名（你叫什麼名）
         abstract public string GetTypeName();
 
+        //資訊字卡
         public string Info
         {
             get
@@ -28,6 +30,7 @@ namespace DrawingModel
         Shape _shape1;
         Shape _shape2;
 
+        //把Point1跟這個shape的中心點做binding
         public void ConnectPoint1ToShape(Shape shape)
         {
             _shape1 = shape;
@@ -35,6 +38,7 @@ namespace DrawingModel
             _shape1._shapeChanged += HandleShapeChanged;
         }
 
+        //把Point2跟這個shape的中心點做binding
         public void ConnectPoint2ToShape(Shape shape)
         {
             _shape2 = shape;
@@ -42,6 +46,7 @@ namespace DrawingModel
             _shape2._shapeChanged += HandleShapeChanged;
         }
 
+        //Observer，更新座標
         void HandleShapeChanged()
         {
             Point1 = _shape1.Center;
@@ -88,37 +93,51 @@ namespace DrawingModel
             }
         }
 
+        //被點到了
         public bool CatchedBy(MyPoint point)
         {
             MyPoint topLeft = new MyPoint(GetMin(Point1.X, Point2.X),
                                         GetMin(Point1.Y, Point2.Y));
-            MyPoint bottonRight = new MyPoint(GetMax(Point1.X, Point2.X),
+            MyPoint bottomRight = new MyPoint(GetMax(Point1.X, Point2.X),
                                             GetMax(Point1.Y, Point2.Y));
 
-            return topLeft.X < point.X && point.X < bottonRight.X &&
-                    topLeft.Y < point.Y && point.Y < bottonRight.Y;
+            return topLeft.X < point.X && point.X < bottomRight.X &&
+                    topLeft.Y < point.Y && point.Y < bottomRight.Y;
         }
 
-        double GetMax(double num1, double num2)
+        //找誰大
+        double GetMax(double firstNumber, double secondNumber)
         {
-            if (num1 > num2) return num1;
-            return num2;
+            if (firstNumber > secondNumber)
+            {
+                return firstNumber;
+            }
+            return secondNumber;
         }
 
-        double GetMin(double num1, double num2)
+        //找誰小
+        double GetMin(double firstNumber, double secondNumber)
         {
-            if (num1 < num2) return num1;
-            return num2;
+            if (firstNumber < secondNumber)
+            {
+                return firstNumber;
+            }
+            return secondNumber;
         }
 
         //畫圖，virtual function
         abstract public void Draw(IGraphics graphics);
 
+        //畫被選到時的框，virtual function
         abstract public void DrawMarker(IGraphics graphics);
 
+        //Observer
         void NotifyShapeChanged()
         {
-            _shapeChanged?.Invoke();
+            if (_shapeChanged != null)
+            {
+                _shapeChanged();
+            }
         }
     }
 }

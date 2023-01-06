@@ -20,11 +20,13 @@ namespace DrawingModel
             }
         }
 
+        //執行：清除
         public void Execute()
         {
             _model.ClearAllShapes();
         }
 
+        //反執行：把那次清除的一切照順序一個個加回來
         public void UndoExecute()
         {
             foreach (Shape shape in _shapes)

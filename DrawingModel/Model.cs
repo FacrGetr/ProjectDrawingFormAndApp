@@ -17,16 +17,19 @@ namespace DrawingModel
         ShapeFactory _shapeFactory = new ShapeFactory();
         IState _state = new PointState();
 
+        //存檔
         public void Save()
         {
             throw new NotImplementedException();
         }
 
+        //讀檔
         public void Load()
         {
             throw new NotImplementedException();
         }
 
+        //設定按鈕狀態
         void SetButtonsMode(DrawingMode mode)
         {
             _buttons.SetMode(mode);
@@ -74,17 +77,20 @@ namespace DrawingModel
             NotifyModelChanged();
         }
 
+        //有沒有點到圖?
         public Shape CatchShape(MyPoint point)
         {
             return _shapes.CatchShape(point);
         }
 
+        //生成新 Hint，第一個點是個圖
         public void CreateNewHint(DrawingMode mode, Shape shape)
         {
             _hint = _shapeFactory.CreateNewShape(mode);
             _hint.ConnectPoint1ToShape(shape);
         }
 
+        //生成新 Hint，第一個點是個座標
         public void CreateNewHint(DrawingMode mode, MyPoint firstPoint)
         {
             _hint = _shapeFactory.CreateNewShape(mode);
@@ -92,35 +98,69 @@ namespace DrawingModel
             _hint.Point2 = firstPoint;
         }
 
+        //設定 Hint 的屁股座標
         public void SetHintPoint2(MyPoint point)
         {
             _hint.Point2 = point;
         }
 
+        //新增 Hint 到圖形們裡，終點給的是座標
+        public void AddHintToShapes(MyPoint endPoint)
+        {
+            _hint.Point2 = endPoint;
+            _commands.Execute(new CommandAddNewShape(this, _hint));
+        }
+
+        //新增 Hint 到圖形們裡，終點給的是圖形
+        public void AddHintToShapes(Shape endShape)
+        {
+            _hint.ConnectPoint2ToShape(endShape);
+            _commands.Execute(new CommandAddNewShape(this, _hint));
+        }
+
+        //新增圖形進圖形們裡
+        public void AddShape(Shape shape)
+        {
+            _shapes.Add(shape);
+            NotifyModelChanged();
+        }
+
+        //吐掉一個圖形
+        public void PopShape()
+        {
+            _shapes.PopShape();
+            NotifyModelChanged();
+        }
+
+        //轉換為選取模式
         public void SetToPointState()
         {
             SetButtonsMode(DrawingMode.Point);
             _state = new PointState();
         }
 
+        //轉換為畫方形模式
         public void SetToRectangleState()
         {
             SetButtonsMode(DrawingMode.Rectangle);
             _state = new DrawRectangleState();
         }
 
+        //轉換為畫三角形模式
         public void SetToTriangleState()
         {
             SetButtonsMode(DrawingMode.Triangle);
             _state = new DrawTriangleState();
         }
 
+        //轉換為畫線模式
         public void SetToLineState()
         {
             SetButtonsMode(DrawingMode.Line);
             _state = new LineState();
         }
 
+        //選擇圖形
         public void SelectTargetShape(MyPoint point)
         {
             _shapes.SelectTargetShape(point);
@@ -128,34 +168,11 @@ namespace DrawingModel
             Notify(nameof(SelectedShapeInfo));
         }
 
+        //打開按鈕們
         void EnableButtons()
         {
             _buttons.EnableAll();
             NotifyButtonsChanged();
-        }
-
-        public void AddHintToShapes(MyPoint endPoint)
-        {
-            _hint.Point2 = endPoint;
-            _commands.Execute(new CommandAddNewShape(this, _hint));
-        }
-
-        public void AddHintToShapes(Shape endShape)
-        {
-            _hint.ConnectPoint2ToShape(endShape);
-            _commands.Execute(new CommandAddNewShape(this, _hint));
-        }
-
-        public void AddShape(Shape shape)
-        {
-            _shapes.Add(shape);
-            NotifyModelChanged();
-        }
-
-        public void PopShape()
-        {
-            _shapes.PopShape();
-            NotifyModelChanged();
         }
 
         //點擊 Clear Button 時，清空畫面上所有圖片，並且將所有按鈕 enable。
@@ -169,13 +186,14 @@ namespace DrawingModel
             _state = new PointState();
         }
 
+        //清除所有圖形
         public void ClearAllShapes()
         {
             _shapes.Clear();
             NotifyModelChanged();
         }
 
-        //畫圖
+        //畫出圖形
         public void Draw(IGraphics graphics)
         {
             graphics.ClearAll();
@@ -223,6 +241,7 @@ namespace DrawingModel
             }
         }
 
+        //Line按鈕是否可用
         public bool IsLineEnable
         {
             get
@@ -231,6 +250,7 @@ namespace DrawingModel
             }
         }
 
+        //Redo按鈕是否可用
         public bool IsRedoEnabled
         {
             get
@@ -239,6 +259,7 @@ namespace DrawingModel
             }
         }
 
+        //Undo按鈕是否可用
         public bool IsUndoEnabled
         {
             get
@@ -247,6 +268,7 @@ namespace DrawingModel
             }
         }
 
+        //現在選取中的圖形，的資訊字卡
         public string SelectedShapeInfo
         {
             get
@@ -255,6 +277,7 @@ namespace DrawingModel
             }
         }
 
+        //現在左鍵正在被按著嗎
         public bool IsPressed
         {
             get

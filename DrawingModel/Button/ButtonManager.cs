@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DrawingModel
 {
-    class ButtonManager : IEnumerable
+    class ButtonManager
     {
         MyButton _clear = new MyButton(DrawingMode.Point, true);
         MyButton _rectangle = new MyButton(DrawingMode.Rectangle, true);
@@ -79,11 +79,6 @@ namespace DrawingModel
             {
                 button.IsEnable = true;
             }
-        }
-
-        public IEnumerator GetEnumerator()
-        {
-            return _buttonList.GetEnumerator();
         }
     }
 }

@@ -11,6 +11,7 @@ namespace DrawingModel
         Stack<ICommand> _undo = new Stack<ICommand>();
         Stack<ICommand> _redo = new Stack<ICommand>();
 
+        //執行
         public void Execute(ICommand command)
         {
             // push command 進 undo stack
@@ -20,39 +21,45 @@ namespace DrawingModel
             command.Execute();
         }
 
+        //後悔
         public void Undo()
         {
+            const string EXCEPTION_MESSAGE = "不能 Undo";
             if (_undo.Count <= 0)
             {
-                throw new Exception();
+                throw new Exception(EXCEPTION_MESSAGE);
             }
             ICommand command = _undo.Pop();
             _redo.Push(command);
             command.UndoExecute();
         }
 
+        //後悔我的後悔
         public void Redo()
         {
+            const string EXCEPTION_MESSAGE = "不能 Redo";
             if (_redo.Count <= 0)
-                throw new Exception();
+                throw new Exception(EXCEPTION_MESSAGE);
             ICommand command = _redo.Pop();
             _undo.Push(command);
             command.Execute();
         }
 
-        public bool IsRedoEnabled
-        {
-            get
-            {
-                return _redo.Count != 0;
-            }
-        }
-
+        //我可以後悔嗎
         public bool IsUndoEnabled
         {
             get
             {
                 return _undo.Count != 0;
+            }
+        }
+
+        //我可以後悔我的後悔嗎
+        public bool IsRedoEnabled
+        {
+            get
+            {
+                return _redo.Count != 0;
             }
         }
     }

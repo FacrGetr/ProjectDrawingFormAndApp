@@ -13,7 +13,7 @@ namespace DrawingModelTests
     {
         Model _model;
         const DrawingMode LINE = DrawingMode.Line;
-        const DrawingMode SELECT = DrawingMode.Select;
+        const DrawingMode POINT = DrawingMode.Point;
         const DrawingMode RECTANGLE = DrawingMode.Rectangle;
         const DrawingMode TRIANGLE = DrawingMode.Triangle;
         bool _modelChanged;
@@ -32,24 +32,24 @@ namespace DrawingModelTests
         [TestMethod()]
         public void SwitchModeTest()
         {
-            _model.SetMode(LINE);
+            _model.SetToLineState();
             _privateModel = new PrivateObject(_model);
             Assert.AreEqual(LINE, _privateModel.Invoke("GetMode"));
-            _model.SetMode(RECTANGLE);
+            _model.SetToRectangleState();
             _privateModel = new PrivateObject(_model);
             Assert.AreEqual(RECTANGLE, _privateModel.Invoke("GetMode"));
             Assert.AreEqual(false, _model.IsRectangleEnable);
             Assert.AreEqual(true, _model.IsTriangleEnable);
             Assert.AreEqual(true, _model.IsClearEnable);
             Assert.AreEqual(true, _model.IsLineEnable);
-            _model.SetMode(TRIANGLE);
+            _model.SetToTriangleState();
             _privateModel = new PrivateObject(_model);
             Assert.AreEqual(TRIANGLE, _privateModel.Invoke("GetMode"));
             Assert.AreEqual(true, _model.IsRectangleEnable);
             Assert.AreEqual(false, _model.IsTriangleEnable);
             Assert.AreEqual(true, _model.IsClearEnable);
             Assert.AreEqual(true, _model.IsLineEnable);
-            _model.SetMode(LINE);
+            _model.SetToLineState();
             _privateModel = new PrivateObject(_model);
             Assert.AreEqual(LINE, _privateModel.Invoke("GetMode"));
             Assert.AreEqual(true, _model.IsRectangleEnable);
@@ -77,7 +77,7 @@ namespace DrawingModelTests
 
 
             TestInitialize();
-            _model.SetMode(RECTANGLE);
+            _model.SetToRectangleState();
             _model.PressedPointer(1, 1);
             _privateModel = new PrivateObject(_model);
             Assert.AreEqual(true, _privateModel.Invoke("IsPressed"));
@@ -92,7 +92,7 @@ namespace DrawingModelTests
             Assert.IsFalse(_graphics.DidDrawSomething);
 
             TestInitialize();
-            _model.SetMode(RECTANGLE);
+            _model.SetToRectangleState();
             _model.PressedPointer(1, 1);
             _model.MovedPointer(10, 10);
             Assert.IsTrue(_modelChanged);
@@ -122,7 +122,7 @@ namespace DrawingModelTests
         {
             _model.ClickClear();
             _privateModel = new PrivateObject(_model);
-            Assert.AreEqual(SELECT, _privateModel.Invoke("GetMode"));
+            Assert.AreEqual(POINT, _privateModel.Invoke("GetMode"));
             Assert.AreEqual(false, _privateModel.Invoke("IsPressed"));
             Assert.IsTrue(_modelChanged);
         }
@@ -141,7 +141,7 @@ namespace DrawingModelTests
             Assert.IsFalse(_graphics.DidDrawSomething);
 
             _graphics.Reset();
-            _model.SetMode(RECTANGLE);
+            _model.SetToRectangleState();
             _model.PressedPointer(1, 1);
             _model.MovedPointer(5, 5);
             _model.ReleasedPointer(10, 10);
@@ -149,7 +149,7 @@ namespace DrawingModelTests
             Assert.IsTrue(_graphics.DidDrawSomething);
 
             _graphics.Reset();
-            _model.SetMode(TRIANGLE);
+            _model.SetToTriangleState();
             _model.PressedPointer(1, 1);
             _model.MovedPointer(5, 5);
             _model.ReleasedPointer(10, 10);
@@ -160,17 +160,17 @@ namespace DrawingModelTests
         [TestMethod()]
         public void TestDrawLine()
         {
-            _model.SetMode(RECTANGLE);
+            _model.SetToRectangleState();
             _model.PressedPointer(1, 1);
             _model.MovedPointer(10, 10);
             _model.ReleasedPointer(10, 10);
 
-            _model.SetMode(TRIANGLE);
+            _model.SetToTriangleState();
             _model.PressedPointer(15, 15);
             _model.MovedPointer(30, 30);
             _model.ReleasedPointer(30, 30);
 
-            _model.SetMode(LINE);
+            _model.SetToLineState();
             _model.PressedPointer(50, 50);
             _model.MovedPointer(10, 10);
             _model.Draw(_graphics);
@@ -186,7 +186,7 @@ namespace DrawingModelTests
             _model.Draw(_graphics);
             Assert.IsFalse(_graphics.DidDrawLine);
 
-            _model.SetMode(LINE);
+            _model.SetToLineState();
             _model.PressedPointer(5, 5);
             _model.MovedPointer(20, 20);
             _model.ReleasedPointer(20, 20);
@@ -201,7 +201,7 @@ namespace DrawingModelTests
             Assert.IsFalse(_model.IsUndoEnabled);
             Assert.IsFalse(_model.IsRedoEnabled);
 
-            _model.SetMode(RECTANGLE);
+            _model.SetToRectangleState();
             _model.PressedPointer(1, 1);
             _model.MovedPointer(10, 10);
             _model.ReleasedPointer(10, 10);
@@ -231,12 +231,12 @@ namespace DrawingModelTests
         [TestMethod()]
         public void TestDrawMarker()
         {
-            _model.SetMode(RECTANGLE);
+            _model.SetToRectangleState();
             _model.PressedPointer(1, 1);
             _model.MovedPointer(10, 10);
             _model.ReleasedPointer(10, 10);
 
-            _model.SetMode(SELECT);
+            _model.SetToPointState();
             _model.PressedPointer(5, 5);
             _model.Draw(_graphics);
             Assert.IsTrue(_graphics.DidDrawMarker);
@@ -253,7 +253,7 @@ namespace DrawingModelTests
         {
             Assert.AreEqual("Select：", _model.SelectedShapeInfo);
 
-            _model.SetMode(RECTANGLE);
+            _model.SetToRectangleState();
             _model.PressedPointer(1, 1);
             _model.MovedPointer(10, 10);
             _model.ReleasedPointer(10, 10);

@@ -8,6 +8,7 @@ namespace DrawingModel
 {
     class MyLine : Shape
     {
+        //畫圖
         public override void Draw(IGraphics graphics)
         {
             MyPoint pointCornor1 = new MyPoint(Point1.X + (Point2.X - Point1.X) / 2, Point1.Y);
@@ -21,11 +22,13 @@ namespace DrawingModel
                                 Point2.X, Point2.Y);
         }
 
+        //被選到時怎麼畫（就單純再畫一次自己）
         public override void DrawMarker(IGraphics graphics)
         {
             Draw(graphics);
         }
 
+        //哩叫蝦米名(你叫甚麼名)
         public override string GetTypeName()
         {
             return nameof(MyLine);

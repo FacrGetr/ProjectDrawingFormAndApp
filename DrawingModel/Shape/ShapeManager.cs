@@ -22,7 +22,7 @@ namespace DrawingModel
             set
             {
                 _nowSelectShape = value;
-                _shapeInfo.SetShape(_nowSelectShape);
+                _shapeInfo.SetSelectedShape(_nowSelectShape);
             }
         }
 
@@ -70,7 +70,7 @@ namespace DrawingModel
                 if (!(aShape is MyLine))
                     aShape.Draw(graphics);
             }
-            if(NowSelectShape != null)
+            if (NowSelectShape != null)
                 NowSelectShape.DrawMarker(graphics);
         }
 
@@ -80,11 +80,13 @@ namespace DrawingModel
             _shapeList.RemoveAt(_shapeList.Count - 1);
         }
 
+        //給 Foreach 用的
         public IEnumerator GetEnumerator()
         {
             return _shapeList.GetEnumerator();
         }
 
+        //Point 模式點選圖形
         public void SelectTargetShape(MyPoint pointer)
         {
             _shapeList.Reverse();
@@ -100,6 +102,7 @@ namespace DrawingModel
             _shapeList.Reverse();
         }
 
+        //判定有沒有點到東西
         public Shape CatchShape(MyPoint pointer)
         {
             //為麼這不能用@@
@@ -117,6 +120,7 @@ namespace DrawingModel
             return null;
         }
 
+        //清除選擇
         public void ClearSelection()
         {
             NowSelectShape = null;

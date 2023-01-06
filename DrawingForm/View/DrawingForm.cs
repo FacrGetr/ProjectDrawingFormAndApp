@@ -37,79 +37,71 @@ namespace DrawingForm
             //
             // prepare clear button
             //
-            Button clear = new Button
-            {
-                Text = "Clear",
-                Dock = DockStyle.Top,
-                AutoSize = true,
-                AutoSizeMode = AutoSizeMode.GrowAndShrink
-            };
+            Button clear = new Button();
+            clear.Text = "Clear";
+            clear.Dock = DockStyle.Top;
+            clear.AutoSize = true;
+            clear.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             clear.Click += HandleClearButtonClick;
             clear.DataBindings.Add(nameof(Enabled), _model, "IsClearEnable");
             Controls.Add(clear);
             //
             // prepare rectangle button
             //
-            Button rectangle = new Button
-            {
-                Text = "Rectangle",
-                Dock = DockStyle.Top,
-                AutoSize = true,
-                AutoSizeMode = AutoSizeMode.GrowAndShrink
-            };
+            Button rectangle = new Button();
+            rectangle.Text = "Rectangle";
+            rectangle.Dock = DockStyle.Top;
+            rectangle.AutoSize = true;
+            rectangle.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             rectangle.Click += HandleRectangleButtonClick;
             rectangle.DataBindings.Add(nameof(Enabled), _model, "IsRectangleEnable");
             Controls.Add(rectangle);
             //
             // prepare triangle button
             //
-            Button triangle = new Button
-            {
-                Text = "Triangle",
-                Dock = DockStyle.Top,
-                AutoSize = true,
-                AutoSizeMode = AutoSizeMode.GrowAndShrink
-            };
+            Button triangle = new Button();
+            triangle.Text = "Triangle";
+            triangle.Dock = DockStyle.Top;
+            triangle.AutoSize = true;
+            triangle.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             triangle.Click += HandleTriangleButtonClick;
             triangle.DataBindings.Add(nameof(Enabled), _model, "IsTriangleEnable");
             Controls.Add(triangle);
             //
             // prepare line button
             //
-            Button line = new Button
-            {
-                Text = "Line",
-                Dock = DockStyle.Top,
-                AutoSize = true,
-                AutoSizeMode = AutoSizeMode.GrowAndShrink
-            };
+            Button line = new Button();
+            line.Text = "Line";
+            line.Dock = DockStyle.Top;
+            line.AutoSize = true;
+            line.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             line.Click += HandleLineButtonClick;
             line.DataBindings.Add(nameof(Enabled), _model, "IsLineEnable");
             Controls.Add(line);
             //
             //ToolStrip
             //
-            ToolStrip ts = new ToolStrip();
-            Controls.Add(ts);
+            ToolStrip toolStrip = new ToolStrip();
+            Controls.Add(toolStrip);
             _undo = new ToolStripButton("Undo", null, HandleUndoButtonClick)
             {
                 Enabled = false,
-                Owner = ts
+                Owner = toolStrip
             };
             _redo = new ToolStripButton("Redo", null, HandleRedoButtonClick)
             {
                 Enabled = false,
-                Owner = ts
+                Owner = toolStrip
             };
             _save = new ToolStripButton("Save", null, HandleSaveButtonClick)
             {
                 Enabled = true,
-                Owner = ts
+                Owner = toolStrip
             };
             _load = new ToolStripButton("Load", null, HandleLoadButtonClick)
             {
                 Enabled = true,
-                Owner = ts
+                Owner = toolStrip
             };
             //
             //selectString
@@ -117,11 +109,13 @@ namespace DrawingForm
             _selectShapeString.DataBindings.Add(nameof(Text), _model, "SelectedShapeInfo");
         }
 
+        //save被按了怎麼辦? Save啊
         private void HandleSaveButtonClick(object sender, EventArgs e)
         {
             _model.Save();
         }
 
+        //load被按了怎麼辦? Load啊
         private void HandleLoadButtonClick(object sender, EventArgs e)
         {
             _model.Load();
@@ -138,6 +132,7 @@ namespace DrawingForm
         {
             _model.Redo();
         }
+
         //Line按鈕
         void HandleLineButtonClick(object sender, System.EventArgs e)
         {

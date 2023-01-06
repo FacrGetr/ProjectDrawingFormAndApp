@@ -37,16 +37,19 @@ namespace DrawingApp
             _model.PropertyChanged += HandlePropertyChanged;
         }
 
+        //redo被按了怎麼辦，Redo啊
         private void HandleRedoButtonClick(object sender, RoutedEventArgs e)
         {
             _model.Redo();
         }
 
+        //undo被按了怎麼辦，Undo啊
         private void HandleUndoButtonClick(object sender, RoutedEventArgs e)
         {
             _model.Undo();
         }
 
+        //切換至line模式
         private void HandleLineButtonClick(object sender, RoutedEventArgs e)
         {
             _model.SetToLineState();
