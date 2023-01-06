@@ -49,7 +49,7 @@ namespace DrawingApp
 
         private void HandleLineButtonClick(object sender, RoutedEventArgs e)
         {
-            _model.SetMode(DrawingMode.Line);
+            _model.SetToLineState();
         }
 
         //Observer，設定按鈕開關
@@ -73,13 +73,13 @@ namespace DrawingApp
         //Rectangle按鈕
         private void HandleRectangleButtonClick(object sender, RoutedEventArgs e)
         {
-            _model.SetMode(DrawingMode.Rectangle);
+            _model.SetToRectangleState();
         }
 
         //Triangle按鈕
         private void HandleTriangleButtonClick(object sender, RoutedEventArgs e)
         {
-            _model.SetMode(DrawingMode.Triangle);
+            _model.SetToTriangleState();
         }
 
         //按下左鍵
