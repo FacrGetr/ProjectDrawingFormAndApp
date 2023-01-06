@@ -1,5 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 using System.ComponentModel;
+using System;
 
 namespace DrawingModel
 {
@@ -15,6 +16,16 @@ namespace DrawingModel
         CommandManager _commands = new CommandManager();
         ShapeFactory _shapeFactory = new ShapeFactory();
         IState _state = new PointState();
+
+        public void Save()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Load()
+        {
+            throw new NotImplementedException();
+        }
 
         void SetButtonsMode(DrawingMode mode)
         {
