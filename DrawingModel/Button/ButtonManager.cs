@@ -9,7 +9,7 @@ namespace DrawingModel
 {
     class ButtonManager : IEnumerable
     {
-        MyButton _clear = new MyButton(DrawingMode.Select, true);
+        MyButton _clear = new MyButton(DrawingMode.Point, true);
         MyButton _rectangle = new MyButton(DrawingMode.Rectangle, true);
         MyButton _triangle = new MyButton(DrawingMode.Triangle, true);
         MyButton _line = new MyButton(DrawingMode.Line, true);

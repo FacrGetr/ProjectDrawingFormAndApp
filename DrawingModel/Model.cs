@@ -8,19 +8,16 @@ namespace DrawingModel
         public event PropertyChangedEventHandler PropertyChanged;
         public event ModelChangedEventHandler _modelChanged;
         public delegate void ModelChangedEventHandler();
-        MyPoint _firstPoint;
         bool _isPressed = false;
         ShapeManager _shapes = new ShapeManager();
         ButtonManager _buttons = new ButtonManager();
         Shape _hint;
-        DrawingMode _drawingModeNow = DrawingMode.Select;
         CommandManager _commands = new CommandManager();
         ShapeFactory _shapeFactory = new ShapeFactory();
+        IState _state = new PointState();
 
-        //更改繪圖模式（設定現在要畫什麼）
-        public void SetMode(DrawingMode mode)
+        void SetButtonsMode(DrawingMode mode)
         {
-            _drawingModeNow = mode;
             _buttons.SetMode(mode);
             NotifyButtonsChanged();
         }
@@ -28,71 +25,115 @@ namespace DrawingModel
         //滑鼠按下
         public void PressedPointer(double x1, double y1)
         {
-            if (x1 <= 0 || y1 <= 0) return;
-            _firstPoint = new MyPoint(x1, y1);
-            if (_drawingModeNow == DrawingMode.Select)
+            if (x1 <= 0 || y1 <= 0)
             {
-                _shapes.SelectTargetShape(_firstPoint);
-                NotifyModelChanged();
-                Notify("SelectedShapeInfo");
                 return;
             }
- 
-            _isPressed = true;
-            _hint = _shapeFactory.CreateNewShape(_drawingModeNow);
-            _hint.Point1 = _firstPoint;
-            _hint.Point2 = _firstPoint;
 
-            if(_drawingModeNow == DrawingMode.Line)
-            {
-                Shape selected = _shapes.LineCatchShape(_firstPoint);
-                if (selected == null)
-                {
-                    _isPressed = false;
-                    return;
-                }
-                _hint.ConnectPoint1ToShape(selected);
-            }
+            _isPressed = true;
+            _state.PressedPointer(this, new MyPoint(x1, y1));
         }
 
         //滑鼠移動
         public void MovedPointer(double x1, double y1)
         {
-            if (!_isPressed) return;
+            if (!_isPressed)
+            {
+                return;
+            }
 
-            _hint.Point2 = new MyPoint(x1, y1);
+            _state.MovedPointer(this, new MyPoint(x1, y1));
+
             NotifyModelChanged();
-            
         }
 
         //滑鼠放開
         public void ReleasedPointer(double x1, double y1)
         {
-            if (!_isPressed) return;
-
-            if (_drawingModeNow == DrawingMode.Line)
+            if (!_isPressed)
             {
-                Shape selected = _shapes.LineCatchShape(new MyPoint(x1, y1));
-                if (selected == null)
-                {
-                    _isPressed = false;
-                    NotifyModelChanged();
-                    return;
-                }
-                _hint.ConnectPoint2ToShape(selected);
+                return;
             }
 
-            _commands.Execute(new CommandAddNewShape(this, _hint));
-            EnableButtons();
+            _state.ReleasedPointer(this, new MyPoint(x1, y1));
             _isPressed = false;
-            _drawingModeNow = DrawingMode.Select;
-            
+
+            EnableButtons();
+
+            NotifyModelChanged();
+        }
+
+        public Shape CatchShape(MyPoint point)
+        {
+            return _shapes.CatchShape(point);
+        }
+
+        public void CreateNewHint(DrawingMode mode, Shape shape)
+        {
+            _hint = _shapeFactory.CreateNewShape(mode);
+            _hint.ConnectPoint1ToShape(shape);
+        }
+
+        public void CreateNewHint(DrawingMode mode, MyPoint firstPoint)
+        {
+            _hint = _shapeFactory.CreateNewShape(mode);
+            _hint.Point1 = firstPoint;
+            _hint.Point2 = firstPoint;
+        }
+
+        public void ChangeHintPoint2(MyPoint point)
+        {
+            _hint.Point2 = point;
+        }
+
+        public void SetToPointState()
+        {
+            SetButtonsMode(DrawingMode.Point);
+            _state = new PointState();
+        }
+
+        public void SetToRectangleState()
+        {
+            SetButtonsMode(DrawingMode.Rectangle);
+            _state = new DrawRectangleState();
+        }
+
+        public void SetToTriangleState()
+        {
+            SetButtonsMode(DrawingMode.Triangle);
+            _state = new DrawTriangleState();
+        }
+
+        public void SetToLineState()
+        {
+            SetButtonsMode(DrawingMode.Line);
+            _state = new LineState();
+        }
+
+        public void SelectTargetShape(MyPoint point)
+        {
+            _shapes.SelectTargetShape(point);
+            NotifyModelChanged();
+            //原本想寫 Notify(nameof(SelectedShapeInfo)); 但不知為何 BadSmell 會閃退
+            Notify("SelectedShapeInfo");
         }
 
         void EnableButtons()
         {
             _buttons.EnableAll();
             NotifyButtonsChanged();
+        }
+
+        public void AddHintToShapes(MyPoint endPoint)
+        {
+            _hint.Point2 = endPoint;
+            _commands.Execute(new CommandAddNewShape(this, _hint));
+        }
+
+        public void AddHintToShapes(Shape endShape)
+        {
+            _hint.ConnectPoint2ToShape(endShape);
+            _commands.Execute(new CommandAddNewShape(this, _hint));
         }
 
         public void AddShape(Shape shape)
@@ -115,7 +156,7 @@ namespace DrawingModel
             //NotifyModelChanged();
             _commands.Execute(new CommandClear(this, _shapes));
             EnableButtons();
-            _drawingModeNow = DrawingMode.Select;
+            _state = new PointState();
         }
 
         public void ClearAllShapes()
@@ -142,18 +183,6 @@ namespace DrawingModel
         void NotifyModelChanged()
         {
             _modelChanged?.Invoke();
-        }
-
-        //單元測試用
-        private DrawingMode GetMode()
-        {
-            return _drawingModeNow;
-        }
-
-        //單元測試用
-        private bool IsPressed()
-        {
-            return _isPressed;
         }
 
         //Rectangle按鈕是否可用
@@ -215,9 +244,22 @@ namespace DrawingModel
             }
         }
 
+        public bool IsPressed
+        {
+            get
+            {
+                return _isPressed;
+            }
+            set
+            {
+                _isPressed = value;
+            }
+        }
+
         //後悔
         public void Undo()
         {
+            _shapes.ClearSelection();
             _commands.Undo();
             NotifyButtonsChanged();
         }

@@ -112,7 +112,7 @@ namespace DrawingForm
         //Line按鈕
         void HandleLineButtonClick(object sender, System.EventArgs e)
         {
-            _model.SetMode(DrawingMode.Line);
+            _model.SetToLineState();
         }
 
         //Clear按鈕
@@ -124,13 +124,13 @@ namespace DrawingForm
         //Rectangle按鈕
         void HandleRectangleButtonClick(object sender, System.EventArgs e)
         {
-            _model.SetMode(DrawingMode.Rectangle);
+            _model.SetToRectangleState();
         }
 
         //Triangle按鈕
         void HandleTriangleButtonClick(object sender, System.EventArgs e)
         {
-            _model.SetMode(DrawingMode.Triangle);
+            _model.SetToTriangleState();
         }
 
         //左鍵按下去

@@ -53,8 +53,8 @@ namespace DrawingModel
         //將形狀清空
         public void Clear()
         {
+            ClearSelection();
             _shapeList.Clear();
-            NowSelectShape = null;
         }
 
         //畫圖
@@ -100,7 +100,7 @@ namespace DrawingModel
             _shapeList.Reverse();
         }
 
-        public Shape LineCatchShape(MyPoint pointer)
+        public Shape CatchShape(MyPoint pointer)
         {
             //為麼這不能用@@
             //return _nowSelectShape;
@@ -115,6 +115,11 @@ namespace DrawingModel
             }
             _shapeList.Reverse();
             return null;
+        }
+
+        public void ClearSelection()
+        {
+            NowSelectShape = null;
         }
     }
 }

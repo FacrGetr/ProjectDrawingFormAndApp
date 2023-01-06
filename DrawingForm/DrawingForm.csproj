@@ -97,6 +97,24 @@
     <Compile Include="..\DrawingModel\Shape\ShapeManager.cs">
       <Link>Model\ShapeManager.cs</Link>
     </Compile>
+    <Compile Include="..\DrawingModel\State\DrawRectangleState.cs">
+      <Link>Model\DrawRectangleState.cs</Link>
+    </Compile>
+    <Compile Include="..\DrawingModel\State\DrawState.cs">
+      <Link>Model\DrawState.cs</Link>
+    </Compile>
+    <Compile Include="..\DrawingModel\State\DrawTriangleState.cs">
+      <Link>Model\DrawTriangleState.cs</Link>
+    </Compile>
+    <Compile Include="..\DrawingModel\State\IState.cs">
+      <Link>Model\IState.cs</Link>
+    </Compile>
+    <Compile Include="..\DrawingModel\State\LineState.cs">
+      <Link>Model\LineState.cs</Link>
+    </Compile>
+    <Compile Include="..\DrawingModel\State\PointState.cs">
+      <Link>Model\PointState.cs</Link>
+    </Compile>
     <Compile Include="View\DoubleBufferedPanel.cs">
       <SubType>Component</SubType>
     </Compile>

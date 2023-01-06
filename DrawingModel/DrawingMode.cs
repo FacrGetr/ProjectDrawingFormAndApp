@@ -8,7 +8,7 @@ namespace DrawingModel
 {
     public enum DrawingMode
     {
-        Select,
+        Point,
         Line,
         Rectangle,
         Triangle
