@@ -39,7 +39,10 @@ namespace DrawingModel
         {
             const string EXCEPTION_MESSAGE = "不能 Redo";
             if (_redo.Count <= 0)
+            {
                 throw new Exception(EXCEPTION_MESSAGE);
+            }
+
             ICommand command = _redo.Pop();
             _undo.Push(command);
             command.Execute();

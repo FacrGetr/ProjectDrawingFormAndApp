@@ -201,7 +201,7 @@ namespace DrawingModel
             {
                 _shapes.Draw(graphics);
             }
-            if (_isPressed)
+            if (_isPressed && _hint != null)
             {
                 _hint.Draw(graphics);
             }
