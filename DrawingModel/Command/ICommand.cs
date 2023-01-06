@@ -9,6 +9,6 @@ namespace DrawingModel
     interface ICommand
     {
         void Execute();
-        void UnExecute();
+        void UndoExecute();
     }
 }

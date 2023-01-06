@@ -28,7 +28,7 @@ namespace DrawingModel
 
         public override string GetTypeName()
         {
-            return "Line";
+            return nameof(MyLine);
         }
     }
 

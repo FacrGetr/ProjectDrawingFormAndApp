@@ -21,7 +21,7 @@ namespace DrawingModel
 
         public override string GetTypeName()
         {
-            return "Rectangle";
+            return nameof(MyRectangle);
         }
     }
 

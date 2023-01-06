@@ -92,7 +92,7 @@ namespace DrawingModel
             _hint.Point2 = firstPoint;
         }
 
-        public void ChangeHintPoint2(MyPoint point)
+        public void SetHintPoint2(MyPoint point)
         {
             _hint.Point2 = point;
         }
@@ -125,8 +125,7 @@ namespace DrawingModel
         {
             _shapes.SelectTargetShape(point);
             NotifyModelChanged();
-            //原本想寫 Notify(nameof(SelectedShapeInfo)); 但不知為何 BadSmell 會閃退
-            Notify("SelectedShapeInfo");
+            Notify(nameof(SelectedShapeInfo));
         }
 
         void EnableButtons()
@@ -193,7 +192,8 @@ namespace DrawingModel
         //Observer Pattern，通知訂閱者老子變了
         void NotifyModelChanged()
         {
-            _modelChanged?.Invoke();
+            if (_modelChanged != null)
+                _modelChanged();
         }
 
         //Rectangle按鈕是否可用
@@ -296,7 +296,10 @@ namespace DrawingModel
         //Observer / DataBinding 用
         void Notify(string propertyName)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
         }
     }
 }

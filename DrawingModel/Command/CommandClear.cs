@@ -25,7 +25,7 @@ namespace DrawingModel
             _model.ClearAllShapes();
         }
 
-        public void UnExecute()
+        public void UndoExecute()
         {
             foreach (Shape shape in _shapes)
             {

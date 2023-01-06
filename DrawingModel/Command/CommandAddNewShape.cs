@@ -22,7 +22,7 @@ namespace DrawingModel
             _model.AddShape(_shape);
         }
 
-        public void UnExecute()
+        public void UndoExecute()
         {
             _model.PopShape();
         }

@@ -10,7 +10,7 @@ namespace DrawingModel
     {
         public void MovedPointer(Model model, MyPoint point)
         {
-            model.ChangeHintPoint2(point);
+            model.SetHintPoint2(point);
         }
 
         public abstract void PressedPointer(Model model, MyPoint point);

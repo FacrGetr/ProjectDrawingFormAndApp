@@ -13,8 +13,10 @@ namespace DrawingModel
 
         public void Execute(ICommand command)
         {
-            _undo.Push(command);    // push command 進 undo stack
-            _redo.Clear();      // 清除redo stack
+            // push command 進 undo stack
+            _undo.Push(command);
+            // 清除redo stack
+            _redo.Clear();
             command.Execute();
         }
 
@@ -22,17 +24,17 @@ namespace DrawingModel
         {
             if (_undo.Count <= 0)
             {
-                throw new Exception("Cannot Undo exception\n");
+                throw new Exception();
             }
             ICommand command = _undo.Pop();
             _redo.Push(command);
-            command.UnExecute();
+            command.UndoExecute();
         }
 
         public void Redo()
         {
             if (_redo.Count <= 0)
-                throw new Exception("Cannot Redo exception\n");
+                throw new Exception();
             ICommand command = _redo.Pop();
             _undo.Push(command);
             command.Execute();
