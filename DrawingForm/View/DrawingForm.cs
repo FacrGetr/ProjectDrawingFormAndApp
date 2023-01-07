@@ -112,13 +112,17 @@ namespace DrawingForm
         //save被按了怎麼辦? Save啊
         private void HandleSaveButtonClick(object sender, EventArgs e)
         {
-            _model.Save();
+            SaveForm saveDialog = new SaveForm();
+            if (saveDialog.ShowDialog(this) == DialogResult.OK)
+                _model.Save();
         }
 
         //load被按了怎麼辦? Load啊
         private void HandleLoadButtonClick(object sender, EventArgs e)
         {
-            _model.Load();
+            LoadForm loadDialog = new LoadForm();
+            if (loadDialog.ShowDialog(this) == DialogResult.OK)
+                _model.Load();
         }
 
         //Undo按鈕

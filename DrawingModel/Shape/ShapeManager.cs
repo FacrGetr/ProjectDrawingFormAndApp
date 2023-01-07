@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -51,7 +52,7 @@ namespace DrawingModel
         }
 
         //將形狀清空
-        public void Clear()
+        public void ClearAll()
         {
             ClearSelection();
             _shapeList.Clear();
@@ -124,6 +125,23 @@ namespace DrawingModel
         public void ClearSelection()
         {
             NowSelectShape = null;
+        }
+
+        //存檔，寫檔
+        public void Save(string saveFileName)
+        {
+            StreamWriter streamWriter = new StreamWriter(saveFileName);
+            foreach (Shape aShape in _shapeList)
+            {
+                streamWriter.WriteLine(aShape.Info);
+            }
+            streamWriter.Close();
+        }
+
+        //讀檔
+        public void Load()
+        {
+
         }
     }
 }

@@ -11,6 +11,13 @@ namespace DrawingModel
         Stack<ICommand> _undo = new Stack<ICommand>();
         Stack<ICommand> _redo = new Stack<ICommand>();
 
+        //淨空
+        public void ClearAll()
+        {
+            _undo.Clear();
+            _redo.Clear();
+        }
+
         //執行
         public void Execute(ICommand command)
         {

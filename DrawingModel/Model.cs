@@ -1,6 +1,7 @@
 ﻿using System.Runtime.CompilerServices;
 using System.ComponentModel;
 using System;
+using System.IO;
 
 namespace DrawingModel
 {
@@ -16,17 +17,31 @@ namespace DrawingModel
         CommandManager _commands = new CommandManager();
         ShapeFactory _shapeFactory = new ShapeFactory();
         IState _state = new PointState();
+        const string SAVE_FILE_PATH = "test.txt";
 
         //存檔
         public void Save()
         {
-            throw new NotImplementedException();
+            _shapes.Save(SAVE_FILE_PATH);
         }
 
         //讀檔
         public void Load()
         {
-            throw new NotImplementedException();
+            _shapes.ClearAll();
+            _commands.ClearAll();
+
+            StreamReader streamReader = new StreamReader(SAVE_FILE_PATH);
+            string aLine = streamReader.ReadLine();
+            while (aLine != null)
+            {
+                Shape shape = _shapeFactory.CreateNewShapeByInfo(aLine);
+
+                _commands.Execute(new CommandAddNewShape(this, shape));
+                
+                aLine = streamReader.ReadLine();
+            }
+            NotifyModelChanged();
         }
 
         //設定按鈕狀態
@@ -189,7 +204,7 @@ namespace DrawingModel
         //清除所有圖形
         public void ClearAllShapes()
         {
-            _shapes.Clear();
+            _shapes.ClearAll();
             NotifyModelChanged();
         }
 
