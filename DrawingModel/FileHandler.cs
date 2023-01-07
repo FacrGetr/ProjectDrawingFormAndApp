@@ -13,7 +13,7 @@ namespace DrawingModel
         const string CONTENT_TYPE = "text/plain";
         const string DOWNLOAD_PATH = "..\\\\";
         const string APPLICATION_NAME = "Windows Project#2";
-        const string CLIENT_SECRET_FILE_NAME = "client_secret.json";
+        const string CLIENT_SECRET_FILE_NAME = "clientSecret.json";
         GoogleDriveService _service = new GoogleDriveService(APPLICATION_NAME, CLIENT_SECRET_FILE_NAME);
 
         public GoogleDriveService Service

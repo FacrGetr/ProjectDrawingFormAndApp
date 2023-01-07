@@ -185,8 +185,8 @@
     <EmbeddedResource Include="View\SaveForm.resx">
       <DependentUpon>SaveForm.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="..\DrawingModel\client_secret.json">
-      <Link>client_secret.json</Link>
+    <None Include="..\DrawingModel\clientSecret.json">
+      <Link>clientSecret.json</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
