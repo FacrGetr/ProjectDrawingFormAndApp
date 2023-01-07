@@ -9,7 +9,7 @@ namespace DrawingModel
 {
     class FileHandler
     {
-        const string SAVE_FILE_TITLE = "test.txt";
+        const string SAVE_FILE_TITLE = "saveFileForHW.txt";
         const string CONTENT_TYPE = "text/plain";
         const string DOWNLOAD_PATH = "..\\\\";
         const string APPLICATION_NAME = "Windows Project#2";

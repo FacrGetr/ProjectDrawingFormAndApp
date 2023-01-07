@@ -18,7 +18,7 @@ namespace DrawingModel
 {
     public class GoogleDriveService
     {
-        private static readonly string[] SCOPES = new[] { DriveService.Scope.DriveFile, DriveService.Scope.Drive };
+        private readonly string[] _scopes = new[] { DriveService.Scope.DriveFile, DriveService.Scope.Drive };
         private DriveService _service;
         private const int KB = 0x400;
         private const int DOWNLOAD_CHUNK_SIZE = 256 * KB;
@@ -26,6 +26,10 @@ namespace DrawingModel
         private string _applicationName;
         private string _clientSecretFileName;
         private UserCredential _credential;
+        const string USER = "user";
+        const string CREDENTIAL_FOLDER = ".credential/";
+        const char SPLASH = '\\';
+        string _title = "";
 
         /// <summary>
         /// 創造一個Google Drive Service
@@ -39,27 +43,19 @@ namespace DrawingModel
             this.CreateNewService(applicationName, clientSecretFileName);
         }
 
+        //建立新服務
         private void CreateNewService(string applicationName, string clientSecretFileName)
         {
-            const string USER = "user";
-            const string CREDENTIAL_FOLDER = ".credential/";
-            UserCredential credential;
-
             using (FileStream stream = new FileStream(clientSecretFileName, FileMode.Open, FileAccess.Read))
             {
                 string credentialPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
                 credentialPath = Path.Combine(credentialPath, CREDENTIAL_FOLDER + applicationName);
-                credential = GoogleWebAuthorizationBroker.AuthorizeAsync(GoogleClientSecrets.Load(stream).Secrets, SCOPES, USER, CancellationToken.None, new FileDataStore(credentialPath, true)).Result;
+                _credential = GoogleWebAuthorizationBroker.AuthorizeAsync(GoogleClientSecrets.Load(stream).Secrets, _scopes, USER, CancellationToken.None, new FileDataStore(credentialPath, true)).Result;
             }
-
-            DriveService service = new DriveService(new BaseClientService.Initializer()
-            {
-                HttpClientInitializer = credential,
-                ApplicationName = applicationName
-            });
-
-            _credential = credential;
-            DateTime now = DateTime.Now;
+            BaseClientService.Initializer initializer = new BaseClientService.Initializer();
+            initializer.HttpClientInitializer = _credential;
+            initializer.ApplicationName = applicationName;
+            DriveService service = new DriveService(initializer);
             _timeStamp = UNIXNowTimeStamp;
             _service = service;
         }
@@ -118,19 +114,10 @@ namespace DrawingModel
             listRequest.Q = queryString;
             do
             {
-                try
-                {
-                    FileList fileList = listRequest.Execute();
-                    returnList.AddRange(fileList.Items);
-                    listRequest.PageToken = fileList.NextPageToken;
-                }
-                catch (Exception exception)
-                {
-                    listRequest.PageToken = null;
-                    throw exception;
-                }
+                FileList fileList = listRequest.Execute();
+                returnList.AddRange(fileList.Items);
+                listRequest.PageToken = fileList.NextPageToken;
             } while (!String.IsNullOrEmpty(listRequest.PageToken));
-
             return returnList;
         }
 
@@ -145,39 +132,21 @@ namespace DrawingModel
         public Google.Apis.Drive.v2.Data.File UploadFile(string uploadFileName, string contentType, Action<IUploadProgress> uploadProgressEventHandeler = null, Action<Google.Apis.Drive.v2.Data.File> responseReceivedEventHandler = null)
         {
             FileStream uploadStream = new FileStream(uploadFileName, FileMode.Open, FileAccess.Read);
-            const char SPLASH = '\\';
-            string title = "";
-
             this.CheckCredentialTimeStamp();
             if (uploadFileName.LastIndexOf(SPLASH) != -1)
-                title = uploadFileName.Substring(uploadFileName.LastIndexOf(SPLASH) + 1);
+                _title = uploadFileName.Substring(uploadFileName.LastIndexOf(SPLASH) + 1);
             else
-                title = uploadFileName;
-
-            Google.Apis.Drive.v2.Data.File fileToInsert = new Google.Apis.Drive.v2.Data.File { Title = title };
+                _title = uploadFileName;
+            Google.Apis.Drive.v2.Data.File fileToInsert = new Google.Apis.Drive.v2.Data.File();
+            fileToInsert.Title = _title;
             FilesResource.InsertMediaUpload insertRequest = _service.Files.Insert(fileToInsert, uploadStream, contentType);
             insertRequest.ChunkSize = FilesResource.InsertMediaUpload.MinimumChunkSize * 2;
-
             if (uploadProgressEventHandeler != null)
                 insertRequest.ProgressChanged += uploadProgressEventHandeler;
-
-
             if (responseReceivedEventHandler != null)
                 insertRequest.ResponseReceived += responseReceivedEventHandler;
-
-            try
-            {
-                insertRequest.Upload();
-            }
-            catch (Exception exception)
-            {
-                throw exception;
-            }
-            finally
-            {
-                uploadStream.Close();
-            }
-
+            insertRequest.Upload();
+            uploadStream.Close();
             return insertRequest.ResponseBody;
         }
 

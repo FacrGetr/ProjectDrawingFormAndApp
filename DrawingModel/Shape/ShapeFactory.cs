@@ -40,6 +40,7 @@ namespace DrawingModel
             return shape;
         }
 
+        //依據名字生圖形
         Shape HandleTypeNameString(string shapeTypeName)
         {
             const string EXCEPTION_MESSAGE = "無效 ShapeType";
@@ -56,6 +57,7 @@ namespace DrawingModel
             }
         }
 
+        //從字串讀取出座標塞給它
         void HandleShapePoints(Shape shape, string[] pointsString)
         {
             double x1 = double.Parse(pointsString[0]);

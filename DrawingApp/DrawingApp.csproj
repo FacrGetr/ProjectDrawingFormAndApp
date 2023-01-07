@@ -137,6 +137,9 @@
     <Compile Include="..\DrawingModel\DrawingMode.cs">
       <Link>Model\DrawingMode.cs</Link>
     </Compile>
+    <Compile Include="..\DrawingModel\FileHandler.cs">
+      <Link>Model\FileHandler.cs</Link>
+    </Compile>
     <Compile Include="..\DrawingModel\GoogleDriveService.cs">
       <Link>Model\GoogleDriveService.cs</Link>
     </Compile>
