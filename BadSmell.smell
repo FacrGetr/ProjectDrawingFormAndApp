@@ -285,7 +285,7 @@
             <Smell>
               <Id>7</Id>
               <SmellType>Static method and fields(濫用Static)</SmellType>
-              <HashCode>StaticMethodAndFields 16335732</HashCode>
+              <HashCode>StaticMethodAndFields 37127568</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingModel</Project>
@@ -396,13 +396,12 @@
             </Smell>
             <Smell>
               <Id>14</Id>
-              <SmellType>Literal constants(字面常數)-2</SmellType>
-              <HashCode>LiteralConstants.Draw.2</HashCode>
-              <Severity>Warning</Severity>
+              <SmellType>A syntax error has been discovered in file D:\111-1_classes\Windows\PJ2\107A50039\DrawingModel\Model.cs on line 22.</SmellType>
+              <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingModel</Project>
-              <File>MyLine.cs</File>
-              <Line>14</Line>
+              <File>Model.cs</File>
+              <Line>22</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -418,7 +417,7 @@
               <Weight>1</Weight>
               <Project>DrawingModel</Project>
               <File>MyLine.cs</File>
-              <Line>15</Line>
+              <Line>14</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -428,13 +427,13 @@
             </Smell>
             <Smell>
               <Id>16</Id>
-              <SmellType>Literal constants(字面常數)-'('</SmellType>
-              <HashCode>LiteralConstants.get.'('</HashCode>
-              <Severity>Red</Severity>
+              <SmellType>Literal constants(字面常數)-2</SmellType>
+              <HashCode>LiteralConstants.Draw.2</HashCode>
+              <Severity>Warning</Severity>
               <Weight>1</Weight>
               <Project>DrawingModel</Project>
-              <File>Shape.cs</File>
-              <Line>23</Line>
+              <File>MyLine.cs</File>
+              <Line>15</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -444,8 +443,8 @@
             </Smell>
             <Smell>
               <Id>17</Id>
-              <SmellType>Literal constants(字面常數)-", "</SmellType>
-              <HashCode>LiteralConstants.get.", "</HashCode>
+              <SmellType>Literal constants(字面常數)-'('</SmellType>
+              <HashCode>LiteralConstants.get.'('</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingModel</Project>
@@ -492,8 +491,8 @@
             </Smell>
             <Smell>
               <Id>20</Id>
-              <SmellType>Literal constants(字面常數)-')'</SmellType>
-              <HashCode>LiteralConstants.get.')'</HashCode>
+              <SmellType>Literal constants(字面常數)-", "</SmellType>
+              <HashCode>LiteralConstants.get.", "</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingModel</Project>
@@ -508,13 +507,13 @@
             </Smell>
             <Smell>
               <Id>21</Id>
-              <SmellType>Literal constants(字面常數)-2</SmellType>
-              <HashCode>LiteralConstants.get.2</HashCode>
-              <Severity>Warning</Severity>
+              <SmellType>Literal constants(字面常數)-')'</SmellType>
+              <HashCode>LiteralConstants.get.')'</HashCode>
+              <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingModel</Project>
               <File>Shape.cs</File>
-              <Line>90</Line>
+              <Line>27</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -540,6 +539,22 @@
             </Smell>
             <Smell>
               <Id>23</Id>
+              <SmellType>Literal constants(字面常數)-2</SmellType>
+              <HashCode>LiteralConstants.get.2</HashCode>
+              <Severity>Warning</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingModel</Project>
+              <File>Shape.cs</File>
+              <Line>92</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>24</Id>
               <SmellType>Literal constants(字面常數)-'('</SmellType>
               <HashCode>LiteralConstants.CreateNewShapeByInfo.'('</HashCode>
               <Severity>Red</Severity>
@@ -555,7 +570,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>24</Id>
+              <Id>25</Id>
               <SmellType>Literal constants(字面常數)-','</SmellType>
               <HashCode>LiteralConstants.CreateNewShapeByInfo.','</HashCode>
               <Severity>Red</Severity>
@@ -571,7 +586,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>25</Id>
+              <Id>26</Id>
               <SmellType>Literal constants(字面常數)-2</SmellType>
               <HashCode>LiteralConstants.HandleShapePoints.2</HashCode>
               <Severity>Warning</Severity>
@@ -587,7 +602,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>26</Id>
+              <Id>27</Id>
               <SmellType>Literal constants(字面常數)-3</SmellType>
               <HashCode>LiteralConstants.HandleShapePoints.3</HashCode>
               <Severity>Red</Severity>
@@ -603,7 +618,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>27</Id>
+              <Id>28</Id>
               <SmellType>Unsuitable naming(名不符實)-GetEnumerator(enumerator)</SmellType>
               <HashCode>UnsuitableNaming.ShapeManager.GetEnumerator.GetEnumerator</HashCode>
               <Severity>Red</Severity>
@@ -611,22 +626,6 @@
               <Project>DrawingModel</Project>
               <File>ShapeManager.cs</File>
               <Line>85</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>28</Id>
-              <SmellType>Unsuitable naming(名不符實)-rootFoldersFilesAndFolders(folders, folders)</SmellType>
-              <HashCode>UnsuitableNaming.LoadForm.LoadForm.rootFoldersFilesAndFolders</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingForm</Project>
-              <File>LoadForm.cs</File>
-              <Line>23</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -682,12 +681,12 @@
             <Smell>
               <Id>32</Id>
               <SmellType>Unresolved warnings(忽視警告)-找不到類型或命名空間名稱 'FileHandler' (是否遺漏了 using 指示詞或組件參考?)</SmellType>
-              <HashCode>DrawingApp\DrawingApp.Model.cs.Unresolved warnings(忽視警告)-找不到類型或命名空間名稱 'FileHandler' (是否遺漏了 using 指示詞或組件參考?).24</HashCode>
+              <HashCode>DrawingApp\DrawingApp.Model.cs.Unresolved warnings(忽視警告)-找不到類型或命名空間名稱 'FileHandler' (是否遺漏了 using 指示詞或組件參考?).20</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingApp\DrawingApp</Project>
               <File>Model.cs</File>
-              <Line>24</Line>
+              <Line>20</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -698,12 +697,12 @@
             <Smell>
               <Id>33</Id>
               <SmellType>Unresolved warnings(忽視警告)-找不到類型或命名空間名稱 'FileHandler' (是否遺漏了 using 指示詞或組件參考?)</SmellType>
-              <HashCode>DrawingApp\DrawingApp.Model.cs.Unresolved warnings(忽視警告)-找不到類型或命名空間名稱 'FileHandler' (是否遺漏了 using 指示詞或組件參考?).28</HashCode>
+              <HashCode>DrawingApp\DrawingApp.Model.cs.Unresolved warnings(忽視警告)-找不到類型或命名空間名稱 'FileHandler' (是否遺漏了 using 指示詞或組件參考?).20</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingApp\DrawingApp</Project>
               <File>Model.cs</File>
-              <Line>28</Line>
+              <Line>20</Line>
               <StartLine>0</StartLine>
               <StartCol>0</StartCol>
               <EndLine>0</EndLine>
@@ -970,15 +969,15 @@
             <Smell>
               <Id>50</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
-              <HashCode>234 目前物件 DrawingModel.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.ShapeManager，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：DrawingModel.ShapeManager.Draw(DrawingModel.IGraphics) 以及 DrawingModel.ShapeManager.NotEmpty</HashCode>
+              <HashCode>223 目前物件 DrawingModel.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.ShapeManager，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：DrawingModel.ShapeManager.Draw(DrawingModel.IGraphics) 以及 DrawingModel.ShapeManager.NotEmpty</HashCode>
               <Severity>Warning</Severity>
               <Weight>1</Weight>
               <Project>DrawingModel</Project>
               <File>D:\111-1_classes\Windows\PJ2\107A50039\DrawingModel\Model.cs</File>
-              <Line>234</Line>
-              <StartLine>233</StartLine>
+              <Line>223</Line>
+              <StartLine>222</StartLine>
               <StartCol>0</StartCol>
-              <EndLine>234</EndLine>
+              <EndLine>223</EndLine>
               <EndCol>0</EndCol>
               <Comment>目前物件 DrawingModel.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.ShapeManager，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：DrawingModel.ShapeManager.Draw(DrawingModel.IGraphics) 以及 DrawingModel.ShapeManager.NotEmpty</Comment>
               <Auto>false</Auto>
@@ -986,15 +985,15 @@
             <Smell>
               <Id>51</Id>
               <SmellType>Feature Envy(依戀情節)</SmellType>
-              <HashCode>105 目前物件 DrawingModel.Shape，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.MyPoint，使用物件方法或屬性次數：8次，使用到的方法或屬性為以下：DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y</HashCode>
+              <HashCode>106 目前物件 DrawingModel.Shape，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.MyPoint，使用物件方法或屬性次數：8次，使用到的方法或屬性為以下：DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingModel</Project>
               <File>D:\111-1_classes\Windows\PJ2\107A50039\DrawingModel\Shape\Shape.cs</File>
-              <Line>105</Line>
-              <StartLine>102</StartLine>
+              <Line>106</Line>
+              <StartLine>103</StartLine>
               <StartCol>0</StartCol>
-              <EndLine>105</EndLine>
+              <EndLine>106</EndLine>
               <EndCol>0</EndCol>
               <Comment>目前物件 DrawingModel.Shape，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.MyPoint，使用物件方法或屬性次數：8次，使用到的方法或屬性為以下：DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y</Comment>
               <Auto>false</Auto>
@@ -1020,11 +1019,16 @@
             <string>LiteralConstants.Draw.2</string>
           </HashCodeIgnoreList>
           <HashCodeRequestIgnoreList>
-            <string>LiteralConstants.get.2</string>
+            <string>LargeClass.DrawingModel.Model.308</string>
             <string>UnsuitableNaming.ShapeManager.GetEnumerator.GetEnumerator</string>
             <string xsi:nil="true" />
             <string>LiteralConstants.get.'('</string>
             <string>LiteralConstants.get.", "</string>
+            <string>LiteralConstants.get.')'</string>
+            <string>LiteralConstants.get.2</string>
+            <string>LiteralConstants.CreateNewShapeByInfo.'('</string>
+            <string>LiteralConstants.CreateNewShapeByInfo.','</string>
+            <string>LiteralConstants.HandleShapePoints.3</string>
           </HashCodeRequestIgnoreList>
           <AnalysisFileManager>
             <AnalysisFiles>
@@ -1265,7 +1269,7 @@
               </AnalysisFile>
             </AnalysisFiles>
           </AnalysisFileManager>
-          <ProductionLoc>2572</ProductionLoc>
+          <ProductionLoc>2209</ProductionLoc>
           <TestLoc>411</TestLoc>
         </CodeReview>
       </Data>

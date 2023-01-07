@@ -79,9 +79,9 @@ namespace DrawingModel
         Google.Apis.Drive.v2.Data.File FindSaveFile()
         {
             const string EXCEPTION_MESSAGE = "找不到檔案";
-            List<Google.Apis.Drive.v2.Data.File> rootFoldersFiles = _service.ListRootFileAndFolder();
+            List<Google.Apis.Drive.v2.Data.File> rootFiles = _service.ListRootFileAndFolder();
 
-            foreach (Google.Apis.Drive.v2.Data.File file in rootFoldersFiles)
+            foreach (Google.Apis.Drive.v2.Data.File file in rootFiles)
             {
                 if (file.Title == SAVE_FILE_TITLE)
                 {

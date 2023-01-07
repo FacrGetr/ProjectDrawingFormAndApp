@@ -11,7 +11,6 @@ namespace DrawingModel
         public event PropertyChangedEventHandler PropertyChanged;
         public event ModelChangedEventHandler _modelChanged;
         public delegate void ModelChangedEventHandler();
-        bool _isPressed = false;
         ShapeManager _shapes = new ShapeManager();
         ButtonManager _buttons = new ButtonManager();
         Shape _hint;
@@ -19,7 +18,10 @@ namespace DrawingModel
         ShapeFactory _shapeFactory = new ShapeFactory();
         IState _state = new PointState();
         FileHandler _fileHandler = new FileHandler();
-        bool _isLoadEnabled = false;
+
+        public bool IsPressed { get; set; } = false;
+
+        public bool IsLoadEnabled { get; set; } = false;
 
         public GoogleDriveService Service
         {
@@ -34,7 +36,7 @@ namespace DrawingModel
         {
             _shapes.Save(_fileHandler.SaveFileName);
             await Task.Run(_fileHandler.Upload);
-            _isLoadEnabled = true;
+            IsLoadEnabled = true;
             NotifyModelChanged();
         }
 
@@ -43,9 +45,7 @@ namespace DrawingModel
         {
             _shapes.ClearAll();
             _commands.ClearAll();
-
             _fileHandler.LoadFile(this);
-
             NotifyModelChanged();
         }
 
@@ -63,37 +63,31 @@ namespace DrawingModel
             {
                 return;
             }
-
-            _isPressed = true;
+            IsPressed = true;
             _state.PressedPointer(this, new MyPoint(x1, y1));
         }
 
         //滑鼠移動
         public void MovedPointer(double x1, double y1)
         {
-            if (!_isPressed)
+            if (!IsPressed)
             {
                 return;
             }
-
             _state.MovedPointer(this, new MyPoint(x1, y1));
-
             NotifyModelChanged();
         }
 
         //滑鼠放開
         public void ReleasedPointer(double x1, double y1)
         {
-            if (!_isPressed)
+            if (!IsPressed)
             {
                 return;
             }
-
             _state.ReleasedPointer(this, new MyPoint(x1, y1));
-            _isPressed = false;
-
+            IsPressed = false;
             EnableButtons();
-
             NotifyModelChanged();
         }
 
@@ -205,7 +199,7 @@ namespace DrawingModel
         //點擊 Clear Button 時，清空畫面上所有圖片，並且將所有按鈕 enable。
         public void ClickClear()
         {
-            _isPressed = false;
+            IsPressed = false;
             //_shapes.Clear();
             //NotifyModelChanged();
             _commands.Execute(new CommandClear(this, _shapes));
@@ -228,7 +222,7 @@ namespace DrawingModel
             {
                 _shapes.Draw(graphics);
             }
-            if (_isPressed && _hint != null)
+            if (IsPressed && _hint != null)
             {
                 _hint.Draw(graphics);
             }
@@ -295,34 +289,12 @@ namespace DrawingModel
             }
         }
 
-        //Load按鈕是否可用
-        public bool IsLoadEnabled
-        {
-            get
-            {
-                return _isLoadEnabled;
-            }
-        }
-
         //現在選取中的圖形，的資訊字卡
         public string SelectedShapeInfo
         {
             get
             {
                 return _shapes.SelectShapeInfo;
-            }
-        }
-
-        //現在左鍵正在被按著嗎
-        public bool IsPressed
-        {
-            get
-            {
-                return _isPressed;
-            }
-            set
-            {
-                _isPressed = value;
             }
         }
 
