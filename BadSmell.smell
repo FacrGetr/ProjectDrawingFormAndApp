@@ -236,7 +236,7 @@
             </Smell>
             <Smell>
               <Id>4</Id>
-              <SmellType>A syntax error has been discovered in file D:\111-1_classes\Windows\PJ2\107A50039\DrawingModel\Model.cs on line 22.</SmellType>
+              <SmellType>A syntax error has been discovered in file D:\111-1_classes\Windows\107A50039\DrawingModel\Model.cs on line 22.</SmellType>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingModel</Project>
@@ -475,7 +475,7 @@
             </Smell>
             <Smell>
               <Id>19</Id>
-              <SmellType>A syntax error has been discovered in file D:\111-1_classes\Windows\PJ2\107A50039\DrawingForm\View\WindowsFormsGraphicsAdaptor.cs on line 36.</SmellType>
+              <SmellType>A syntax error has been discovered in file D:\111-1_classes\Windows\107A50039\DrawingForm\View\WindowsFormsGraphicsAdaptor.cs on line 36.</SmellType>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingForm</Project>
@@ -490,7 +490,7 @@
             </Smell>
             <Smell>
               <Id>20</Id>
-              <SmellType>A syntax error has been discovered in file D:\111-1_classes\Windows\PJ2\107A50039\DrawingApp\View\WindowsStoreGraphicsAdaptor.cs on line 55.</SmellType>
+              <SmellType>A syntax error has been discovered in file D:\111-1_classes\Windows\107A50039\DrawingApp\View\WindowsStoreGraphicsAdaptor.cs on line 55.</SmellType>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingApp</Project>
@@ -505,7 +505,7 @@
             </Smell>
             <Smell>
               <Id>21</Id>
-              <SmellType>A syntax error has been discovered in file D:\111-1_classes\Windows\PJ2\107A50039\DrawingModelTests\Robot.cs on line 147.</SmellType>
+              <SmellType>A syntax error has been discovered in file D:\111-1_classes\Windows\107A50039\DrawingModelTests\Robot.cs on line 147.</SmellType>
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingModelTests</Project>
@@ -520,50 +520,50 @@
             </Smell>
             <Smell>
               <Id>22</Id>
-              <SmellType>Unresolved warnings(忽視警告)-'GoogleClientSecrets.Load(Stream)' 已經過時: 'Please use GoogleClientSecrets.FromStream which is an equivalent alternative.'</SmellType>
-              <HashCode>.GoogleDriveService.cs.Unresolved warnings(忽視警告)-'GoogleClientSecrets.Load(Stream)' 已經過時: 'Please use GoogleClientSecrets.FromStream which is an equivalent alternative.'.53</HashCode>
+              <SmellType>Feature Envy(依戀情節)</SmellType>
+              <HashCode>106 目前物件 DrawingModel.Shape，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.MyPoint，使用物件方法或屬性次數：8次，使用到的方法或屬性為以下：DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y</HashCode>
               <Severity>Red</Severity>
               <Weight>1</Weight>
-              <Project />
-              <File>GoogleDriveService.cs</File>
-              <Line>53</Line>
-              <StartLine>0</StartLine>
+              <Project>DrawingModel</Project>
+              <File>D:\111-1_classes\Windows\107A50039\DrawingModel\Shape\Shape.cs</File>
+              <Line>106</Line>
+              <StartLine>103</StartLine>
               <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
+              <EndLine>106</EndLine>
               <EndCol>0</EndCol>
-              <Comment />
+              <Comment>目前物件 DrawingModel.Shape，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.MyPoint，使用物件方法或屬性次數：8次，使用到的方法或屬性為以下：DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y</Comment>
               <Auto>false</Auto>
             </Smell>
             <Smell>
               <Id>23</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>20 DrawingApp.Program.Main(string[])</HashCode>
-              <Severity>Red</Severity>
+              <SmellType>Feature Envy(依戀情節)</SmellType>
+              <HashCode>211 目前物件 DrawingModel.GoogleDriveService，使用物件的方法或屬性次數：0次，Envy到對象物件 Google.Apis.Drive.v2.DriveService，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Google.Apis.Drive.v2.DriveService.Files 以及 Google.Apis.Drive.v2.DriveService.Files</HashCode>
+              <Severity>Warning</Severity>
               <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>App.g.i.cs</File>
-              <Line>20</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>DrawingApp.Program.Main(string[])</Comment>
+              <Project>DrawingModel</Project>
+              <File>D:\111-1_classes\Windows\107A50039\DrawingModel\GoogleDriveService.cs</File>
+              <Line>211</Line>
+              <StartLine>211</StartLine>
+              <StartCol>48</StartCol>
+              <EndLine>211</EndLine>
+              <EndCol>114</EndCol>
+              <Comment>目前物件 DrawingModel.GoogleDriveService，使用物件的方法或屬性次數：0次，Envy到對象物件 Google.Apis.Drive.v2.DriveService，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Google.Apis.Drive.v2.DriveService.Files 以及 Google.Apis.Drive.v2.DriveService.Files</Comment>
               <Auto>false</Auto>
             </Smell>
             <Smell>
               <Id>24</Id>
-              <SmellType>Lack of comments(缺乏註解)</SmellType>
-              <HashCode>52 DrawingApp.MainPage.UnloadObject(Windows.UI.Xaml.DependencyObject)</HashCode>
-              <Severity>Red</Severity>
+              <SmellType>Feature Envy(依戀情節)</SmellType>
+              <HashCode>223 目前物件 DrawingModel.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.ShapeManager，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：DrawingModel.ShapeManager.Draw(DrawingModel.IGraphics) 以及 DrawingModel.ShapeManager.NotEmpty</HashCode>
+              <Severity>Warning</Severity>
               <Weight>1</Weight>
-              <Project>DrawingApp</Project>
-              <File>MainPage.g.i.cs</File>
-              <Line>52</Line>
-              <StartLine>0</StartLine>
+              <Project>DrawingModel</Project>
+              <File>D:\111-1_classes\Windows\107A50039\DrawingModel\Model.cs</File>
+              <Line>223</Line>
+              <StartLine>222</StartLine>
               <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
+              <EndLine>223</EndLine>
               <EndCol>0</EndCol>
-              <Comment>DrawingApp.MainPage.UnloadObject(Windows.UI.Xaml.DependencyObject)</Comment>
+              <Comment>目前物件 DrawingModel.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.ShapeManager，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：DrawingModel.ShapeManager.Draw(DrawingModel.IGraphics) 以及 DrawingModel.ShapeManager.NotEmpty</Comment>
               <Auto>false</Auto>
             </Smell>
             <Smell>
@@ -573,7 +573,7 @@
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingModel</Project>
-              <File>D:\111-1_classes\Windows\PJ2\107A50039\DrawingModel\Shape\MyLine.cs</File>
+              <File>D:\111-1_classes\Windows\107A50039\DrawingModel\Shape\MyLine.cs</File>
               <Line>13</Line>
               <StartLine>13</StartLine>
               <StartCol>20</StartCol>
@@ -589,7 +589,7 @@
               <Severity>Red</Severity>
               <Weight>1</Weight>
               <Project>DrawingModel</Project>
-              <File>D:\111-1_classes\Windows\PJ2\107A50039\DrawingModel\Shape\MyLine.cs</File>
+              <File>D:\111-1_classes\Windows\107A50039\DrawingModel\Shape\MyLine.cs</File>
               <Line>14</Line>
               <StartLine>14</StartLine>
               <StartCol>20</StartCol>
@@ -605,7 +605,7 @@
               <Severity>Warning</Severity>
               <Weight>1</Weight>
               <Project>DrawingModel</Project>
-              <File>D:\111-1_classes\Windows\PJ2\107A50039\DrawingModel\State\LineState.cs</File>
+              <File>D:\111-1_classes\Windows\107A50039\DrawingModel\State\LineState.cs</File>
               <Line>27</Line>
               <StartLine>26</StartLine>
               <StartCol>0</StartCol>
@@ -621,61 +621,13 @@
               <Severity>Warning</Severity>
               <Weight>1</Weight>
               <Project>DrawingModel</Project>
-              <File>D:\111-1_classes\Windows\PJ2\107A50039\DrawingModel\State\LineState.cs</File>
+              <File>D:\111-1_classes\Windows\107A50039\DrawingModel\State\LineState.cs</File>
               <Line>39</Line>
               <StartLine>38</StartLine>
               <StartCol>0</StartCol>
               <EndLine>39</EndLine>
               <EndCol>0</EndCol>
               <Comment>目前物件 DrawingModel.LineState，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.Model，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：DrawingModel.Model.CatchShape(DrawingModel.MyPoint) 以及 DrawingModel.Model.AddHintToShapes(DrawingModel.Shape)</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>29</Id>
-              <SmellType>Feature Envy(依戀情節)</SmellType>
-              <HashCode>223 目前物件 DrawingModel.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.ShapeManager，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：DrawingModel.ShapeManager.Draw(DrawingModel.IGraphics) 以及 DrawingModel.ShapeManager.NotEmpty</HashCode>
-              <Severity>Warning</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingModel</Project>
-              <File>D:\111-1_classes\Windows\PJ2\107A50039\DrawingModel\Model.cs</File>
-              <Line>223</Line>
-              <StartLine>222</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>223</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>目前物件 DrawingModel.Model，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.ShapeManager，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：DrawingModel.ShapeManager.Draw(DrawingModel.IGraphics) 以及 DrawingModel.ShapeManager.NotEmpty</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>30</Id>
-              <SmellType>Feature Envy(依戀情節)</SmellType>
-              <HashCode>106 目前物件 DrawingModel.Shape，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.MyPoint，使用物件方法或屬性次數：8次，使用到的方法或屬性為以下：DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingModel</Project>
-              <File>D:\111-1_classes\Windows\PJ2\107A50039\DrawingModel\Shape\Shape.cs</File>
-              <Line>106</Line>
-              <StartLine>103</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>106</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>目前物件 DrawingModel.Shape，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.MyPoint，使用物件方法或屬性次數：8次，使用到的方法或屬性為以下：DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.X 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y 以及 DrawingModel.MyPoint.Y</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>31</Id>
-              <SmellType>Feature Envy(依戀情節)</SmellType>
-              <HashCode>211 目前物件 DrawingModel.GoogleDriveService，使用物件的方法或屬性次數：0次，Envy到對象物件 Google.Apis.Drive.v2.DriveService，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Google.Apis.Drive.v2.DriveService.Files 以及 Google.Apis.Drive.v2.DriveService.Files</HashCode>
-              <Severity>Warning</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingModel</Project>
-              <File>D:\111-1_classes\Windows\PJ2\107A50039\DrawingModel\GoogleDriveService.cs</File>
-              <Line>211</Line>
-              <StartLine>211</StartLine>
-              <StartCol>48</StartCol>
-              <EndLine>211</EndLine>
-              <EndCol>114</EndCol>
-              <Comment>目前物件 DrawingModel.GoogleDriveService，使用物件的方法或屬性次數：0次，Envy到對象物件 Google.Apis.Drive.v2.DriveService，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：Google.Apis.Drive.v2.DriveService.Files 以及 Google.Apis.Drive.v2.DriveService.Files</Comment>
               <Auto>false</Auto>
             </Smell>
           </Reviews>

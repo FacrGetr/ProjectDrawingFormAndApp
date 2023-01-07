@@ -136,7 +136,7 @@ namespace DrawingModel
         public void AddShape(string shapeInfo)
         {
             Shape shape = _shapeFactory.CreateNewShapeByInfo(shapeInfo);
-            AddShape(shape);
+            _commands.Execute(new CommandAddNewShape(this, shape));
         }
 
         //新增圖形進圖形們裡
