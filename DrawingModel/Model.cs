@@ -1,7 +1,8 @@
 ﻿using System.Runtime.CompilerServices;
 using System.ComponentModel;
 using System;
-using System.IO;
+using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace DrawingModel
 {
@@ -17,12 +18,24 @@ namespace DrawingModel
         CommandManager _commands = new CommandManager();
         ShapeFactory _shapeFactory = new ShapeFactory();
         IState _state = new PointState();
-        const string SAVE_FILE_PATH = "test.txt";
+        FileHandler _fileHandler = new FileHandler();
+        bool _isLoadEnabled = false;
+
+        public GoogleDriveService Service
+        {
+            get
+            {
+                return _fileHandler.Service;
+            }
+        }
 
         //存檔
-        public void Save()
+        public async void Save()
         {
-            _shapes.Save(SAVE_FILE_PATH);
+            _shapes.Save(_fileHandler.SaveFileName);
+            await Task.Run(_fileHandler.Upload);
+            _isLoadEnabled = true;
+            NotifyModelChanged();
         }
 
         //讀檔
@@ -31,16 +44,8 @@ namespace DrawingModel
             _shapes.ClearAll();
             _commands.ClearAll();
 
-            StreamReader streamReader = new StreamReader(SAVE_FILE_PATH);
-            string aLine = streamReader.ReadLine();
-            while (aLine != null)
-            {
-                Shape shape = _shapeFactory.CreateNewShapeByInfo(aLine);
+            _fileHandler.LoadFile(this);
 
-                _commands.Execute(new CommandAddNewShape(this, shape));
-                
-                aLine = streamReader.ReadLine();
-            }
             NotifyModelChanged();
         }
 
@@ -131,6 +136,13 @@ namespace DrawingModel
         {
             _hint.ConnectPoint2ToShape(endShape);
             _commands.Execute(new CommandAddNewShape(this, _hint));
+        }
+
+        //新增圖形進圖形們裡
+        public void AddShape(string shapeInfo)
+        {
+            Shape shape = _shapeFactory.CreateNewShapeByInfo(shapeInfo);
+            AddShape(shape);
         }
 
         //新增圖形進圖形們裡
@@ -280,6 +292,15 @@ namespace DrawingModel
             get
             {
                 return _commands.IsUndoEnabled;
+            }
+        }
+
+        //Load按鈕是否可用
+        public bool IsLoadEnabled
+        {
+            get
+            {
+                return _isLoadEnabled;
             }
         }
 

@@ -69,6 +69,8 @@
     <Compile Include="Command\CommandManager.cs" />
     <Compile Include="DrawingMode.cs" />
     <Compile Include="Command\ICommand.cs" />
+    <Compile Include="FileHandler.cs" />
+    <Compile Include="GoogleDriveService.cs" />
     <Compile Include="IGraphics.cs" />
     <Compile Include="State\DrawRectangleState.cs" />
     <Compile Include="State\DrawState.cs" />
@@ -90,6 +92,9 @@
   <ItemGroup>
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>
+    </None>
+    <None Include="client_secret.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

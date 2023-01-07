@@ -88,6 +88,12 @@
     <Compile Include="..\DrawingModel\DrawingMode.cs">
       <Link>Model\DrawingMode.cs</Link>
     </Compile>
+    <Compile Include="..\DrawingModel\FileHandler.cs">
+      <Link>Model\FileHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\DrawingModel\GoogleDriveService.cs">
+      <Link>Model\GoogleDriveService.cs</Link>
+    </Compile>
     <Compile Include="..\DrawingModel\IGraphics.cs">
       <Link>Model\IGraphics.cs</Link>
     </Compile>
@@ -179,6 +185,10 @@
     <EmbeddedResource Include="View\SaveForm.resx">
       <DependentUpon>SaveForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="..\DrawingModel\client_secret.json">
+      <Link>client_secret.json</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

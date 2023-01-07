@@ -25,16 +25,16 @@ namespace DrawingModel
         }
 
         //根據要求 new 一個形狀回去，讀檔
-        public Shape CreateNewShapeByInfo(string shapeInfo)
+        public Shape CreateNewShapeByInfo(string rawInfoString)
         {
             //去除尾端的 )
-            shapeInfo = shapeInfo.Remove(shapeInfo.Length - 1);
-            string[] subString = shapeInfo.Split('(');
+            rawInfoString = rawInfoString.Remove(rawInfoString.Length - 1);
+            string[] shapeInfo = rawInfoString.Split('(');
 
-            string shapeTypeName = subString[0];
+            string shapeTypeName = shapeInfo[0];
             Shape shape = HandleTypeNameString(shapeTypeName);
 
-            string[] pointsString = subString[1].Split(',');
+            string[] pointsString = shapeInfo[1].Split(',');
             HandleShapePoints(shape, pointsString);
 
             return shape;

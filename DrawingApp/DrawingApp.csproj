@@ -137,6 +137,9 @@
     <Compile Include="..\DrawingModel\DrawingMode.cs">
       <Link>Model\DrawingMode.cs</Link>
     </Compile>
+    <Compile Include="..\DrawingModel\GoogleDriveService.cs">
+      <Link>Model\GoogleDriveService.cs</Link>
+    </Compile>
     <Compile Include="..\DrawingModel\IGraphics.cs">
       <Link>Model\IGraphics.cs</Link>
     </Compile>
@@ -220,6 +223,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Google.Apis.Drive.v2">
+      <Version>1.58.0.2859</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.12</Version>
     </PackageReference>

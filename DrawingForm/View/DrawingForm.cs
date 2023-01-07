@@ -100,7 +100,7 @@ namespace DrawingForm
             };
             _load = new ToolStripButton("Load", null, HandleLoadButtonClick)
             {
-                Enabled = true,
+                Enabled = false,
                 Owner = toolStrip
             };
             //
@@ -194,6 +194,7 @@ namespace DrawingForm
             Invalidate(true);
             _undo.Enabled = _model.IsUndoEnabled;
             _redo.Enabled = _model.IsRedoEnabled;
+            _load.Enabled = _model.IsLoadEnabled;
         }
     }
 }
